@@ -154,6 +154,23 @@ public class Comparators {
             throw new IllegalStateException();
         }
 
+        private static long wholePart(double d) {
+            return (long) d;
+        }
+
+        private static boolean isFrac(double d) {
+            return d % 1 != 0;
+        }
+
+        private static double toDouble(Object o) {
+            if (o.getClass() == Double.class || o.getClass() == Double.TYPE) {
+                return (double) o;
+            }
+            if (o.getClass() == Float.class || o.getClass() == Float.TYPE) {
+                return (double) (float) o;
+            }
+            throw new IllegalStateException();
+        }
     }
 
 
@@ -187,6 +204,15 @@ public class Comparators {
             if (o1 == null && o2 == null) return true;
             return (o1 != null && o2 != null && toChars(o1) == toChars(o2));
         }
+
+        private static char toChars(Object o) {
+            if (o.getClass() == Character.class || o.getClass() == Character.TYPE) {
+                return (char) o;
+            }
+            throw new IllegalStateException();
+        }
+
+
     }
 
     public static class BooleanTypesComparator<T1, T2> implements CompareTo<T1, T2> {
@@ -272,16 +298,6 @@ public class Comparators {
         throw new IllegalStateException();
     }
 
-    private static double toDouble(Object o) {
-        if (o.getClass() == Double.class || o.getClass() == Double.TYPE) {
-            return (double) o;
-        }
-        if (o.getClass() == Float.class || o.getClass() == Float.TYPE) {
-            return (double) (float) o;
-        }
-        throw new IllegalStateException();
-    }
-
     private static long toLong(Object o) {
         if (o.getClass() == Long.class || o.getClass() == Long.TYPE) {
             return (long) o;
@@ -298,12 +314,6 @@ public class Comparators {
         throw new IllegalStateException();
     }
 
-    private static char toChars(Object o) {
-        if (o.getClass() == Character.class || o.getClass() == Character.TYPE) {
-            return (char) o;
-        }
-        throw new IllegalStateException();
-    }
 
     private static boolean isInt(Class clazz) {
         return Arrays.stream(INTS).anyMatch(c -> c == clazz);
@@ -311,15 +321,6 @@ public class Comparators {
 
     private static boolean isFloat(Class clazz) {
         return Arrays.stream(FLOATS).anyMatch(c -> c == clazz);
-    }
-
-
-    private static boolean isFrac(double d) {
-        return d % 1 != 0;
-    }
-
-    private static long wholePart(double d) {
-        return (long) d;
     }
 
 }
