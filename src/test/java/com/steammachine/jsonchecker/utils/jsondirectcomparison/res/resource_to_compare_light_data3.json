@@ -1,0 +1,63 @@
+{
+  "monkeyId": "ui_leaders",
+  "ComponentType": "sqc_scriptable_dialog",
+  "visible": "true",
+  "children": [
+    {
+      "monkeyId": "background_tab",
+      "ComponentType": "milk_widget",
+      "visible": "true",
+      "children": [
+        {
+          "monkeyId": "tab_container1",
+          "ComponentType": "milk_touch_widget",
+          "visible": "true",
+          "children": [
+            {
+              "image_name": "ui_tab_button_image1_ipad",
+              "monkeyId": "button_image",
+              "visible": "true",
+              "children": [],
+              "className": "milk_image",
+              "type": "image",
+              "value": "",
+              "coords": [
+                416.0,
+                557.0,
+                76.0,
+                48.0
+              ]
+            }
+          ],
+          "className": "milk_touch_widget",
+          "type": "widget",
+          "value": "",
+          "coords": [
+            408.0,
+            548.0,
+            91.0,
+            55.0
+          ]
+        }
+      ],
+      "className": "milk_widget",
+      "type": "widget",
+      "value": "",
+      "coords": [
+        304.0,
+        257.0,
+        672.0,
+        350.0
+      ]
+    }
+  ],
+  "className": "sqc_scriptable_dialog",
+  "type": "widget",
+  "value": "",
+  "coords": [
+    284.0,
+    113.0,
+    711.0,
+    573.0
+  ]
+}

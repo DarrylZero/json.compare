@@ -1,0 +1,923 @@
+{
+  "monkeyId": "ui_leaders",
+  "ComponentType": "sqc_scriptable_dialog",
+  "visible": "true",
+  "children": [
+    {
+      "monkeyId": "background_top_blur",
+      "ComponentType": "milk_blurred_back_image",
+      "visible": "true",
+      "children": [
+        {
+          "image_name": "barn_background_top_ipad",
+          "monkeyId": "background_top",
+          "ComponentType": "milk_image",
+          "visible": "true",
+          "children": [],
+          "className": "milk_image",
+          "type": "image",
+          "value": "",
+          "coords": [
+            540.0,
+            664.0,
+            200.0,
+            22.0
+          ]
+        }
+      ],
+      "className": "milk_blurred_back_image",
+      "type": "widget",
+      "value": "",
+      "coords": [
+        540.0,
+        664.0,
+        200.0,
+        22.0
+      ]
+    },
+    {
+      "monkeyId": "background_blur",
+      "ComponentType": "milk_blurred_back_slice_image",
+      "visible": "true",
+      "children": [
+        {
+          "monkeyId": "background_blur",
+          "ComponentType": "milk_slice_image",
+          "visible": "true",
+          "children": [],
+          "className": "milk_slice_image",
+          "type": "widget",
+          "value": "",
+          "coords": [
+            284.0,
+            113.0,
+            711.0,
+            551.0
+          ]
+        }
+      ],
+      "className": "milk_blurred_back_slice_image",
+      "type": "widget",
+      "value": "",
+      "coords": [
+        284.0,
+        113.0,
+        711.0,
+        551.0
+      ]
+    },
+    {
+      "monkeyId": "title",
+      "ComponentType": "milk_label",
+      "visible": "true",
+      "children": [],
+      "className": "milk_label",
+      "type": "widget",
+      "value": "ТОП",
+      "coords": [
+        415.0,
+        619.0,
+        450.0,
+        30.0
+      ]
+    },
+    {
+      "monkeyId": "close_button",
+      "ComponentType": "milk_image_button",
+      "visible": "true",
+      "children": [],
+      "active": true,
+      "className": "milk_image_button",
+      "type": "button",
+      "value": "",
+      "coords": [
+        932.0,
+        600.0,
+        52.0,
+        52.0
+      ]
+    },
+    {
+      "monkeyId": "background_tab",
+      "ComponentType": "milk_widget",
+      "visible": "true",
+      "children": [
+        {
+          "monkeyId": "tab_container1",
+          "ComponentType": "milk_touch_widget",
+          "visible": "true",
+          "children": [
+            {
+              "monkeyId": "shadow",
+              "ComponentType": "milk_slice_image",
+              "visible": "true",
+              "children": [],
+              "className": "milk_slice_image",
+              "type": "widget",
+              "value": "",
+              "coords": [
+                408.0,
+                547.0,
+                91.0,
+                55.0
+              ]
+            },
+            {
+              "monkeyId": "background",
+              "ComponentType": "milk_slice_image",
+              "visible": "false",
+              "children": [],
+              "className": "milk_slice_image",
+              "type": "widget",
+              "value": "",
+              "coords": [
+                408.0,
+                546.0,
+                91.0,
+                56.0
+              ]
+            },
+            {
+              "image_name": "ui_tab_button_image1_ipad",
+              "monkeyId": "button_image",
+              "ComponentType": "milk_image",
+              "visible": "true",
+              "children": [],
+              "className": "milk_image",
+              "type": "image",
+              "value": "",
+              "coords": [
+                416.0,
+                557.0,
+                76.0,
+                48.0
+              ]
+            }
+          ],
+          "className": "milk_touch_widget",
+          "type": "widget",
+          "value": "",
+          "coords": [
+            408.0,
+            548.0,
+            91.0,
+            55.0
+          ]
+        },
+        {
+          "monkeyId": "list_bg",
+          "ComponentType": "milk_slice_image",
+          "visible": "true",
+          "children": [],
+          "className": "milk_slice_image",
+          "type": "widget",
+          "value": "",
+          "coords": [
+            304.0,
+            202.0,
+            672.0,
+            350.0
+          ]
+        },
+        {
+          "monkeyId": "tab_container0",
+          "ComponentType": "milk_touch_widget",
+          "visible": "true",
+          "children": [
+            {
+              "monkeyId": "shadow",
+              "ComponentType": "milk_slice_image",
+              "visible": "false",
+              "children": [],
+              "className": "milk_slice_image",
+              "type": "widget",
+              "value": "",
+              "coords": [
+                315.0,
+                547.0,
+                91.0,
+                55.0
+              ]
+            },
+            {
+              "monkeyId": "background",
+              "ComponentType": "milk_slice_image",
+              "visible": "true",
+              "children": [],
+              "className": "milk_slice_image",
+              "type": "widget",
+              "value": "",
+              "coords": [
+                315.0,
+                546.0,
+                91.0,
+                56.0
+              ]
+            },
+            {
+              "image_name": "ui_tab_button_image2_ipad",
+              "monkeyId": "button_image",
+              "ComponentType": "milk_image",
+              "visible": "true",
+              "children": [],
+              "className": "milk_image",
+              "type": "image",
+              "value": "",
+              "coords": [
+                323.0,
+                557.0,
+                76.0,
+                48.0
+              ]
+            }
+          ],
+          "className": "milk_touch_widget",
+          "type": "widget",
+          "value": "",
+          "coords": [
+            315.0,
+            548.0,
+            91.0,
+            55.0
+          ]
+        }
+      ],
+      "className": "milk_widget",
+      "type": "widget",
+      "value": "",
+      "coords": [
+        304.0,
+        257.0,
+        672.0,
+        350.0
+      ]
+    },
+    {
+      "monkeyId": "platform_top_gold",
+      "ComponentType": "milk_slice_image",
+      "visible": "true",
+      "children": [
+        {
+          "monkeyId": "number_label",
+          "ComponentType": "milk_label",
+          "visible": "true",
+          "children": [],
+          "className": "milk_label",
+          "type": "widget",
+          "value": "",
+          "coords": [
+            334.0,
+            146.0,
+            23.0,
+            21.0
+          ]
+        },
+        {
+          "image_name": "ui_icon_star_ipad",
+          "monkeyId": "icon_star",
+          "ComponentType": "milk_image",
+          "visible": "true",
+          "children": [],
+          "className": "milk_image",
+          "type": "image",
+          "value": "",
+          "coords": [
+            383.0,
+            144.0,
+            31.0,
+            32.0
+          ]
+        },
+        {
+          "monkeyId": "position_label",
+          "ComponentType": "milk_label",
+          "visible": "true",
+          "children": [],
+          "className": "milk_label",
+          "type": "widget",
+          "value": "17",
+          "coords": [
+            420.0,
+            150.0,
+            30.0,
+            19.0
+          ]
+        },
+        {
+          "monkeyId": "position_up_info_widget",
+          "ComponentType": "milk_widget",
+          "visible": "false",
+          "children": [
+            {
+              "image_name": "icon_arrow_up_ipad",
+              "monkeyId": "position_up_img",
+              "ComponentType": "milk_image",
+              "visible": "true",
+              "children": [],
+              "className": "milk_image",
+              "type": "image",
+              "value": "",
+              "coords": [
+                471.0,
+                156.0,
+                26.0,
+                22.0
+              ]
+            },
+            {
+              "monkeyId": "position_up_lbl",
+              "ComponentType": "milk_label",
+              "visible": "true",
+              "children": [],
+              "className": "milk_label",
+              "type": "widget",
+              "value": "",
+              "coords": [
+                469.0,
+                141.0,
+                30.0,
+                13.0
+              ]
+            }
+          ],
+          "className": "milk_widget",
+          "type": "widget",
+          "value": "",
+          "coords": [
+            469.0,
+            141.0,
+            30.0,
+            37.0
+          ]
+        },
+        {
+          "monkeyId": "position_down_info_widget",
+          "ComponentType": "milk_widget",
+          "visible": "false",
+          "children": [
+            {
+              "monkeyId": "position_down_lbl",
+              "ComponentType": "milk_label",
+              "visible": "true",
+              "children": [],
+              "className": "milk_label",
+              "type": "widget",
+              "value": "",
+              "coords": [
+                469.0,
+                165.0,
+                30.0,
+                13.0
+              ]
+            },
+            {
+              "image_name": "icon_arrow_down_ipad",
+              "monkeyId": "position_down_img",
+              "ComponentType": "milk_image",
+              "visible": "true",
+              "children": [],
+              "className": "milk_image",
+              "type": "image",
+              "value": "",
+              "coords": [
+                471.0,
+                141.0,
+                26.0,
+                22.0
+              ]
+            }
+          ],
+          "className": "milk_widget",
+          "type": "widget",
+          "value": "",
+          "coords": [
+            469.0,
+            141.0,
+            30.0,
+            37.0
+          ]
+        },
+        {
+          "monkeyId": "position_equally_info_widget",
+          "ComponentType": "milk_widget",
+          "visible": "false",
+          "children": [
+            {
+              "image_name": "icon_arrow_equally_ipad",
+              "monkeyId": "position_equally_img",
+              "ComponentType": "milk_image",
+              "visible": "true",
+              "children": [],
+              "className": "milk_image",
+              "type": "image",
+              "value": "",
+              "coords": [
+                471.0,
+                149.0,
+                26.0,
+                22.0
+              ]
+            }
+          ],
+          "className": "milk_widget",
+          "type": "widget",
+          "value": "",
+          "coords": [
+            469.0,
+            141.0,
+            30.0,
+            37.0
+          ]
+        },
+        {
+          "monkeyId": "player_name_label",
+          "ComponentType": "milk_label",
+          "visible": "true",
+          "children": [],
+          "className": "milk_label",
+          "type": "widget",
+          "value": "Ранчо",
+          "coords": [
+            501.0,
+            148.0,
+            320.0,
+            23.0
+          ]
+        },
+        {
+          "monkeyId": "tickets_bg",
+          "ComponentType": "milk_slice_image",
+          "visible": "true",
+          "children": [
+            {
+              "monkeyId": "tickets_sum_label",
+              "ComponentType": "milk_label",
+              "visible": "true",
+              "children": [],
+              "className": "milk_label",
+              "type": "widget",
+              "value": "0",
+              "coords": [
+                832.0,
+                151.0,
+                65.0,
+                16.0
+              ]
+            }
+          ],
+          "className": "milk_slice_image",
+          "type": "widget",
+          "value": "",
+          "coords": [
+            823.0,
+            147.0,
+            124.0,
+            26.0
+          ]
+        },
+        {
+          "image_name": "icon_ticket_ipad",
+          "monkeyId": "ticket_image",
+          "ComponentType": "milk_image",
+          "visible": "true",
+          "children": [],
+          "className": "milk_image",
+          "type": "image",
+          "value": "",
+          "coords": [
+            904.0,
+            134.0,
+            52.0,
+            52.0
+          ]
+        }
+      ],
+      "className": "milk_slice_image",
+      "type": "widget",
+      "value": "",
+      "coords": [
+        316.0,
+        133.0,
+        648.0,
+        53.0
+      ]
+    },
+    {
+      "monkeyId": "top_wait_label",
+      "ComponentType": "milk_label",
+      "visible": "false",
+      "children": [],
+      "className": "milk_label",
+      "type": "widget",
+      "value": "",
+      "coords": [
+        390.0,
+        323.0,
+        500.0,
+        100.0
+      ]
+    },
+    {
+      "image_name": "",
+      "monkeyId": "none",
+      "ComponentType": "milk_image",
+      "visible": "true",
+      "children": [],
+      "className": "milk_image",
+      "type": "image",
+      "value": "",
+      "coords": [
+        335.0,
+        550.0,
+        50.0,
+        50.0
+      ]
+    },
+    {
+      "image_name": "",
+      "monkeyId": "none",
+      "ComponentType": "milk_image",
+      "visible": "true",
+      "children": [],
+      "className": "milk_image",
+      "type": "image",
+      "value": "",
+      "coords": [
+        335.0,
+        550.0,
+        50.0,
+        50.0
+      ]
+    },
+    {
+      "monkeyId": "none",
+      "ComponentType": "sqc_dialog_page",
+      "visible": "true",
+      "children": [
+        {
+          "monkeyId": "ui_leader_table",
+          "ComponentType": "milk_widget",
+          "visible": "true",
+          "children": [
+            {
+              "monkeyId": "table_title",
+              "ComponentType": "milk_label",
+              "visible": "true",
+              "children": [],
+              "className": "milk_label",
+              "type": "widget",
+              "value": "Лучшие игроки среди друзей",
+              "coords": [
+                440.0,
+                502.0,
+                400.0,
+                30.0
+              ]
+            },
+            {
+              "monkeyId": "top_table",
+              "ComponentType": "sqc_scriptable_table",
+              "visible": "true",
+              "children": [
+                {
+                  "monkeyId": "ui_leaders_beige_cell",
+                  "ComponentType": "milk_widget",
+                  "visible": "true",
+                  "children": [
+                    {
+                      "monkeyId": "platform_top_beige",
+                      "ComponentType": "milk_slice_image",
+                      "visible": "true",
+                      "children": [
+                        {
+                          "monkeyId": "number_label",
+                          "ComponentType": "milk_label",
+                          "visible": "true",
+                          "children": [],
+                          "className": "milk_label",
+                          "type": "widget",
+                          "value": "1",
+                          "coords": [
+                            334.0,
+                            445.0,
+                            23.0,
+                            21.0
+                          ]
+                        },
+                        {
+                          "image_name": "ui_icon_star_ipad",
+                          "monkeyId": "icon_star",
+                          "ComponentType": "milk_image",
+                          "visible": "true",
+                          "children": [],
+                          "className": "milk_image",
+                          "type": "image",
+                          "value": "",
+                          "coords": [
+                            384.0,
+                            440.0,
+                            31.0,
+                            32.0
+                          ]
+                        },
+                        {
+                          "monkeyId": "position_label",
+                          "ComponentType": "milk_label",
+                          "visible": "true",
+                          "children": [],
+                          "className": "milk_label",
+                          "type": "widget",
+                          "value": "17",
+                          "coords": [
+                            420.0,
+                            446.0,
+                            30.0,
+                            19.0
+                          ]
+                        },
+                        {
+                          "monkeyId": "position_up_info_widget",
+                          "ComponentType": "milk_widget",
+                          "visible": "false",
+                          "children": [
+                            {
+                              "image_name": "icon_arrow_up_ipad",
+                              "monkeyId": "position_up_img",
+                              "ComponentType": "milk_image",
+                              "visible": "true",
+                              "children": [],
+                              "className": "milk_image",
+                              "type": "image",
+                              "value": "",
+                              "coords": [
+                                471.0,
+                                452.0,
+                                26.0,
+                                22.0
+                              ]
+                            },
+                            {
+                              "monkeyId": "position_up_lbl",
+                              "ComponentType": "milk_label",
+                              "visible": "true",
+                              "children": [],
+                              "className": "milk_label",
+                              "type": "widget",
+                              "value": "",
+                              "coords": [
+                                469.0,
+                                437.0,
+                                30.0,
+                                13.0
+                              ]
+                            }
+                          ],
+                          "className": "milk_widget",
+                          "type": "widget",
+                          "value": "",
+                          "coords": [
+                            469.0,
+                            437.0,
+                            30.0,
+                            37.0
+                          ]
+                        },
+                        {
+                          "monkeyId": "position_down_info_widget",
+                          "ComponentType": "milk_widget",
+                          "visible": "false",
+                          "children": [
+                            {
+                              "monkeyId": "position_down_lbl",
+                              "ComponentType": "milk_label",
+                              "visible": "true",
+                              "children": [],
+                              "className": "milk_label",
+                              "type": "widget",
+                              "value": "",
+                              "coords": [
+                                469.0,
+                                461.0,
+                                30.0,
+                                13.0
+                              ]
+                            },
+                            {
+                              "image_name": "icon_arrow_down_ipad",
+                              "monkeyId": "position_down_img",
+                              "ComponentType": "milk_image",
+                              "visible": "true",
+                              "children": [],
+                              "className": "milk_image",
+                              "type": "image",
+                              "value": "",
+                              "coords": [
+                                471.0,
+                                437.0,
+                                26.0,
+                                22.0
+                              ]
+                            }
+                          ],
+                          "className": "milk_widget",
+                          "type": "widget",
+                          "value": "",
+                          "coords": [
+                            469.0,
+                            437.0,
+                            30.0,
+                            37.0
+                          ]
+                        },
+                        {
+                          "monkeyId": "position_equally_info_widget",
+                          "ComponentType": "milk_widget",
+                          "visible": "true",
+                          "children": [
+                            {
+                              "image_name": "icon_arrow_equally_ipad",
+                              "monkeyId": "position_equally_img",
+                              "ComponentType": "milk_image",
+                              "visible": "true",
+                              "children": [],
+                              "className": "milk_image",
+                              "type": "image",
+                              "value": "",
+                              "coords": [
+                                471.0,
+                                445.0,
+                                26.0,
+                                22.0
+                              ]
+                            }
+                          ],
+                          "className": "milk_widget",
+                          "type": "widget",
+                          "value": "",
+                          "coords": [
+                            469.0,
+                            437.0,
+                            30.0,
+                            37.0
+                          ]
+                        },
+                        {
+                          "monkeyId": "player_name_label",
+                          "ComponentType": "milk_label",
+                          "visible": "true",
+                          "children": [],
+                          "className": "milk_label",
+                          "type": "widget",
+                          "value": "Ранчо",
+                          "coords": [
+                            500.0,
+                            444.0,
+                            240.0,
+                            23.0
+                          ]
+                        },
+                        {
+                          "monkeyId": "tickets_bg",
+                          "ComponentType": "milk_slice_image",
+                          "visible": "true",
+                          "children": [
+                            {
+                              "monkeyId": "tickets_sum_label",
+                              "ComponentType": "milk_label",
+                              "visible": "true",
+                              "children": [],
+                              "className": "milk_label",
+                              "type": "widget",
+                              "value": "0",
+                              "coords": [
+                                749.0,
+                                447.0,
+                                65.0,
+                                16.0
+                              ]
+                            }
+                          ],
+                          "className": "milk_slice_image",
+                          "type": "widget",
+                          "value": "",
+                          "coords": [
+                            740.0,
+                            443.0,
+                            124.0,
+                            26.0
+                          ]
+                        },
+                        {
+                          "image_name": "icon_ticket_ipad",
+                          "monkeyId": "ticket_image",
+                          "ComponentType": "milk_image",
+                          "visible": "true",
+                          "children": [],
+                          "className": "milk_image",
+                          "type": "image",
+                          "value": "",
+                          "coords": [
+                            818.0,
+                            430.0,
+                            52.0,
+                            52.0
+                          ]
+                        },
+                        {
+                          "monkeyId": "visit_button",
+                          "ComponentType": "milk_slice_button",
+                          "visible": "false",
+                          "children": [
+                            {
+                              "monkeyId": "visit_label",
+                              "ComponentType": "milk_label",
+                              "visible": "true",
+                              "children": [],
+                              "className": "milk_label",
+                              "type": "widget",
+                              "value": "Перейти",
+                              "coords": [
+                                884.0,
+                                447.0,
+                                65.0,
+                                18.0
+                              ]
+                            }
+                          ],
+                          "active": true,
+                          "className": "milk_slice_button",
+                          "type": "button",
+                          "value": "",
+                          "coords": [
+                            877.0,
+                            440.0,
+                            79.0,
+                            32.0
+                          ]
+                        }
+                      ],
+                      "className": "milk_slice_image",
+                      "type": "widget",
+                      "value": "",
+                      "coords": [
+                        316.0,
+                        429.0,
+                        648.0,
+                        53.0
+                      ]
+                    }
+                  ],
+                  "className": "milk_widget",
+                  "type": "widget",
+                  "value": "",
+                  "coords": [
+                    316.0,
+                    429.0,
+                    648.0,
+                    50.0
+                  ]
+                }
+              ],
+              "className": "sqc_scriptable_table",
+              "type": "widget",
+              "value": "",
+              "coords": [
+                316.0,
+                208.0,
+                648.0,
+                276.0
+              ]
+            }
+          ],
+          "className": "milk_widget",
+          "type": "widget",
+          "value": "",
+          "coords": [
+            316.0,
+            206.0,
+            648.0,
+            336.0
+          ]
+        }
+      ],
+      "className": "sqc_dialog_page",
+      "type": "widget",
+      "value": "",
+      "coords": [
+        284.0,
+        113.0,
+        711.0,
+        573.0
+      ]
+    }
+  ],
+  "className": "sqc_scriptable_dialog",
+  "type": "widget",
+  "value": "",
+  "coords": [
+    284.0,
+    113.0,
+    711.0,
+    573.0
+  ]
+}

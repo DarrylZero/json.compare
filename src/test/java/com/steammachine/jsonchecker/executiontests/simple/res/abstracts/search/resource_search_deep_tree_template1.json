@@ -1,0 +1,75 @@
+{
+  "debugId":  "one",
+  "monkeyId": "one",
+  "ComponentType": "sqc_scriptable_dialog",
+  "visible": "true",
+  "children": [
+    {
+      "debugId":  "two",
+      "monkeyId": "two",
+      "ComponentType": "milk_bevel",
+      "visible": "true",
+      "children": [],
+      "className": "milk_bevel",
+      "type": "widget",
+      "value": "",
+      "coords": [
+        250.0,
+        98.0,
+        780.0,
+        470.0
+      ]
+    },
+    {
+      "debugId":  "three",
+      "monkeyId": "three",
+      "ComponentType": "milk_bevel",
+      "visible": "true",
+      "children": [],
+      "className": "milk_bevel",
+      "type": "widget",
+      "value": "",
+      "coords": [
+        250.0,
+        98.0,
+        780.0,
+        470.0
+      ]
+    },
+    {
+      "debugId":  "four",
+      "monkeyId": "four",
+      "ComponentType": "milk_bevel",
+      "visible": "true",
+      "children": [
+        {
+          "debugId":  "five",
+          "monkeyId": "five",
+          "ComponentType": "milk_bevel",
+          "visible": "true",
+        },
+        {
+          "debugId":  "six",
+          "monkeyId": "six",
+          "ComponentType": "milk_bevel",
+          "visible": "true"
+        },
+        {
+          "debugId":  "seven",
+          "monkeyId": "seven",
+          "ComponentType": "milk_bevel",
+          "visible": "true"
+        }
+      ],
+      "className": "milk_bevel",
+      "type": "widget",
+      "value": "",
+      "coords": [
+        250.0,
+        98.0,
+        780.0,
+        470.0
+      ]
+    }
+  ]
+}
