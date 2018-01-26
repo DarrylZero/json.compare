@@ -20,6 +20,7 @@ plugins {
     id "org.sonarqube" version "2.5"
 }
 
+apply plugin: 'idea'
 apply plugin: 'org.junit.platform.gradle.plugin'
 apply plugin: 'com.steammachine.org.gradle.properties.plugins'
 apply plugin: 'com.steammachine.org.gradle.copyresources.plugin'
@@ -35,16 +36,24 @@ auxprops.set('deploy') {
     propertyFile = file('publish.properties')
 }
 
+idea {
+    module {
+        inheritOutputDirs = false
+        outputDir = file('build/classes/main')
+        testOutputDir = file('build/classes/test')
+    }
+}
+
 group = deploy.group
 version = deploy.version
 
+
 import com.steammachine.org.gradle.substitute.plugin.ModificationRule
-import com.steammachine.org.gradle.substitute.plugin.predefinedsubstitutions.DirectSubstitution
 
 import java.text.SimpleDateFormat
 
 dependencies {
-    compile 'log4j:log4j:1.2.17'
+    compile 'org.slf4j:slf4j-api:1.7.25'
     compile 'com.steammachine.org:common.utils:1.0.1'
     compile 'com.googlecode.json-simple:json-simple:1.1'
 
@@ -55,7 +64,6 @@ dependencies {
     testCompile 'org.junit.vintage:junit-vintage-engine:4.12.0'
     testCompile 'org.junit.platform:junit-platform-launcher:1.0.0'
     testCompile 'com.steammachine.org:junit5.extensions:0.9.1'
-
 }
 
 jar {

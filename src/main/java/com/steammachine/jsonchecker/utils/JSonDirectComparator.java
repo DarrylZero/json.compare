@@ -1,8 +1,11 @@
 package com.steammachine.jsonchecker.utils;
 
+import com.steammachine.common.apilevel.Api;
+import com.steammachine.common.apilevel.State;
 import com.steammachine.common.definitions.annotations.SignatureSensitive;
 import com.steammachine.common.utils.commonutils.CommonUtils;
 import com.steammachine.jsonchecker.defaults.AddressType;
+import com.steammachine.jsonchecker.defaults.MonkeyPathRepresentation;
 import com.steammachine.jsonchecker.defaults.ResultNodeCheckContext;
 import com.steammachine.jsonchecker.impl.directcomparison.flatterprocs.Flatters;
 import com.steammachine.jsonchecker.impl.directcomparison.pathformats.Formats;
@@ -38,6 +41,7 @@ import static com.steammachine.common.utils.commonutils.CommonUtils.intersectCol
  * {@link com.steammachine.jsonchecker.utils.JSonDirectComparator}
  * com.steammachine.jsonchecker.utils.JSonDirectComparator
  **/
+@Api(State.MAINTAINED)
 public class JSonDirectComparator {
 
     private static final String START_PARAM = "${";
@@ -180,7 +184,8 @@ public class JSonDirectComparator {
      * @param json2 строка (not null)
      * @return {@code true} если два данных json идентичны  по структуре
      */
-    public static boolean comapreJSonStrings(String json1, String json2, PathRepresentation representation) {
+    @Api(State.INTERNAL)
+    public static boolean compareJSonStrings(String json1, String json2, PathRepresentation representation) {
         Objects.requireNonNull(json1);
         Objects.requireNonNull(json2);
         return compareJSonsObjects(loadJson(json1), loadJson(json2), representation).isSuccessful();
@@ -218,7 +223,8 @@ public class JSonDirectComparator {
      * @param representation объект представления пути (not null)
      * @return {@code true} если два данных json идентичны  по структуре
      */
-    public static boolean comapreJSonStreams(
+    @Api(State.INTERNAL)
+    public static boolean compareJSonStreams(
             InputStream json1,
             InputStream json2,
             PathRepresentation representation) throws IOException {
@@ -235,6 +241,7 @@ public class JSonDirectComparator {
      * @param o2 - объект
      * @return результат сравнения
      */
+    @Api(State.INTERNAL)
     public static NodeCheckResult compareJSonsObjects(JSONObject o1, JSONObject o2, PathRepresentation representation) {
         return compareJSonsObjects(o1, o2, representation, Collections.emptyList());
     }
@@ -261,6 +268,7 @@ public class JSonDirectComparator {
      *                           exclusions[n] всегда не null
      * @return результат сравнения
      */
+    @Api(State.INTERNAL)
     public static NodeCheckResult compareJSonsObjects(
             JSONObject o1,
             JSONObject o2,
@@ -269,9 +277,9 @@ public class JSonDirectComparator {
             Collection<String> inclusionsTemplate,
             Collection<String> exclusionsTemplate) {
 
-        ResultNodeCheckContext result;
-        doCompareJSonsObjects(o1, o2, params == null ? JSONParams.STUB_PARAMS : params,
-                inclusionsTemplate, exclusionsTemplate, (result = new ResultNodeCheckContext()),
+        ResultNodeCheckContext result = new ResultNodeCheckContext();
+        doCompareJSonsObjects(o1, o2, params == null ? JSONParamsStub.STUB_PARAMS : params,
+                inclusionsTemplate, exclusionsTemplate, result,
                 representation);
         return result;
     }
@@ -288,6 +296,7 @@ public class JSonDirectComparator {
      * @return результат сравнения
      */
     @SafeVarargs
+    @Api(State.INTERNAL)
     public static NodeCheckResult compareJSonsObjects(
             JSONObject o1, JSONObject o2,
             PathRepresentation representation,
@@ -613,6 +622,66 @@ public class JSonDirectComparator {
         } catch (ParseException e) {
             throw new WrongDataFormat(e);
         }
+    }
+
+/* ------------------------------------------- public toplevel maintained methods ---------------------------------- */
+
+    /**
+     * Simple json string comparison
+     *
+     * @param json1 строка (not null)
+     * @param json2 строка (not null)
+     * @return {@code true} if jsons are structurally identical
+     */
+    @Api(State.MAINTAINED)
+    public static boolean compareJSonStrings(String json1, String json2) {
+        Objects.requireNonNull(json1);
+        Objects.requireNonNull(json2);
+        return compareJSonsObjects(loadJson(json1), loadJson(json2), MonkeyPathRepresentation.REPRESENTATION).isSuccessful();
+    }
+
+
+    /**
+     * Простое сравнение двух потоков - содержащих данные json.
+     * Сравнение производится с предварительным преобразованием к приведенному виду.
+     * Результат выполнения не дает даталей расхождений.
+     * <p>
+     * Api note - внутри метода не осуществляется закрытия потоков.
+     *
+     * @param json1 поток с данными (not null)
+     * @param json2 поток с данными (not null)
+     * @return {@code true} если два данных json идентичны  по структуре
+     */
+    @Api(State.MAINTAINED)
+    public static boolean compareJSonStreams(
+            InputStream json1,
+            InputStream json2) throws IOException {
+
+        Objects.requireNonNull(json1);
+        Objects.requireNonNull(json2);
+        return compareJSonStreams(json1, json2, MonkeyPathRepresentation.REPRESENTATION);
+    }
+
+    /**
+     * Простое сравнение двух потоков - содержащих данные json.
+     * Сравнение производится с предварительным преобразованием к приведенному виду.
+     * Результат выполнения не дает даталей расхождений.
+     * <p>
+     * Api note - внутри метода не осуществляется закрытия потоков.
+     *
+     * @param json1          поток с данными (not null)
+     * @param json2          поток с данными (not null)
+     * @return {@code true} если два данных json идентичны  по структуре
+     */
+    @Api(State.INCUBATING)
+    public static NodeCheckResult compareJSonStreams(
+            InputStream json1,
+            InputStream json2,
+            JSONParams jsonParams,
+            Collection<String> inclusionsTemplate,
+            Collection<String> exclusionsTemplate) {
+        return compareJSonsObjects(loadJson(json1), loadJson(json2), MonkeyPathRepresentation.REPRESENTATION,
+                jsonParams, inclusionsTemplate, exclusionsTemplate);
     }
 
 

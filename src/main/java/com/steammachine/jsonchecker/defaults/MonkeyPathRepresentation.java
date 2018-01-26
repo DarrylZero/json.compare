@@ -1,5 +1,7 @@
 package com.steammachine.jsonchecker.defaults;
 
+import com.steammachine.common.apilevel.Api;
+import com.steammachine.common.apilevel.State;
 import com.steammachine.jsonchecker.impl.flatter2.Element;
 import com.steammachine.jsonchecker.types.PathParticle;
 import com.steammachine.jsonchecker.types.PathRepresentation;
@@ -13,8 +15,10 @@ import java.util.List;
  *
  * @author Vladimir Bogodukhov
  **/
+@Api(State.INTERNAL)
 public class MonkeyPathRepresentation {
 
+    @Api(State.INTERNAL)
     public static final PathRepresentation REPRESENTATION = MonkeyPathRepresentation::asString;
 
     private static String asString(Path path) {

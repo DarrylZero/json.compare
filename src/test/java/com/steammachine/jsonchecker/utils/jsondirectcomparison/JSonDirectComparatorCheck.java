@@ -40,7 +40,7 @@ class JSonDirectComparatorCheck {
                 JSonDirectComparator.class.getName());
     }
 
-    /* --------------------------------------------- comapreJSonStrings -------------------------------------------  */
+    /* --------------------------------------------- compareJSonStrings -------------------------------------------  */
 
 
     @SuppressWarnings("WeakerAccess")
@@ -136,7 +136,7 @@ class JSonDirectComparatorCheck {
         return () -> {
             Boolean result;
             try {
-                result = JSonDirectComparator.comapreJSonStrings(param.getData1(), param.getData2(),
+                result = JSonDirectComparator.compareJSonStrings(param.getData1(), param.getData2(),
                         param.representation()); /* <--- Это тестируемый метод <--- */
                 if (param.getExpectedError() != null) {
                     Assertions.assertEquals(null, param.getExpectedError());
@@ -167,7 +167,7 @@ class JSonDirectComparatorCheck {
 
 
     @TestFactory
-    Stream<DynamicTest> comapreJSonStrings() {
+    Stream<DynamicTest> compareJSonStrings() {
         return DynamicTestParams.of(
                 ComapreJSonStringsParam.expectError("expectError10", null, "", NullPointerException.class),
                 ComapreJSonStringsParam.expectError("expectError20", "", null, NullPointerException.class),
@@ -198,7 +198,7 @@ class JSonDirectComparatorCheck {
 
     @TestFactory
     @Tag("DebugRun")
-    Stream<DynamicTest> comapreJSonStrings_Debug() {
+    Stream<DynamicTest> compareJSonStrings_Debug() {
         return DynamicTestParams.of(
                 ComapreJSonStringsParam.delimetr(),
 
@@ -211,28 +211,28 @@ class JSonDirectComparatorCheck {
 
 
     @Test
-    void comapreJSonStringsSpeedTest() throws Exception {
+    void compareJSonStringsSpeedTest() throws Exception {
         String bigString = string("res/resource_big_json.json");
-        long measuredTime = measureTime(() -> JSonDirectComparator.comapreJSonStrings(bigString, bigString,
+        long measuredTime = measureTime(() -> JSonDirectComparator.compareJSonStrings(bigString, bigString,
                 MonkeyPathRepresentation.REPRESENTATION), 10);
         Assertions.assertTrue(measuredTime < 10000);
     }
 
     @Test
-    void comapreJSonStrings10() {
-        Assertions.assertFalse(JSonDirectComparator.comapreJSonStrings(string("res/resource_to_compare1.json"),
+    void compareJSonStrings10() {
+        Assertions.assertFalse(JSonDirectComparator.compareJSonStrings(string("res/resource_to_compare1.json"),
                 string("res/resource_to_compare2.json"), MonkeyPathRepresentation.REPRESENTATION));
     }
 
     @Test
-    void comapreJSonStrings30() {
-        Assertions.assertFalse(JSonDirectComparator.comapreJSonStrings(
+    void compareJSonStrings30() {
+        Assertions.assertFalse(JSonDirectComparator.compareJSonStrings(
                 string("res/resource_to_compare1.json"),
                 string("res/resource_to_compare3.json"), MonkeyPathRepresentation.REPRESENTATION));
     }
 
     @Test
-    void comapreJSonStrings40() {
+    void compareJSonStrings40() {
         Assertions.assertFalse(JSonDirectComparator.compareJSonsObjects(
                 jsonFromPath("res/resource_to_compare1.json"),
                 jsonFromPath("res/resource_to_compare3.json"),
@@ -240,7 +240,7 @@ class JSonDirectComparatorCheck {
     }
 
     @Test
-    void comapreJSonStrings50() {
+    void compareJSonStrings50() {
         NodeCheckResult result = JSonDirectComparator.compareJSonsObjects(
                 jsonFromPath("res/resource_to_compare1.json"),
                 jsonFromPath("res/resource_to_compare3.json"),
@@ -250,7 +250,7 @@ class JSonDirectComparatorCheck {
     }
 
     @Test
-    void comapreJSonStrings60() {
+    void compareJSonStrings60() {
         NodeCheckResult result = JSonDirectComparator.compareJSonsObjects(
                 jsonFromPath("res/resource_to_compare1.json"),
                 jsonFromPath("res/resource_to_compare4.json"),
@@ -259,7 +259,7 @@ class JSonDirectComparatorCheck {
 
     }
 
-    /* --------------------------------------------- comapreJSonStream -------------------------------------------  */
+    /* --------------------------------------------- compareJSonStream -------------------------------------------  */
 
 
     @SuppressWarnings("WeakerAccess")
@@ -355,11 +355,11 @@ class JSonDirectComparatorCheck {
         }
     }
 
-    private static DynamicTest comapreJSonStreamParamTest(ComapreJSonStreamParam param) {
+    private static DynamicTest compareJSonStreamParamTest(ComapreJSonStreamParam param) {
         return DynamicTest.dynamicTest(param.testName(), () -> {
             Boolean result = null;
             try {
-                result = JSonDirectComparator.comapreJSonStreams(param.data1(), param.data2(),
+                result = JSonDirectComparator.compareJSonStreams(param.data1(), param.data2(),
                         param.representation()); /* <--- Это тестируемый метод <--- */
                 if (param.getExpectedError() != null) {
                     Assertions.assertEquals(null, param.getExpectedError());
@@ -391,7 +391,7 @@ class JSonDirectComparatorCheck {
     }
 
     @TestFactory
-    Stream<DynamicTest> comapreJSonStream() {
+    Stream<DynamicTest> compareJSonStream() {
         return DynamicTestParams.of(
                 ComapreJSonStreamParam.expectError("expectError10", null, fromString(""), NullPointerException.class),
                 ComapreJSonStreamParam.expectError("expectError20", fromString(""), null, NullPointerException.class),
@@ -415,24 +415,24 @@ class JSonDirectComparatorCheck {
                 ComapreJSonStreamParam.comaprison("comaprison160", fromString("{\"desc\": \"w\",  \"defaultclassalias\": \"TestType\"}"),
                         fromString("{\"defaultclassalias\": \"TestType\", \"desc\": \"w\"}"), true),
                 ComapreJSonStreamParam.SKIPPED).
-                lock().dynamicTests(JSonDirectComparatorCheck::comapreJSonStreamParamTest, ComapreJSonStreamParam::isUsed);
+                lock().dynamicTests(JSonDirectComparatorCheck::compareJSonStreamParamTest, ComapreJSonStreamParam::isUsed);
     }
 
     @TestFactory
     @Tag("DebugRun")
-    Stream<DynamicTest> comapreJSonStreamDebug() {
+    Stream<DynamicTest> compareJSonStreamDebug() {
         return DynamicTestParams.of(
                 ComapreJSonStreamParam.comaprison("comaprison110", fromPath("res/resource_big_json.json"), fromPath("res/resource_big_json.json"), true),
                 ComapreJSonStreamParam.SKIPPED).
-                lock().dynamicTests(JSonDirectComparatorCheck::comapreJSonStreamParamTest, ComapreJSonStreamParam::isUsed);
+                lock().dynamicTests(JSonDirectComparatorCheck::compareJSonStreamParamTest, ComapreJSonStreamParam::isUsed);
     }
 
     @Test
-    void comapreJSonStreamSpeedTest() throws Exception {
+    void compareJSonStreamSpeedTest() throws Exception {
         long measuredTime = measureTime(() -> {
             try (InputStream stream1 = ResourceUtils.loadResourceByRelativePath(JSonDirectComparatorCheck.class, "res/resource_big_json.json")) {
                 try (InputStream stream2 = ResourceUtils.loadResourceByRelativePath(JSonDirectComparatorCheck.class, "res/resource_big_json.json")) {
-                    JSonDirectComparator.comapreJSonStreams(stream1, stream2, MonkeyPathRepresentation.REPRESENTATION);
+                    JSonDirectComparator.compareJSonStreams(stream1, stream2, MonkeyPathRepresentation.REPRESENTATION);
                 }
             }
         }, 10);
