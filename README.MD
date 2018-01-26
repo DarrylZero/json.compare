@@ -7,5 +7,4 @@ Each example code snippet is annotated with @Example annotation.
 Please bear in mind that any parts of code (classes, methods, fields) are free to be modified or removed
 unless annotated with @Api(State.MAINTAINED) or @Api(State.INCUBATING)
 
-Take a look at the class to start with
-com.steammachine.jsonchecker.examples.Examples
+Take a look at the class com.steammachine.jsonchecker.examples.Examples to start with
