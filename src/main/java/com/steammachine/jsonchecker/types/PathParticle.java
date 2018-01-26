@@ -17,7 +17,7 @@ public interface PathParticle {
         NO_TRESPASING;
 
         public boolean in(ParticleType... types) {
-            return Arrays.stream(types).anyMatch((t) -> t == this);
+            return Arrays.stream(types).anyMatch(t -> t == this);
         }
 
     }

@@ -1,5 +1,7 @@
 package com.steammachine.jsonchecker.types;
 
+import com.steammachine.common.apilevel.Api;
+import com.steammachine.common.apilevel.State;
 import com.steammachine.jsonchecker.types.exceptions.ParamError;
 import com.steammachine.jsonchecker.types.exceptions.ParamTypeError;
 
@@ -8,6 +10,7 @@ import com.steammachine.jsonchecker.types.exceptions.ParamTypeError;
  *
  * @author Vladimir Bogodukhov
  */
+@Api(State.MAINTAINED)
 public interface JSONParam {
 
     /**

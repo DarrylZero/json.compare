@@ -1,5 +1,7 @@
 package com.steammachine.jsonchecker.types;
 
+import com.steammachine.common.apilevel.Api;
+import com.steammachine.common.apilevel.State;
 import com.steammachine.jsonchecker.impl.ver1.ReservedWords;
 
 /**
@@ -28,6 +30,7 @@ import com.steammachine.jsonchecker.impl.ver1.ReservedWords;
  *
  **/
 @Deprecated
+@Api(State.INTERNAL)
 public interface NodeChecker<Type> {
 
 
