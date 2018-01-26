@@ -1,5 +1,3 @@
-# DRAFT
-
 
 Instead of writing loads of documentation we've decided to provide you with examples of snippets
 left in example code. 
@@ -15,7 +13,4 @@ unless not annotated with @Api(State.MAINTAINED) or @Api(State.INCUBATING)
 
 
 Take a look at the class to start with
-'''java
 com.steammachine.jsonchecker.examples.Examples 
-
-'''
