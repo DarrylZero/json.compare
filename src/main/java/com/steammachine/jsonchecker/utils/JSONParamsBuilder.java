@@ -1,5 +1,7 @@
 package com.steammachine.jsonchecker.utils;
 
+import com.steammachine.common.apilevel.Api;
+import com.steammachine.common.apilevel.State;
 import com.steammachine.jsonchecker.types.DirectValue;
 import com.steammachine.jsonchecker.impl.directcomparison.flatterprocs.FlattersCommon;
 import com.steammachine.jsonchecker.types.JSONMatchedParam;
@@ -31,6 +33,7 @@ import java.util.stream.Collectors;
  *
  * @author Vladimir Bogodukhov
  */
+@Api(State.MAINTAINED)
 public class JSONParamsBuilder {
 
     private static class JSONMatchedParamWrapper implements JSONParam {
@@ -53,7 +56,7 @@ public class JSONParamsBuilder {
         }
 
         @Override
-        public void checkValues() throws ParamTypeError, ParamError {
+        public void checkValues() {
         }
 
         @Override
@@ -87,7 +90,7 @@ public class JSONParamsBuilder {
         }
 
         @Override
-        public void checkValues() throws ParamTypeError {
+        public void checkValues() {
             CommonUtils.check(() -> FlattersCommon.isFlatValue(value),
                     () -> new ParamTypeError("VALUE " + value + " has wrong type " +
                             value.getClass().getName()));
@@ -109,7 +112,6 @@ public class JSONParamsBuilder {
             return value;
         }
     }
-
 
     private static class RegexpMatcherParam implements JSONParam {
         private final Pattern pattern;
@@ -147,7 +149,7 @@ public class JSONParamsBuilder {
         }
 
         @Override
-        public void checkValues() throws ParamTypeError, ParamError {
+        public void checkValues() {
             if (pattern == null) {
                 throw new ParamError("pattern is not valid. " + regexp);
             }
@@ -163,7 +165,6 @@ public class JSONParamsBuilder {
             return false;
         }
     }
-
 
     private final List<JSONParam> params = new ArrayList<>();
 

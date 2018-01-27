@@ -13,12 +13,12 @@ import java.util.List;
 public interface NodeCheckResult {
 
     /**
-     * @return Признак успешного завершения проверки.
+     * @return whether documents are equal.
      */
     boolean isSuccessful();
 
     /**
-     * @return - Немодифицируемый список строк сообщений проверки (всегда не null)
+     * @return - unmodified list of changes report(always not null)
      */
     List<String> messages();
 }

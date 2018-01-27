@@ -3,7 +3,6 @@ package com.steammachine.jsonchecker.utils;
 import com.steammachine.common.apilevel.Api;
 import com.steammachine.common.apilevel.State;
 import com.steammachine.common.definitions.annotations.SignatureSensitive;
-import com.steammachine.common.utils.commonutils.CommonUtils;
 import com.steammachine.jsonchecker.defaults.AddressType;
 import com.steammachine.jsonchecker.defaults.MonkeyPathRepresentation;
 import com.steammachine.jsonchecker.defaults.ResultNodeCheckContext;
@@ -25,17 +24,17 @@ import org.json.simple.parser.ParseException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.text.Format;
 import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+import static com.steammachine.common.utils.commonutils.CommonUtils.check;
 import static com.steammachine.common.utils.commonutils.CommonUtils.intersectCollections;
 
 /**
- * Класс сравнения двух json на полное соответствие.
- * <p>
- * 30.12.2017 10:21:46
+ * Utility class for json data comparison
  *
  * @author Vladimir Bogodukhov
  * {@link com.steammachine.jsonchecker.utils.JSonDirectComparator}
@@ -47,6 +46,7 @@ public class JSonDirectComparator {
     private static final String START_PARAM = "${";
     private static final String END_PARAM = "}";
     private static final String VALUES_BY_PATH = "values by path";
+    private static final String PARAM_NOT_FOUND = "Param %s not found";
 
     private static class Values {
 
@@ -162,9 +162,14 @@ public class JSonDirectComparator {
 
             String paramName = extractParamName(stringVal);
             JSONParam jsonParam = params.get(paramName);
-            CommonUtils.check(() -> jsonParam != null, () -> new ParamNotFound("param " + jsonParam.name() + " not found"));
+            check(() -> jsonParam != null, () -> new ParamNotFound(String.format(PARAM_NOT_FOUND, jsonParam.name())));
             return jsonParam;
         }
+    }
+
+
+    private JSonDirectComparator() {
+      /*  */
     }
 
     private static String extractParamName(String stringVal) {
@@ -449,7 +454,10 @@ public class JSonDirectComparator {
         boolean hasParams = cluster.kinds().stream().map(cluster::path).flatMap(path -> path.elements().stream()).
                 flatMap(element -> element.list().stream()).map(Id::id).filter(Objects::nonNull).
                 peek(value -> checkParam(value, params)).anyMatch(JSonDirectComparator::hasParam);
-        if (!hasParams) return cluster; /* параметров в пути нет возвращаем то, что было. */
+        if (!hasParams) {
+            /* there is no params - returning unfiltered data. */
+            return cluster;
+        }
 
 
         /* На момент трансформации все элементы проверены. Трансформация выполняется только в случае
@@ -505,9 +513,9 @@ public class JSonDirectComparator {
     private static void checkParam(String value, JSONParams params) {
         if (!hasParam(value)) return;
         String paramName = extractParamName(value);
-        CommonUtils.check(() -> DirectValue.class.isInstance(params.get(paramName)),
+        check(() -> DirectValue.class.isInstance(params.get(paramName)),
                 () -> new IllegalStateException("param " + paramName + " must support " + DirectValue.class.getName()));
-        CommonUtils.check(() -> String.class.isInstance(DirectValue.class.cast(params.get(paramName)).value()),
+        check(() -> String.class.isInstance(DirectValue.class.cast(params.get(paramName)).value()),
                 () -> new IllegalStateException("param " + paramName + " must be of " +
                         DirectValue.class.getName() + " type"));
     }
@@ -669,8 +677,8 @@ public class JSonDirectComparator {
      * <p>
      * Api note - внутри метода не осуществляется закрытия потоков.
      *
-     * @param json1          поток с данными (not null)
-     * @param json2          поток с данными (not null)
+     * @param json1 поток с данными (not null)
+     * @param json2 поток с данными (not null)
      * @return {@code true} если два данных json идентичны  по структуре
      */
     @Api(State.INCUBATING)

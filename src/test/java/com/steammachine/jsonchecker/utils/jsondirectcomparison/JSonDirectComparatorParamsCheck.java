@@ -81,7 +81,7 @@ class JSonDirectComparatorParamsCheck {
         }
 
         @Override
-        public void checkValues() throws ParamTypeError, ParamError {
+        public void checkValues() {
         }
 
         @Override

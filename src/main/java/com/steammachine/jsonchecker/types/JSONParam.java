@@ -26,6 +26,9 @@ public interface JSONParam {
 
     /**
      * Метод проверяет допустимость типов и значений данного параметра.
+     *
+     * @throws ParamTypeError
+     * @throws ParamError
      */
     void checkValues() throws ParamTypeError, ParamError;
 
