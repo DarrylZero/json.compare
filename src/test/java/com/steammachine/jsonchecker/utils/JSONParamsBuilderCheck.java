@@ -3,8 +3,6 @@ package com.steammachine.jsonchecker.utils;
 import com.steammachine.common.map.MapBuilder;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class JSONParamsBuilderCheck {
     @Test
     void of() {
@@ -13,7 +11,7 @@ class JSONParamsBuilderCheck {
 
     @Test
     void fromMap() {
-//        JSONParamsBuilder.of().fromMap(MapBuilder.of()<String, Long>.put("11", 1000L).build());
+        JSONParamsBuilder.of().fromMap(MapBuilder.<String, Integer>of().put("11", 1000).build());
     }
 
 /*

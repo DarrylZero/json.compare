@@ -175,7 +175,7 @@ public class JSONParamsBuilder {
         return new JSONParamsBuilder();
     }
 
-    public JSONParamsBuilder fromMap(Map<String, Object> value) {
+    public <T extends Object> JSONParamsBuilder  fromMap(Map<String, T> value) {
         if (value != null) {
             value.entrySet().forEach(entry -> single(entry.getKey(), entry.getValue()));
         }
