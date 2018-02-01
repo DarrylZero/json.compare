@@ -1,0 +1,14 @@
+{
+  "monkeyId": "monkeyId1",
+  "ComponentType": "sqc_scriptable_dialog",
+  "value": "value2",
+  "children": [
+    {
+      "monkeyId": "monkeyId2",
+      "ComponentType": "milk_bevel",
+      "value": "value+1",
+      "value2": "value+2",
+      "value3": "value+3"
+    }
+  ]
+}

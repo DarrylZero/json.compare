@@ -1,0 +1,14 @@
+{
+  "monkeyId": "ui_leaders",
+  "ComponentType": "sqc_scriptable_dialog",
+  "visible": "true",
+  "className": "sqc_scriptable_dialog",
+  "type": "widget",
+  "value": "",
+  "coords": [
+    284.0,
+    113.0,
+    711.0,
+    573.0
+  ]
+}

@@ -1,0 +1,166 @@
+buildscript {
+    repositories {
+        jcenter()
+        maven { url "https://clojars.org/repo" }
+    }
+
+    dependencies {
+        classpath 'org.junit.platform:junit-platform-gradle-plugin:1.0.0'
+        classpath 'com.steammachine.org:gradle.plugins:0.9.3'
+        classpath 'com.steammachine.org:gradle.copy.plugin:0.9.0'
+        classpath 'com.steammachine.org:gradle.substitute.plugin:1.0.0'
+    }
+}
+
+
+plugins {
+    id 'java'
+    id 'maven-publish'
+    id "maven"
+    id "org.sonarqube" version "2.5"
+}
+
+apply plugin: 'idea'
+apply plugin: 'org.junit.platform.gradle.plugin'
+apply plugin: 'com.steammachine.org.gradle.properties.plugins'
+apply plugin: 'com.steammachine.org.gradle.copyresources.plugin'
+apply plugin: 'com.steammachine.org.gradle.substitute.plugin'
+
+repositories {
+    mavenLocal()
+    jcenter()
+    maven { url "https://clojars.org/repo" }
+}
+
+auxprops.set('deploy') {
+    propertyFile = file('publish.properties')
+}
+
+idea {
+    module {
+        inheritOutputDirs = false
+        outputDir = file('build/classes/main')
+        testOutputDir = file('build/classes/test')
+    }
+}
+
+group = deploy.group
+version = deploy.version
+
+
+import com.steammachine.org.gradle.substitute.plugin.ModificationRule
+
+import java.text.SimpleDateFormat
+
+dependencies {
+    compile 'org.slf4j:slf4j-api:1.7.25'
+    compile 'com.steammachine.org:common.utils:1.0.4'
+    compile 'com.googlecode.json-simple:json-simple:1.1'
+
+    testRuntime 'org.junit.jupiter:junit-jupiter-engine:5.0.0'
+    testCompile 'org.junit.jupiter:junit-jupiter-api:5.0.0'
+    testCompile 'junit:junit:4.12'
+    testCompile 'org.junit.jupiter:junit-jupiter-engine:5.0.0'
+    testCompile 'org.junit.vintage:junit-vintage-engine:4.12.0'
+    testCompile 'org.junit.platform:junit-platform-launcher:1.0.0'
+    testCompile 'com.steammachine.org:junit5.extensions:0.9.1'
+}
+
+jar {
+    manifest {
+        attributes(
+                "Implementation-Title": deploy.title,
+                "Implementation-Version": deploy.version,
+                "Description": deploy.description
+        )
+    }
+}
+
+
+sourceCompatibility = JavaVersion.VERSION_1_8
+targetCompatibility = JavaVersion.VERSION_1_8
+
+
+junitPlatform {
+    details = 'tree'
+    filters {
+        engines {
+            include 'junit-jupiter'
+            include 'junit-vintage'
+        }
+        tags { exclude 'DebugRun' }
+        includeClassNamePattern '.*Check'
+    }
+}
+
+
+
+task sourceJar(type: Jar) {
+    from sourceSets.main.allJava
+    classifier "sources"
+
+    manifest {
+        attributes(
+                "Implementation-Title": deploy.title,
+                "Implementation-Version": deploy.version,
+                "Description": deploy.description
+        )
+    }
+}
+
+def artefacts_publications_password = project.hasProperty('repo_password') ? repo_password : 'repo_password'
+
+publishing {
+    repositories {
+        maven {
+            credentials {
+                username = deploy.username
+                password = artefacts_publications_password
+            }
+            url deploy.repository_host
+        }
+    }
+
+    publications {
+        mavenJava(MavenPublication) {
+            groupId deploy.group
+            version deploy.version
+            artifactId deploy.artifact
+
+            from components.java
+            artifact sourceJar
+        }
+    }
+}
+
+
+task buildandsources(dependsOn: [sourceJar, build]) {}
+
+class DateTimeSubstitution implements ModificationRule {
+    static final String find = '#DT'
+    static final String timeFormat = "dd.MM.yyyy hh:mm:ss"
+
+    boolean lineMatches(String line) {
+        line.contains(find)
+    }
+
+    String substitution(String line) {
+        line.replaceAll(find, new SimpleDateFormat(timeFormat).format(new Date()))
+    }
+}
+
+class GuidSubstitution implements ModificationRule {
+    static final String find = '#GUID'
+
+    boolean lineMatches(String line) {
+        line.contains(find)
+    }
+
+    String substitution(String line) {
+        line.replaceAll(find, UUID.randomUUID().toString())
+    }
+}
+
+modifysources.rule(DateTimeSubstitution)
+modifysources.rule(GuidSubstitution)
+

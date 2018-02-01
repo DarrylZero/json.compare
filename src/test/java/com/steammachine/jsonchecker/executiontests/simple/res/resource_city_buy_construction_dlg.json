@@ -1,0 +1,1475 @@
+{
+  "parent": null,
+  "monkeyId": "sqc::framework::city_buy_construction_dlg",
+  "ComponentType": "sqc_dialog",
+  "visible": "true",
+  "children": [
+    {
+      "parent": {
+        "monkeyId": "sqc::framework::city_buy_construction_dlg",
+        "ComponentType": "sqc_dialog",
+        "className": "sqc_dialog"
+      },
+      "monkeyId": "dialog_title_bevel",
+      "ComponentType": "milk_bevel",
+      "visible": "true",
+      "children": [],
+      "className": "milk_bevel",
+      "type": "widget",
+      "value": "",
+      "coords": [
+        216.0,
+        583.0,
+        627.0,
+        62.0
+      ]
+    },
+    {
+      "parent": {
+        "monkeyId": "sqc::framework::city_buy_construction_dlg",
+        "ComponentType": "sqc_dialog",
+        "className": "sqc_dialog"
+      },
+      "monkeyId": "dialog_title_caption",
+      "ComponentType": "milk_label",
+      "visible": "true",
+      "children": [],
+      "className": "milk_label",
+      "type": "widget",
+      "value": "Iowa Business Center",
+      "coords": [
+        225.0,
+        583.0,
+        608.0,
+        62.0
+      ]
+    },
+    {
+      "parent": {
+        "monkeyId": "sqc::framework::city_buy_construction_dlg",
+        "ComponentType": "sqc_dialog",
+        "className": "sqc_dialog"
+      },
+      "monkeyId": "bevel",
+      "ComponentType": "milk_bevel",
+      "visible": "true",
+      "children": [],
+      "className": "milk_bevel",
+      "type": "widget",
+      "value": "",
+      "coords": [
+        189.0,
+        108.0,
+        901.0,
+        478.0
+      ]
+    },
+    {
+      "parent": {
+        "monkeyId": "sqc::framework::city_buy_construction_dlg",
+        "ComponentType": "sqc_dialog",
+        "className": "sqc_dialog"
+      },
+      "monkeyId": "default_bevel",
+      "ComponentType": "milk_bevel",
+      "visible": "true",
+      "children": [
+        {
+          "parent": {
+            "monkeyId": "default_bevel",
+            "ComponentType": "milk_bevel",
+            "className": "milk_bevel"
+          },
+          "monkeyId": "none",
+          "ComponentType": "sqc_proxy_texture_widget",
+          "texture_is_ready": true,
+          "visible": "true",
+          "children": [
+            {
+              "parent": {
+                "monkeyId": "none",
+                "ComponentType": "sqc_proxy_texture_widget",
+                "className": "sqc_proxy_texture_widget"
+              },
+              "monkeyId": "none",
+              "ComponentType": "milk_circular_progress",
+              "visible": "false",
+              "children": [],
+              "className": "milk_circular_progress",
+              "type": "widget",
+              "value": "",
+              "coords": [
+                250.0,
+                448.0,
+                91.0,
+                91.0
+              ]
+            },
+            {
+              "parent": {
+                "monkeyId": "none",
+                "ComponentType": "sqc_proxy_texture_widget",
+                "className": "sqc_proxy_texture_widget"
+              },
+              "monkeyId": "none",
+              "ComponentType": "sqc_textured_image",
+              "texture_is_ready": true,
+              "visible": "true",
+              "children": [],
+              "className": "sqc_textured_image",
+              "type": "texture_image",
+              "value": "",
+              "coords": [
+                216.0,
+                429.0,
+                160.0,
+                130.0
+              ],
+              "texture_name": "business_centre_iowa_stage3_v1"
+            }
+          ],
+          "className": "sqc_proxy_texture_widget",
+          "type": "proxy_texture_widget",
+          "value": "",
+          "coords": [
+            216.0,
+            429.0,
+            160.0,
+            130.0
+          ],
+          "texture_name": "business_centre_iowa_stage3_v1"
+        },
+        {
+          "parent": {
+            "monkeyId": "default_bevel",
+            "ComponentType": "milk_bevel",
+            "className": "milk_bevel"
+          },
+          "monkeyId": "descr_label",
+          "ComponentType": "milk_label",
+          "visible": "true",
+          "children": [],
+          "className": "milk_label",
+          "type": "widget",
+          "value": "Upgrade the Iowa Business Center and its contracts will be even more profitable!",
+          "coords": [
+            401.0,
+            436.0,
+            675.0,
+            110.0
+          ]
+        }
+      ],
+      "className": "milk_bevel",
+      "type": "widget",
+      "value": "",
+      "coords": [
+        201.0,
+        409.0,
+        881.0,
+        165.0
+      ]
+    },
+    {
+      "parent": {
+        "monkeyId": "sqc::framework::city_buy_construction_dlg",
+        "ComponentType": "sqc_dialog",
+        "className": "sqc_dialog"
+      },
+      "monkeyId": "none",
+      "ComponentType": "milk_separator",
+      "visible": "true",
+      "children": [],
+      "className": "milk_separator",
+      "type": "widget",
+      "value": "",
+      "coords": [
+        188.0,
+        396.0,
+        901.0,
+        4.0
+      ]
+    },
+    {
+      "parent": {
+        "monkeyId": "sqc::framework::city_buy_construction_dlg",
+        "ComponentType": "sqc_dialog",
+        "className": "sqc_dialog"
+      },
+      "monkeyId": "default_spinboard",
+      "ComponentType": "milk_spinboard",
+      "visible": "true",
+      "children": [
+        {
+          "parent": {
+            "monkeyId": "default_spinboard",
+            "ComponentType": "milk_spinboard",
+            "className": "milk_spinboard"
+          },
+          "monkeyId": "cell_0",
+          "ComponentType": "milk_widget",
+          "visible": "true",
+          "children": [
+            {
+              "parent": {
+                "monkeyId": "cell_0",
+                "ComponentType": "milk_widget",
+                "className": "milk_widget"
+              },
+              "monkeyId": "cell_transparent_layer",
+              "ComponentType": "milk_widget",
+              "visible": "true",
+              "children": [
+                {
+                  "parent": {
+                    "monkeyId": "cell_transparent_layer",
+                    "ComponentType": "milk_widget",
+                    "className": "milk_widget"
+                  },
+                  "monkeyId": "cell_background_btn",
+                  "ComponentType": "milk_theme_button",
+                  "visible": "true",
+                  "children": [
+                    {
+                      "parent": {
+                        "monkeyId": "cell_background_btn",
+                        "ComponentType": "milk_theme_button",
+                        "className": "milk_theme_button"
+                      },
+                      "monkeyId": "none",
+                      "ComponentType": "sqc_proxy_texture_widget",
+                      "texture_is_ready": true,
+                      "visible": "true",
+                      "children": [
+                        {
+                          "parent": {
+                            "monkeyId": "none",
+                            "ComponentType": "sqc_proxy_texture_widget",
+                            "className": "sqc_proxy_texture_widget"
+                          },
+                          "monkeyId": "none",
+                          "ComponentType": "milk_circular_progress",
+                          "visible": "false",
+                          "children": [],
+                          "className": "milk_circular_progress",
+                          "type": "widget",
+                          "value": "",
+                          "coords": [
+                            262.0,
+                            226.0,
+                            47.0,
+                            47.0
+                          ]
+                        },
+                        {
+                          "parent": {
+                            "monkeyId": "none",
+                            "ComponentType": "sqc_proxy_texture_widget",
+                            "className": "sqc_proxy_texture_widget"
+                          },
+                          "monkeyId": "none",
+                          "ComponentType": "sqc_textured_image",
+                          "texture_is_ready": true,
+                          "visible": "true",
+                          "children": [],
+                          "className": "sqc_textured_image",
+                          "type": "texture_image",
+                          "value": "",
+                          "coords": [
+                            249.0,
+                            216.0,
+                            74.0,
+                            68.0
+                          ],
+                          "texture_name": "business_centre_iowa_buildsite_v1"
+                        }
+                      ],
+                      "className": "sqc_proxy_texture_widget",
+                      "type": "proxy_texture_widget",
+                      "value": "",
+                      "coords": [
+                        249.0,
+                        216.0,
+                        74.0,
+                        68.0
+                      ],
+                      "texture_name": "business_centre_iowa_buildsite_v1"
+                    },
+                    {
+                      "parent": {
+                        "monkeyId": "cell_background_btn",
+                        "ComponentType": "milk_theme_button",
+                        "className": "milk_theme_button"
+                      },
+                      "monkeyId": "none",
+                      "ComponentType": "milk_widget",
+                      "visible": "true",
+                      "children": [
+                        {
+                          "parent": {
+                            "monkeyId": "none",
+                            "ComponentType": "milk_widget",
+                            "className": "milk_widget"
+                          },
+                          "monkeyId": "power_consume",
+                          "ComponentType": "milk_slice_image",
+                          "visible": "true",
+                          "children": [
+                            {
+                              "image_name": "power_resource_icon_ipad",
+                              "parent": {
+                                "monkeyId": "power_consume",
+                                "ComponentType": "milk_slice_image",
+                                "className": "milk_slice_image"
+                              },
+                              "monkeyId": "icon",
+                              "ComponentType": "milk_image",
+                              "visible": "true",
+                              "children": [],
+                              "className": "milk_image",
+                              "type": "image",
+                              "value": "",
+                              "coords": [
+                                215.0,
+                                277.0,
+                                21.0,
+                                23.0
+                              ]
+                            },
+                            {
+                              "parent": {
+                                "monkeyId": "power_consume",
+                                "ComponentType": "milk_slice_image",
+                                "className": "milk_slice_image"
+                              },
+                              "monkeyId": "value",
+                              "ComponentType": "milk_label",
+                              "visible": "true",
+                              "children": [],
+                              "className": "milk_label",
+                              "type": "widget",
+                              "value": "-15",
+                              "coords": [
+                                238.0,
+                                277.0,
+                                42.0,
+                                23.0
+                              ]
+                            }
+                          ],
+                          "className": "milk_slice_image",
+                          "type": "widget",
+                          "value": "",
+                          "coords": [
+                            215.0,
+                            277.0,
+                            69.0,
+                            23.0
+                          ]
+                        },
+                        {
+                          "parent": {
+                            "monkeyId": "none",
+                            "ComponentType": "milk_widget",
+                            "className": "milk_widget"
+                          },
+                          "monkeyId": "water_consume",
+                          "ComponentType": "milk_slice_image",
+                          "visible": "true",
+                          "children": [
+                            {
+                              "image_name": "aqua_resource_icon_ipad",
+                              "parent": {
+                                "monkeyId": "water_consume",
+                                "ComponentType": "milk_slice_image",
+                                "className": "milk_slice_image"
+                              },
+                              "monkeyId": "icon",
+                              "ComponentType": "milk_image",
+                              "visible": "true",
+                              "children": [],
+                              "className": "milk_image",
+                              "type": "image",
+                              "value": "",
+                              "coords": [
+                                215.0,
+                                248.0,
+                                18.0,
+                                23.0
+                              ]
+                            },
+                            {
+                              "parent": {
+                                "monkeyId": "water_consume",
+                                "ComponentType": "milk_slice_image",
+                                "className": "milk_slice_image"
+                              },
+                              "monkeyId": "value",
+                              "ComponentType": "milk_label",
+                              "visible": "true",
+                              "children": [],
+                              "className": "milk_label",
+                              "type": "widget",
+                              "value": "-5",
+                              "coords": [
+                                235.0,
+                                248.0,
+                                45.0,
+                                23.0
+                              ]
+                            }
+                          ],
+                          "className": "milk_slice_image",
+                          "type": "widget",
+                          "value": "",
+                          "coords": [
+                            215.0,
+                            248.0,
+                            69.0,
+                            23.0
+                          ]
+                        },
+                        {
+                          "parent": {
+                            "monkeyId": "none",
+                            "ComponentType": "milk_widget",
+                            "className": "milk_widget"
+                          },
+                          "monkeyId": "population_capacity",
+                          "ComponentType": "milk_slice_image",
+                          "visible": "true",
+                          "children": [
+                            {
+                              "image_name": "population_lim_icon_ipad",
+                              "parent": {
+                                "monkeyId": "population_capacity",
+                                "ComponentType": "milk_slice_image",
+                                "className": "milk_slice_image"
+                              },
+                              "monkeyId": "icon",
+                              "ComponentType": "milk_image",
+                              "visible": "true",
+                              "children": [],
+                              "className": "milk_image",
+                              "type": "image",
+                              "value": "",
+                              "coords": [
+                                215.0,
+                                200.0,
+                                28.0,
+                                23.0
+                              ]
+                            },
+                            {
+                              "parent": {
+                                "monkeyId": "population_capacity",
+                                "ComponentType": "milk_slice_image",
+                                "className": "milk_slice_image"
+                              },
+                              "monkeyId": "value",
+                              "ComponentType": "milk_label",
+                              "visible": "true",
+                              "children": [],
+                              "className": "milk_label",
+                              "type": "widget",
+                              "value": "+5000",
+                              "coords": [
+                                245.0,
+                                200.0,
+                                35.0,
+                                23.0
+                              ]
+                            }
+                          ],
+                          "className": "milk_slice_image",
+                          "type": "widget",
+                          "value": "",
+                          "coords": [
+                            215.0,
+                            200.0,
+                            69.0,
+                            23.0
+                          ]
+                        },
+                        {
+                          "parent": {
+                            "monkeyId": "none",
+                            "ComponentType": "milk_widget",
+                            "className": "milk_widget"
+                          },
+                          "monkeyId": "experience",
+                          "ComponentType": "milk_slice_image",
+                          "visible": "true",
+                          "children": [
+                            {
+                              "image_name": "experience_icon_ipad",
+                              "parent": {
+                                "monkeyId": "experience",
+                                "ComponentType": "milk_slice_image",
+                                "className": "milk_slice_image"
+                              },
+                              "monkeyId": "icon",
+                              "ComponentType": "milk_image",
+                              "visible": "true",
+                              "children": [],
+                              "className": "milk_image",
+                              "type": "image",
+                              "value": "",
+                              "coords": [
+                                289.0,
+                                277.0,
+                                22.0,
+                                23.0
+                              ]
+                            },
+                            {
+                              "parent": {
+                                "monkeyId": "experience",
+                                "ComponentType": "milk_slice_image",
+                                "className": "milk_slice_image"
+                              },
+                              "monkeyId": "value",
+                              "ComponentType": "milk_label",
+                              "visible": "true",
+                              "children": [],
+                              "className": "milk_label",
+                              "type": "widget",
+                              "value": "+250",
+                              "coords": [
+                                313.0,
+                                277.0,
+                                41.0,
+                                23.0
+                              ]
+                            }
+                          ],
+                          "className": "milk_slice_image",
+                          "type": "widget",
+                          "value": "",
+                          "coords": [
+                            289.0,
+                            277.0,
+                            69.0,
+                            23.0
+                          ]
+                        }
+                      ],
+                      "className": "milk_widget",
+                      "type": "widget",
+                      "value": "",
+                      "coords": [
+                        209.0,
+                        194.0,
+                        155.0,
+                        112.0
+                      ]
+                    }
+                  ],
+                  "active": true,
+                  "className": "milk_theme_button",
+                  "type": "button",
+                  "value": "",
+                  "coords": [
+                    209.0,
+                    194.0,
+                    155.0,
+                    112.0
+                  ]
+                },
+                {
+                  "parent": {
+                    "monkeyId": "cell_transparent_layer",
+                    "ComponentType": "milk_widget",
+                    "className": "milk_widget"
+                  },
+                  "monkeyId": "cell_item_name_label",
+                  "ComponentType": "milk_label",
+                  "visible": "true",
+                  "children": [],
+                  "className": "milk_label",
+                  "type": "widget",
+                  "value": "Iowa Business Center",
+                  "coords": [
+                    204.0,
+                    310.0,
+                    165.0,
+                    80.0
+                  ]
+                },
+                {
+                  "parent": {
+                    "monkeyId": "cell_transparent_layer",
+                    "ComponentType": "milk_widget",
+                    "className": "milk_widget"
+                  },
+                  "monkeyId": "none",
+                  "ComponentType": "milk_widget",
+                  "visible": "true",
+                  "children": [
+                    {
+                      "image_name": "price_bucks_icon_ipad",
+                      "parent": {
+                        "monkeyId": "none",
+                        "ComponentType": "milk_widget",
+                        "className": "milk_widget"
+                      },
+                      "monkeyId": "cell_price_in_megabucks_image",
+                      "ComponentType": "milk_image",
+                      "visible": "true",
+                      "children": [],
+                      "className": "milk_image",
+                      "type": "image",
+                      "value": "",
+                      "coords": [
+                        207.0,
+                        170.0,
+                        23.0,
+                        20.0
+                      ]
+                    },
+                    {
+                      "parent": {
+                        "monkeyId": "none",
+                        "ComponentType": "milk_widget",
+                        "className": "milk_widget"
+                      },
+                      "monkeyId": "cell_price_in_megabucks_label",
+                      "ComponentType": "milk_label",
+                      "visible": "true",
+                      "children": [],
+                      "className": "milk_label",
+                      "type": "widget",
+                      "value": "3",
+                      "coords": [
+                        237.0,
+                        170.0,
+                        9.0,
+                        20.0
+                      ]
+                    }
+                  ],
+                  "className": "milk_widget",
+                  "type": "widget",
+                  "value": "",
+                  "coords": [
+                    207.0,
+                    170.0,
+                    39.0,
+                    23.0
+                  ]
+                },
+                {
+                  "parent": {
+                    "monkeyId": "cell_transparent_layer",
+                    "ComponentType": "milk_widget",
+                    "className": "milk_widget"
+                  },
+                  "monkeyId": "buy_object_button",
+                  "ComponentType": "milk_widget",
+                  "visible": "true",
+                  "children": [
+                    {
+                      "parent": {
+                        "monkeyId": "buy_object_button",
+                        "ComponentType": "milk_widget",
+                        "className": "milk_widget"
+                      },
+                      "monkeyId": "buy_button",
+                      "ComponentType": "milk_theme_button",
+                      "visible": "true",
+                      "children": [
+                        {
+                          "parent": {
+                            "monkeyId": "buy_button",
+                            "ComponentType": "milk_theme_button",
+                            "className": "milk_theme_button"
+                          },
+                          "monkeyId": "buy_button_label",
+                          "ComponentType": "milk_label",
+                          "visible": "true",
+                          "children": [],
+                          "className": "milk_label",
+                          "type": "widget",
+                          "value": "Buy",
+                          "coords": [
+                            248.0,
+                            134.0,
+                            78.0,
+                            26.0
+                          ]
+                        }
+                      ],
+                      "active": true,
+                      "className": "milk_theme_button",
+                      "type": "button",
+                      "value": "",
+                      "coords": [
+                        248.0,
+                        130.0,
+                        78.0,
+                        30.0
+                      ]
+                    }
+                  ],
+                  "className": "milk_widget",
+                  "type": "widget",
+                  "value": "",
+                  "coords": [
+                    248.0,
+                    130.0,
+                    78.0,
+                    30.0
+                  ]
+                }
+              ],
+              "className": "milk_widget",
+              "type": "widget",
+              "value": "",
+              "coords": [
+                201.0,
+                124.0,
+                172.0,
+                266.0
+              ]
+            },
+            {
+              "parent": {
+                "monkeyId": "cell_0",
+                "ComponentType": "milk_widget",
+                "className": "milk_widget"
+              },
+              "monkeyId": "non_transparent_backing_layer",
+              "ComponentType": "milk_widget",
+              "visible": "true",
+              "children": [],
+              "className": "milk_widget",
+              "type": "widget",
+              "value": "",
+              "coords": [
+                209.0,
+                194.0,
+                155.0,
+                112.0
+              ]
+            }
+          ],
+          "className": "milk_widget",
+          "type": "widget",
+          "value": "",
+          "coords": [
+            201.0,
+            124.0,
+            172.0,
+            266.0
+          ]
+        },
+        {
+          "parent": {
+            "monkeyId": "default_spinboard",
+            "ComponentType": "milk_spinboard",
+            "className": "milk_spinboard"
+          },
+          "monkeyId": "cell_1",
+          "ComponentType": "milk_widget",
+          "visible": "true",
+          "children": [
+            {
+              "parent": {
+                "monkeyId": "cell_1",
+                "ComponentType": "milk_widget",
+                "className": "milk_widget"
+              },
+              "monkeyId": "cell_transparent_layer",
+              "ComponentType": "milk_widget",
+              "visible": "true",
+              "children": [
+                {
+                  "parent": {
+                    "monkeyId": "cell_transparent_layer",
+                    "ComponentType": "milk_widget",
+                    "className": "milk_widget"
+                  },
+                  "monkeyId": "cell_background_btn",
+                  "ComponentType": "milk_theme_button",
+                  "visible": "true",
+                  "children": [
+                    {
+                      "parent": {
+                        "monkeyId": "cell_background_btn",
+                        "ComponentType": "milk_theme_button",
+                        "className": "milk_theme_button"
+                      },
+                      "monkeyId": "none",
+                      "ComponentType": "sqc_proxy_texture_widget",
+                      "texture_is_ready": true,
+                      "visible": "true",
+                      "children": [
+                        {
+                          "parent": {
+                            "monkeyId": "none",
+                            "ComponentType": "sqc_proxy_texture_widget",
+                            "className": "sqc_proxy_texture_widget"
+                          },
+                          "monkeyId": "none",
+                          "ComponentType": "milk_circular_progress",
+                          "visible": "false",
+                          "children": [],
+                          "className": "milk_circular_progress",
+                          "type": "widget",
+                          "value": "",
+                          "coords": [
+                            439.0,
+                            226.0,
+                            47.0,
+                            47.0
+                          ]
+                        },
+                        {
+                          "parent": {
+                            "monkeyId": "none",
+                            "ComponentType": "sqc_proxy_texture_widget",
+                            "className": "sqc_proxy_texture_widget"
+                          },
+                          "monkeyId": "none",
+                          "ComponentType": "sqc_textured_image",
+                          "texture_is_ready": true,
+                          "visible": "true",
+                          "children": [],
+                          "className": "sqc_textured_image",
+                          "type": "texture_image",
+                          "value": "",
+                          "coords": [
+                            426.0,
+                            216.0,
+                            74.0,
+                            68.0
+                          ],
+                          "texture_name": "business_centre_iowa_buildsite_v1"
+                        }
+                      ],
+                      "className": "sqc_proxy_texture_widget",
+                      "type": "proxy_texture_widget",
+                      "value": "",
+                      "coords": [
+                        426.0,
+                        216.0,
+                        74.0,
+                        68.0
+                      ],
+                      "texture_name": "business_centre_iowa_buildsite_v1"
+                    },
+                    {
+                      "parent": {
+                        "monkeyId": "cell_background_btn",
+                        "ComponentType": "milk_theme_button",
+                        "className": "milk_theme_button"
+                      },
+                      "monkeyId": "none",
+                      "ComponentType": "milk_widget",
+                      "visible": "true",
+                      "children": [
+                        {
+                          "parent": {
+                            "monkeyId": "none",
+                            "ComponentType": "milk_widget",
+                            "className": "milk_widget"
+                          },
+                          "monkeyId": "power_consume",
+                          "ComponentType": "milk_slice_image",
+                          "visible": "true",
+                          "children": [
+                            {
+                              "image_name": "power_resource_icon_ipad",
+                              "parent": {
+                                "monkeyId": "power_consume",
+                                "ComponentType": "milk_slice_image",
+                                "className": "milk_slice_image"
+                              },
+                              "monkeyId": "icon",
+                              "ComponentType": "milk_image",
+                              "visible": "true",
+                              "children": [],
+                              "className": "milk_image",
+                              "type": "image",
+                              "value": "",
+                              "coords": [
+                                392.0,
+                                277.0,
+                                21.0,
+                                23.0
+                              ]
+                            },
+                            {
+                              "parent": {
+                                "monkeyId": "power_consume",
+                                "ComponentType": "milk_slice_image",
+                                "className": "milk_slice_image"
+                              },
+                              "monkeyId": "value",
+                              "ComponentType": "milk_label",
+                              "visible": "true",
+                              "children": [],
+                              "className": "milk_label",
+                              "type": "widget",
+                              "value": "-15",
+                              "coords": [
+                                415.0,
+                                277.0,
+                                42.0,
+                                23.0
+                              ]
+                            }
+                          ],
+                          "className": "milk_slice_image",
+                          "type": "widget",
+                          "value": "",
+                          "coords": [
+                            392.0,
+                            277.0,
+                            69.0,
+                            23.0
+                          ]
+                        },
+                        {
+                          "parent": {
+                            "monkeyId": "none",
+                            "ComponentType": "milk_widget",
+                            "className": "milk_widget"
+                          },
+                          "monkeyId": "water_consume",
+                          "ComponentType": "milk_slice_image",
+                          "visible": "true",
+                          "children": [
+                            {
+                              "image_name": "aqua_resource_icon_ipad",
+                              "parent": {
+                                "monkeyId": "water_consume",
+                                "ComponentType": "milk_slice_image",
+                                "className": "milk_slice_image"
+                              },
+                              "monkeyId": "icon",
+                              "ComponentType": "milk_image",
+                              "visible": "true",
+                              "children": [],
+                              "className": "milk_image",
+                              "type": "image",
+                              "value": "",
+                              "coords": [
+                                392.0,
+                                248.0,
+                                18.0,
+                                23.0
+                              ]
+                            },
+                            {
+                              "parent": {
+                                "monkeyId": "water_consume",
+                                "ComponentType": "milk_slice_image",
+                                "className": "milk_slice_image"
+                              },
+                              "monkeyId": "value",
+                              "ComponentType": "milk_label",
+                              "visible": "true",
+                              "children": [],
+                              "className": "milk_label",
+                              "type": "widget",
+                              "value": "-5",
+                              "coords": [
+                                412.0,
+                                248.0,
+                                45.0,
+                                23.0
+                              ]
+                            }
+                          ],
+                          "className": "milk_slice_image",
+                          "type": "widget",
+                          "value": "",
+                          "coords": [
+                            392.0,
+                            248.0,
+                            69.0,
+                            23.0
+                          ]
+                        },
+                        {
+                          "parent": {
+                            "monkeyId": "none",
+                            "ComponentType": "milk_widget",
+                            "className": "milk_widget"
+                          },
+                          "monkeyId": "population_capacity",
+                          "ComponentType": "milk_slice_image",
+                          "visible": "true",
+                          "children": [
+                            {
+                              "image_name": "population_lim_icon_ipad",
+                              "parent": {
+                                "monkeyId": "population_capacity",
+                                "ComponentType": "milk_slice_image",
+                                "className": "milk_slice_image"
+                              },
+                              "monkeyId": "icon",
+                              "ComponentType": "milk_image",
+                              "visible": "true",
+                              "children": [],
+                              "className": "milk_image",
+                              "type": "image",
+                              "value": "",
+                              "coords": [
+                                392.0,
+                                200.0,
+                                28.0,
+                                23.0
+                              ]
+                            },
+                            {
+                              "parent": {
+                                "monkeyId": "population_capacity",
+                                "ComponentType": "milk_slice_image",
+                                "className": "milk_slice_image"
+                              },
+                              "monkeyId": "value",
+                              "ComponentType": "milk_label",
+                              "visible": "true",
+                              "children": [],
+                              "className": "milk_label",
+                              "type": "widget",
+                              "value": "+5000",
+                              "coords": [
+                                422.0,
+                                200.0,
+                                35.0,
+                                23.0
+                              ]
+                            }
+                          ],
+                          "className": "milk_slice_image",
+                          "type": "widget",
+                          "value": "",
+                          "coords": [
+                            392.0,
+                            200.0,
+                            69.0,
+                            23.0
+                          ]
+                        },
+                        {
+                          "parent": {
+                            "monkeyId": "none",
+                            "ComponentType": "milk_widget",
+                            "className": "milk_widget"
+                          },
+                          "monkeyId": "experience",
+                          "ComponentType": "milk_slice_image",
+                          "visible": "true",
+                          "children": [
+                            {
+                              "image_name": "experience_icon_ipad",
+                              "parent": {
+                                "monkeyId": "experience",
+                                "ComponentType": "milk_slice_image",
+                                "className": "milk_slice_image"
+                              },
+                              "monkeyId": "icon",
+                              "ComponentType": "milk_image",
+                              "visible": "true",
+                              "children": [],
+                              "className": "milk_image",
+                              "type": "image",
+                              "value": "",
+                              "coords": [
+                                466.0,
+                                277.0,
+                                22.0,
+                                23.0
+                              ]
+                            },
+                            {
+                              "parent": {
+                                "monkeyId": "experience",
+                                "ComponentType": "milk_slice_image",
+                                "className": "milk_slice_image"
+                              },
+                              "monkeyId": "value",
+                              "ComponentType": "milk_label",
+                              "visible": "true",
+                              "children": [],
+                              "className": "milk_label",
+                              "type": "widget",
+                              "value": "+250",
+                              "coords": [
+                                490.0,
+                                277.0,
+                                41.0,
+                                23.0
+                              ]
+                            }
+                          ],
+                          "className": "milk_slice_image",
+                          "type": "widget",
+                          "value": "",
+                          "coords": [
+                            466.0,
+                            277.0,
+                            69.0,
+                            23.0
+                          ]
+                        }
+                      ],
+                      "className": "milk_widget",
+                      "type": "widget",
+                      "value": "",
+                      "coords": [
+                        386.0,
+                        194.0,
+                        155.0,
+                        112.0
+                      ]
+                    }
+                  ],
+                  "active": true,
+                  "className": "milk_theme_button",
+                  "type": "button",
+                  "value": "",
+                  "coords": [
+                    386.0,
+                    194.0,
+                    155.0,
+                    112.0
+                  ]
+                },
+                {
+                  "parent": {
+                    "monkeyId": "cell_transparent_layer",
+                    "ComponentType": "milk_widget",
+                    "className": "milk_widget"
+                  },
+                  "monkeyId": "cell_item_name_label",
+                  "ComponentType": "milk_label",
+                  "visible": "true",
+                  "children": [],
+                  "className": "milk_label",
+                  "type": "widget",
+                  "value": "Iowa Business Center",
+                  "coords": [
+                    381.0,
+                    310.0,
+                    165.0,
+                    80.0
+                  ]
+                },
+                {
+                  "parent": {
+                    "monkeyId": "cell_transparent_layer",
+                    "ComponentType": "milk_widget",
+                    "className": "milk_widget"
+                  },
+                  "monkeyId": "none",
+                  "ComponentType": "milk_widget",
+                  "visible": "true",
+                  "children": [
+                    {
+                      "image_name": "price_coins_icon_ipad",
+                      "parent": {
+                        "monkeyId": "none",
+                        "ComponentType": "milk_widget",
+                        "className": "milk_widget"
+                      },
+                      "monkeyId": "cell_price_in_coins_image",
+                      "ComponentType": "milk_image",
+                      "visible": "true",
+                      "children": [],
+                      "className": "milk_image",
+                      "type": "image",
+                      "value": "",
+                      "coords": [
+                        384.0,
+                        170.0,
+                        20.0,
+                        20.0
+                      ]
+                    },
+                    {
+                      "parent": {
+                        "monkeyId": "none",
+                        "ComponentType": "milk_widget",
+                        "className": "milk_widget"
+                      },
+                      "monkeyId": "cell_price_in_coins_label",
+                      "ComponentType": "milk_label",
+                      "visible": "true",
+                      "children": [],
+                      "className": "milk_label",
+                      "type": "widget",
+                      "value": "250 000",
+                      "coords": [
+                        414.0,
+                        170.0,
+                        65.0,
+                        20.0
+                      ]
+                    }
+                  ],
+                  "className": "milk_widget",
+                  "type": "widget",
+                  "value": "",
+                  "coords": [
+                    384.0,
+                    170.0,
+                    95.0,
+                    23.0
+                  ]
+                },
+                {
+                  "parent": {
+                    "monkeyId": "cell_transparent_layer",
+                    "ComponentType": "milk_widget",
+                    "className": "milk_widget"
+                  },
+                  "monkeyId": "buy_object_button",
+                  "ComponentType": "milk_widget",
+                  "visible": "true",
+                  "children": [
+                    {
+                      "parent": {
+                        "monkeyId": "buy_object_button",
+                        "ComponentType": "milk_widget",
+                        "className": "milk_widget"
+                      },
+                      "monkeyId": "buy_button",
+                      "ComponentType": "milk_theme_button",
+                      "visible": "true",
+                      "children": [
+                        {
+                          "parent": {
+                            "monkeyId": "buy_button",
+                            "ComponentType": "milk_theme_button",
+                            "className": "milk_theme_button"
+                          },
+                          "monkeyId": "buy_button_label",
+                          "ComponentType": "milk_label",
+                          "visible": "true",
+                          "children": [],
+                          "className": "milk_label",
+                          "type": "widget",
+                          "value": "Buy",
+                          "coords": [
+                            425.0,
+                            134.0,
+                            78.0,
+                            26.0
+                          ]
+                        }
+                      ],
+                      "active": true,
+                      "className": "milk_theme_button",
+                      "type": "button",
+                      "value": "",
+                      "coords": [
+                        425.0,
+                        130.0,
+                        78.0,
+                        30.0
+                      ]
+                    }
+                  ],
+                  "className": "milk_widget",
+                  "type": "widget",
+                  "value": "",
+                  "coords": [
+                    425.0,
+                    130.0,
+                    78.0,
+                    30.0
+                  ]
+                }
+              ],
+              "className": "milk_widget",
+              "type": "widget",
+              "value": "",
+              "coords": [
+                378.0,
+                124.0,
+                172.0,
+                266.0
+              ]
+            },
+            {
+              "parent": {
+                "monkeyId": "cell_1",
+                "ComponentType": "milk_widget",
+                "className": "milk_widget"
+              },
+              "monkeyId": "non_transparent_backing_layer",
+              "ComponentType": "milk_widget",
+              "visible": "true",
+              "children": [],
+              "className": "milk_widget",
+              "type": "widget",
+              "value": "",
+              "coords": [
+                386.0,
+                194.0,
+                155.0,
+                112.0
+              ]
+            }
+          ],
+          "className": "milk_widget",
+          "type": "widget",
+          "value": "",
+          "coords": [
+            378.0,
+            124.0,
+            172.0,
+            266.0
+          ]
+        }
+      ],
+      "className": "milk_spinboard",
+      "type": "widget",
+      "value": "",
+      "coords": [
+        196.0,
+        124.0,
+        891.0,
+        266.0
+      ]
+    },
+    {
+      "parent": {
+        "monkeyId": "sqc::framework::city_buy_construction_dlg",
+        "ComponentType": "sqc_dialog",
+        "className": "sqc_dialog"
+      },
+      "monkeyId": "arrow_button_left",
+      "ComponentType": "milk_image_button",
+      "visible": "false",
+      "children": [],
+      "active": true,
+      "className": "milk_image_button",
+      "type": "button",
+      "value": "",
+      "coords": [
+        174.0,
+        233.0,
+        23.0,
+        47.0
+      ]
+    },
+    {
+      "parent": {
+        "monkeyId": "sqc::framework::city_buy_construction_dlg",
+        "ComponentType": "sqc_dialog",
+        "className": "sqc_dialog"
+      },
+      "monkeyId": "arrow_button_right",
+      "ComponentType": "milk_image_button",
+      "visible": "false",
+      "children": [],
+      "active": true,
+      "className": "milk_image_button",
+      "type": "button",
+      "value": "",
+      "coords": [
+        1087.0,
+        233.0,
+        23.0,
+        47.0
+      ]
+    },
+    {
+      "parent": {
+        "monkeyId": "sqc::framework::city_buy_construction_dlg",
+        "ComponentType": "sqc_dialog",
+        "className": "sqc_dialog"
+      },
+      "monkeyId": "buildings_spinboard_pager",
+      "ComponentType": "milk_spinboard_pager",
+      "visible": "true",
+      "children": [],
+      "className": "milk_spinboard_pager",
+      "type": "widget",
+      "value": "",
+      "coords": [
+        204.0,
+        85.0,
+        180.0,
+        40.0
+      ]
+    },
+    {
+      "parent": {
+        "monkeyId": "sqc::framework::city_buy_construction_dlg",
+        "ComponentType": "sqc_dialog",
+        "className": "sqc_dialog"
+      },
+      "monkeyId": "btn_add_coins",
+      "ComponentType": "milk_image_button",
+      "visible": "true",
+      "children": [
+        {
+          "parent": {
+            "monkeyId": "btn_add_coins",
+            "ComponentType": "milk_image_button",
+            "className": "milk_image_button"
+          },
+          "monkeyId": "add_coins_caption",
+          "ComponentType": "milk_label",
+          "visible": "true",
+          "children": [],
+          "className": "milk_label",
+          "type": "widget",
+          "value": "Add coins",
+          "coords": [
+            892.0,
+            603.0,
+            158.0,
+            40.0
+          ]
+        }
+      ],
+      "active": true,
+      "className": "milk_image_button",
+      "type": "button",
+      "value": "",
+      "coords": [
+        852.0,
+        598.0,
+        198.0,
+        46.0
+      ]
+    },
+    {
+      "parent": {
+        "monkeyId": "sqc::framework::city_buy_construction_dlg",
+        "ComponentType": "sqc_dialog",
+        "className": "sqc_dialog"
+      },
+      "monkeyId": "dialog.close_button",
+      "ComponentType": "milk_image_button",
+      "visible": "true",
+      "children": [],
+      "active": true,
+      "className": "milk_image_button",
+      "type": "button",
+      "value": "",
+      "coords": [
+        1062.0,
+        603.0,
+        49.0,
+        49.0
+      ]
+    }
+  ],
+  "className": "sqc_dialog",
+  "type": "widget",
+  "value": "Iowa Business Center",
+  "coords": [
+    164.0,
+    80.0,
+    951.0,
+    576.0
+  ]
+}

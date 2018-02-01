@@ -1,0 +1,70 @@
+{
+  "interface": {
+    "types": {
+      "defaultclassalias": "TestType",
+      "items": [
+        {
+          "classalias": "TestType",
+          "class": "com.steammachine.jsonchecker.executiontests.simple.res.types.TestType"
+        }
+      ]
+    },
+
+    "params": [
+      {
+        "class": "java.lang.String",
+        "name": "stringparam",
+        "default": "croaton"
+      },
+      {
+        "class": "int",
+        "name": "intparam",
+        "default": 11
+      },
+      {
+        "class": "int",
+        "name": "intparam2"
+      }
+    ],
+    
+    "userdata": [
+      "exclude val/val/*/",
+      "exclude Gustavo Cerrati es cantante argentino",
+      "include another_one_bytes_the_dust"
+    ]
+    
+  },
+  "name": "obj1",
+  "classalias": "TestType",
+  "instancename": "root",
+  "field1": null,
+  "field2": 12,
+  "children": [
+    {
+      "classalias": "TestType",
+      "instancename": "child1",
+      "name": "obj2",
+
+      "field1": null,
+      "field2": 12
+    },
+    {
+      "class": "com.steammachine.jsonchecker.executiontests.simple.res.types.TestType",
+      "instancename": "child2",
+
+      "name": "obj3",
+      "field1": null,
+      "field2": 12
+    },
+    {
+      "field1": null,
+      "field2": 12,
+      "name": "obj4"
+    },
+    {
+      "field1": "${stringparam}",
+      "field2": "${intparam2}",
+      "name": "obj5"
+    }
+  ]
+}

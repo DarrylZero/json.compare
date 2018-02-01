@@ -1,0 +1,18 @@
+https://git-scm.com/book/ru/v1/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git-%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-%D1%81-%D0%BC%D0%B5%D1%82%D0%BA%D0%B0%D0%BC%D0%B8
+
+Before publishing any new version to artifact storage please do the following:
+
+fix the data
+git tag -a v1.4 -m 'my version 1.4'
+
+where:
+v1.4
+-m
+'my version 1.4'
+
+
+List of published versions
+sq_json_compare_ver_1.0
+
+
+

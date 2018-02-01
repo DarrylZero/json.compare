@@ -1,0 +1,9 @@
+{
+  "parent": null,
+  "monkeyId": "military_production_dlg",
+  "ComponentType": "sqc_scriptable_dialog",
+  "visible": "true",
+  "className": "sqc_scriptable_dialog",
+  "type": "widget",
+  "value": ""
+}

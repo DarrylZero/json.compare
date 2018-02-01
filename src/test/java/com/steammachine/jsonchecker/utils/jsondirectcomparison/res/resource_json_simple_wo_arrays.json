@@ -1,0 +1,9 @@
+{
+  "monkeyId": "ui_leaders",
+  "ComponentType": "sqc_scriptable_dialog",
+  "visible": "true",
+  "visibleBoolean": false,
+  "className": "sqc_scriptable_dialog",
+  "type": "widget",
+  "value": ""
+}

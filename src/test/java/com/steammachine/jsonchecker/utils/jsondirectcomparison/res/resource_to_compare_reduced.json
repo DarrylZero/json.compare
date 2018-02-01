@@ -1,0 +1,32 @@
+{
+  "monkeyId": "ui_leaders1",
+  "ComponentType": "sqc_scriptable_dialog",
+  "value": [
+    "a value 1"
+  ],
+  "children": [
+    {
+      "monkeyId": "background_blur1",
+      "ComponentType": "milk_blurred_back_slice_image",
+      "value": [
+        "a value 1"
+      ],
+      "children": [
+        {
+          "monkeyId": "background_blur2",
+          "ComponentType": "milk_slice_image",
+          "visible": "true",
+          "children": [
+            {
+              "monkeyId": "background_blur",
+              "ComponentType": "milk_slice_image",
+              "visible": "true"
+            }
+          ],
+          "className": "milk_slice_image",
+          "type": "widget"
+        }
+      ]
+    }
+  ]
+}

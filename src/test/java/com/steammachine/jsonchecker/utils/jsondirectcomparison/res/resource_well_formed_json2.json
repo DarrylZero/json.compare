@@ -1,0 +1,29 @@
+{
+  "interface": {
+    "defaultclassalias": "TestType",
+    "desc": "пример описания части interface документа проверки. ",
+    "items": [
+      {
+        "classalias": "TestType",
+        "class": "com.steammachine.common.jsonchecker.exexcutiontests.res.types.TestType"
+      }
+    ],
+
+    "params": [
+      {
+        "name": "stringparam",
+        "class": "java.lang.String",
+        "default": "croaton"
+      },
+      {
+        "name": "intparam",
+        "class": "int",
+        "default": 11
+      },
+      {
+        "class": "int",
+        "name": "intparam2"
+      }
+    ]
+  }
+}

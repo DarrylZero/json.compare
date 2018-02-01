@@ -1,0 +1,3975 @@
+{
+  "parent": null,
+  "monkeyId": "sqc::framework::metro_style::city_metro_style_dlg",
+  "ComponentType": "city_metro_style_dlg",
+  "visible": "true",
+  "children": [
+    {
+      "parent": {
+        "monkeyId": "sqc::framework::metro_style::city_metro_style_dlg",
+        "ComponentType": "city_metro_style_dlg",
+        "className": "city_metro_style_dlg"
+      },
+      "monkeyId": "none",
+      "ComponentType": "milk_bevel",
+      "visible": "true",
+      "children": [],
+      "className": "milk_bevel",
+      "type": "widget",
+      "value": "",
+      "coords": [
+        224.0,
+        579.0,
+        298.0,
+        62.0
+      ]
+    },
+    {
+      "parent": {
+        "monkeyId": "sqc::framework::metro_style::city_metro_style_dlg",
+        "ComponentType": "city_metro_style_dlg",
+        "className": "city_metro_style_dlg"
+      },
+      "monkeyId": "tab_sqc::framework::metro_style::city_material_dlg",
+      "ComponentType": "milk_theme_button",
+      "visible": "false",
+      "children": [],
+      "active": true,
+      "className": "milk_theme_button",
+      "type": "button",
+      "value": "",
+      "coords": [
+        224.0,
+        579.0,
+        298.0,
+        62.0
+      ]
+    },
+    {
+      "parent": {
+        "monkeyId": "sqc::framework::metro_style::city_metro_style_dlg",
+        "ComponentType": "city_metro_style_dlg",
+        "className": "city_metro_style_dlg"
+      },
+      "monkeyId": "none",
+      "ComponentType": "milk_label",
+      "visible": "true",
+      "children": [],
+      "className": "milk_label",
+      "type": "widget",
+      "value": "Construction(1\/2)",
+      "coords": [
+        224.0,
+        576.0,
+        298.0,
+        62.0
+      ]
+    },
+    {
+      "parent": {
+        "monkeyId": "sqc::framework::metro_style::city_metro_style_dlg",
+        "ComponentType": "city_metro_style_dlg",
+        "className": "city_metro_style_dlg"
+      },
+      "monkeyId": "bevel",
+      "ComponentType": "milk_bevel",
+      "visible": "true",
+      "children": [],
+      "className": "milk_bevel",
+      "type": "widget",
+      "value": "",
+      "coords": [
+        165.0,
+        127.0,
+        949.0,
+        455.0
+      ]
+    },
+    {
+      "parent": {
+        "monkeyId": "sqc::framework::metro_style::city_metro_style_dlg",
+        "ComponentType": "city_metro_style_dlg",
+        "className": "city_metro_style_dlg"
+      },
+      "monkeyId": "dialog.close_button",
+      "ComponentType": "milk_image_button",
+      "visible": "true",
+      "children": [],
+      "active": true,
+      "className": "milk_image_button",
+      "type": "button",
+      "value": "",
+      "coords": [
+        1064.0,
+        599.0,
+        49.0,
+        49.0
+      ]
+    },
+    {
+      "parent": {
+        "monkeyId": "sqc::framework::metro_style::city_metro_style_dlg",
+        "ComponentType": "city_metro_style_dlg",
+        "className": "city_metro_style_dlg"
+      },
+      "monkeyId": "material_dlg",
+      "ComponentType": "sqc_dialog_page",
+      "visible": "true",
+      "children": [
+        {
+          "image_name": "plate_buildsite_buy_building_green_ipad",
+          "parent": {
+            "monkeyId": "material_dlg",
+            "ComponentType": "sqc_dialog_page",
+            "className": "sqc_dialog_page"
+          },
+          "monkeyId": "plate_buildsite",
+          "ComponentType": "milk_image",
+          "visible": "true",
+          "children": [
+            {
+              "parent": {
+                "monkeyId": "plate_buildsite",
+                "ComponentType": "milk_image",
+                "className": "milk_image"
+              },
+              "monkeyId": "buildsite_label",
+              "ComponentType": "milk_label",
+              "visible": "true",
+              "children": [],
+              "className": "milk_label",
+              "type": "widget",
+              "value": "HC-11 Helicopter Carrier",
+              "coords": [
+                234.0,
+                530.0,
+                205.0,
+                30.0
+              ]
+            },
+            {
+              "image_name": "bg_number_buy_building_ipad",
+              "parent": {
+                "monkeyId": "plate_buildsite",
+                "ComponentType": "milk_image",
+                "className": "milk_image"
+              },
+              "monkeyId": "bg_number",
+              "ComponentType": "milk_image",
+              "visible": "true",
+              "children": [
+                {
+                  "parent": {
+                    "monkeyId": "bg_number",
+                    "ComponentType": "milk_image",
+                    "className": "milk_image"
+                  },
+                  "monkeyId": "number_label",
+                  "ComponentType": "milk_label",
+                  "visible": "true",
+                  "children": [],
+                  "className": "milk_label",
+                  "type": "widget",
+                  "value": "1",
+                  "coords": [
+                    203.0,
+                    533.0,
+                    27.0,
+                    27.0
+                  ]
+                }
+              ],
+              "className": "milk_image",
+              "type": "image",
+              "value": "",
+              "coords": [
+                203.0,
+                533.0,
+                27.0,
+                27.0
+              ]
+            },
+            {
+              "parent": {
+                "monkeyId": "plate_buildsite",
+                "ComponentType": "milk_image",
+                "className": "milk_image"
+              },
+              "monkeyId": "none",
+              "ComponentType": "sqc_proxy_texture_widget",
+              "texture_is_ready": true,
+              "visible": "true",
+              "children": [
+                {
+                  "parent": {
+                    "monkeyId": "none",
+                    "ComponentType": "sqc_proxy_texture_widget",
+                    "className": "sqc_proxy_texture_widget"
+                  },
+                  "monkeyId": "none",
+                  "ComponentType": "milk_circular_progress",
+                  "visible": "false",
+                  "children": [],
+                  "className": "milk_circular_progress",
+                  "type": "widget",
+                  "value": "",
+                  "coords": [
+                    281.0,
+                    432.0,
+                    79.0,
+                    79.0
+                  ]
+                },
+                {
+                  "parent": {
+                    "monkeyId": "none",
+                    "ComponentType": "sqc_proxy_texture_widget",
+                    "className": "sqc_proxy_texture_widget"
+                  },
+                  "monkeyId": "none",
+                  "ComponentType": "sqc_textured_image",
+                  "texture_is_ready": true,
+                  "visible": "true",
+                  "children": [],
+                  "className": "sqc_textured_image",
+                  "type": "texture_image",
+                  "value": "",
+                  "coords": [
+                    201.0,
+                    415.0,
+                    240.0,
+                    113.0
+                  ],
+                  "texture_name": "helicopter_carrier1_prototype_buildsite"
+                }
+              ],
+              "className": "sqc_proxy_texture_widget",
+              "type": "proxy_texture_widget",
+              "value": "",
+              "coords": [
+                201.0,
+                415.0,
+                240.0,
+                113.0
+              ],
+              "texture_name": "helicopter_carrier1_prototype_buildsite"
+            }
+          ],
+          "className": "milk_image",
+          "type": "image",
+          "value": "",
+          "coords": [
+            197.0,
+            408.0,
+            249.0,
+            160.0
+          ]
+        },
+        {
+          "image_name": "bg_arrow_buy_building_ipad",
+          "parent": {
+            "monkeyId": "material_dlg",
+            "ComponentType": "sqc_dialog_page",
+            "className": "sqc_dialog_page"
+          },
+          "monkeyId": "bg_arrow",
+          "ComponentType": "milk_image",
+          "visible": "true",
+          "children": [],
+          "className": "milk_image",
+          "type": "image",
+          "value": "",
+          "coords": [
+            457.0,
+            452.0,
+            110.0,
+            77.0
+          ]
+        },
+        {
+          "image_name": "plate_result_buy_building_ipad",
+          "parent": {
+            "monkeyId": "material_dlg",
+            "ComponentType": "sqc_dialog_page",
+            "className": "sqc_dialog_page"
+          },
+          "monkeyId": "plate_result",
+          "ComponentType": "milk_image",
+          "visible": "true",
+          "children": [
+            {
+              "parent": {
+                "monkeyId": "plate_result",
+                "ComponentType": "milk_image",
+                "className": "milk_image"
+              },
+              "monkeyId": "result_label",
+              "ComponentType": "milk_label",
+              "visible": "false",
+              "children": [],
+              "className": "milk_label",
+              "type": "widget",
+              "value": "HC-11 Helicopter Carrier",
+              "coords": [
+                800.0,
+                530.0,
+                268.0,
+                30.0
+              ]
+            },
+            {
+              "image_name": "bg_number_buy_building_ipad",
+              "parent": {
+                "monkeyId": "plate_result",
+                "ComponentType": "milk_image",
+                "className": "milk_image"
+              },
+              "monkeyId": "bg_number",
+              "ComponentType": "milk_image",
+              "visible": "true",
+              "children": [
+                {
+                  "parent": {
+                    "monkeyId": "bg_number",
+                    "ComponentType": "milk_image",
+                    "className": "milk_image"
+                  },
+                  "monkeyId": "number_label_2",
+                  "ComponentType": "milk_label",
+                  "visible": "true",
+                  "children": [],
+                  "className": "milk_label",
+                  "type": "widget",
+                  "value": "2",
+                  "coords": [
+                    582.0,
+                    533.0,
+                    27.0,
+                    27.0
+                  ]
+                }
+              ],
+              "className": "milk_image",
+              "type": "image",
+              "value": "",
+              "coords": [
+                582.0,
+                533.0,
+                27.0,
+                27.0
+              ]
+            },
+            {
+              "parent": {
+                "monkeyId": "plate_result",
+                "ComponentType": "milk_image",
+                "className": "milk_image"
+              },
+              "monkeyId": "result_info_label",
+              "ComponentType": "milk_label",
+              "visible": "true",
+              "children": [],
+              "className": "milk_label",
+              "type": "widget",
+              "value": "Build the HC-11 Helicopter Carrier prototype to begin production.",
+              "coords": [
+                800.0,
+                416.0,
+                268.0,
+                144.0
+              ]
+            },
+            {
+              "image_name": "",
+              "parent": {
+                "monkeyId": "plate_result",
+                "ComponentType": "milk_image",
+                "className": "milk_image"
+              },
+              "monkeyId": "properties_dynamic_widget",
+              "ComponentType": "milk_image",
+              "visible": "true",
+              "children": [],
+              "className": "milk_image",
+              "type": "image",
+              "value": "",
+              "coords": [
+                738.0,
+                458.0,
+                312.0,
+                64.0
+              ]
+            },
+            {
+              "image_name": "",
+              "parent": {
+                "monkeyId": "plate_result",
+                "ComponentType": "milk_image",
+                "className": "milk_image"
+              },
+              "monkeyId": "properties_widget",
+              "ComponentType": "milk_image",
+              "visible": "true",
+              "children": [],
+              "className": "milk_image",
+              "type": "image",
+              "value": "",
+              "coords": [
+                611.0,
+                416.0,
+                180.0,
+                144.0
+              ]
+            },
+            {
+              "image_name": "",
+              "parent": {
+                "monkeyId": "plate_result",
+                "ComponentType": "milk_image",
+                "className": "milk_image"
+              },
+              "monkeyId": "properties_widget_instead_info",
+              "ComponentType": "milk_image",
+              "visible": "true",
+              "children": [],
+              "className": "milk_image",
+              "type": "image",
+              "value": "",
+              "coords": [
+                844.0,
+                458.0,
+                170.0,
+                64.0
+              ]
+            },
+            {
+              "image_name": "",
+              "parent": {
+                "monkeyId": "plate_result",
+                "ComponentType": "milk_image",
+                "className": "milk_image"
+              },
+              "monkeyId": "properties_dynamic_widget_alignment_top",
+              "ComponentType": "milk_image",
+              "visible": "true",
+              "children": [],
+              "className": "milk_image",
+              "type": "image",
+              "value": "",
+              "coords": [
+                763.0,
+                458.0,
+                312.0,
+                64.0
+              ]
+            },
+            {
+              "parent": {
+                "monkeyId": "plate_result",
+                "ComponentType": "milk_image",
+                "className": "milk_image"
+              },
+              "monkeyId": "add_resources_button",
+              "ComponentType": "milk_theme_button",
+              "visible": "false",
+              "children": [
+                {
+                  "parent": {
+                    "monkeyId": "add_resources_button",
+                    "ComponentType": "milk_theme_button",
+                    "className": "milk_theme_button"
+                  },
+                  "monkeyId": "add_resources_label",
+                  "ComponentType": "milk_label",
+                  "visible": "true",
+                  "children": [],
+                  "className": "milk_label",
+                  "type": "widget",
+                  "value": "Add resources",
+                  "coords": [
+                    872.0,
+                    427.0,
+                    124.0,
+                    24.0
+                  ]
+                }
+              ],
+              "active": true,
+              "className": "milk_theme_button",
+              "type": "button",
+              "value": "",
+              "coords": [
+                867.0,
+                423.0,
+                134.0,
+                28.0
+              ]
+            },
+            {
+              "parent": {
+                "monkeyId": "plate_result",
+                "ComponentType": "milk_image",
+                "className": "milk_image"
+              },
+              "monkeyId": "none",
+              "ComponentType": "sqc_proxy_texture_widget",
+              "texture_is_ready": true,
+              "visible": "true",
+              "children": [
+                {
+                  "parent": {
+                    "monkeyId": "none",
+                    "ComponentType": "sqc_proxy_texture_widget",
+                    "className": "sqc_proxy_texture_widget"
+                  },
+                  "monkeyId": "none",
+                  "ComponentType": "milk_circular_progress",
+                  "visible": "false",
+                  "children": [],
+                  "className": "milk_circular_progress",
+                  "type": "widget",
+                  "value": "",
+                  "coords": [
+                    651.0,
+                    438.0,
+                    100.0,
+                    100.0
+                  ]
+                },
+                {
+                  "parent": {
+                    "monkeyId": "none",
+                    "ComponentType": "sqc_proxy_texture_widget",
+                    "className": "sqc_proxy_texture_widget"
+                  },
+                  "monkeyId": "none",
+                  "ComponentType": "sqc_textured_image",
+                  "texture_is_ready": true,
+                  "visible": "true",
+                  "children": [],
+                  "className": "sqc_textured_image",
+                  "type": "texture_image",
+                  "value": "",
+                  "coords": [
+                    611.0,
+                    416.0,
+                    180.0,
+                    144.0
+                  ],
+                  "texture_name": "helicopter_carrier1_prototype"
+                }
+              ],
+              "className": "sqc_proxy_texture_widget",
+              "type": "proxy_texture_widget",
+              "value": "",
+              "coords": [
+                611.0,
+                416.0,
+                180.0,
+                144.0
+              ],
+              "texture_name": "helicopter_carrier1_prototype"
+            },
+            {
+              "parent": {
+                "monkeyId": "plate_result",
+                "ComponentType": "milk_image",
+                "className": "milk_image"
+              },
+              "monkeyId": "none",
+              "ComponentType": "milk_widget",
+              "visible": "true",
+              "children": [
+                {
+                  "parent": {
+                    "monkeyId": "none",
+                    "ComponentType": "milk_widget",
+                    "className": "milk_widget"
+                  },
+                  "monkeyId": "experience",
+                  "ComponentType": "milk_slice_image",
+                  "visible": "true",
+                  "children": [
+                    {
+                      "image_name": "experience_icon_ipad",
+                      "parent": {
+                        "monkeyId": "experience",
+                        "ComponentType": "milk_slice_image",
+                        "className": "milk_slice_image"
+                      },
+                      "monkeyId": "icon",
+                      "ComponentType": "milk_image",
+                      "visible": "true",
+                      "children": [],
+                      "className": "milk_image",
+                      "type": "image",
+                      "value": "",
+                      "coords": [
+                        716.0,
+                        531.0,
+                        22.0,
+                        23.0
+                      ]
+                    },
+                    {
+                      "parent": {
+                        "monkeyId": "experience",
+                        "ComponentType": "milk_slice_image",
+                        "className": "milk_slice_image"
+                      },
+                      "monkeyId": "value",
+                      "ComponentType": "milk_label",
+                      "visible": "true",
+                      "children": [],
+                      "className": "milk_label",
+                      "type": "widget",
+                      "value": "+1500",
+                      "coords": [
+                        740.0,
+                        531.0,
+                        41.0,
+                        23.0
+                      ]
+                    }
+                  ],
+                  "className": "milk_slice_image",
+                  "type": "widget",
+                  "value": "",
+                  "coords": [
+                    716.0,
+                    531.0,
+                    69.0,
+                    23.0
+                  ]
+                }
+              ],
+              "className": "milk_widget",
+              "type": "widget",
+              "value": "",
+              "coords": [
+                611.0,
+                416.0,
+                180.0,
+                144.0
+              ]
+            }
+          ],
+          "className": "milk_image",
+          "type": "image",
+          "value": "",
+          "coords": [
+            576.0,
+            408.0,
+            499.0,
+            160.0
+          ]
+        },
+        {
+          "parent": {
+            "monkeyId": "material_dlg",
+            "ComponentType": "sqc_dialog_page",
+            "className": "sqc_dialog_page"
+          },
+          "monkeyId": "none",
+          "ComponentType": "milk_widget",
+          "visible": "true",
+          "children": [
+            {
+              "image_name": "arrow_progress_buy_building_ipad",
+              "parent": {
+                "monkeyId": "none",
+                "ComponentType": "milk_widget",
+                "className": "milk_widget"
+              },
+              "monkeyId": "arrow_progress",
+              "ComponentType": "milk_image",
+              "visible": "true",
+              "children": [],
+              "className": "milk_image",
+              "type": "image",
+              "value": "",
+              "coords": [
+                460.0,
+                461.0,
+                103.0,
+                60.0
+              ]
+            }
+          ],
+          "className": "milk_widget",
+          "type": "widget",
+          "value": "",
+          "coords": [
+            457.0,
+            452.0,
+            0.0,
+            77.0
+          ]
+        },
+        {
+          "parent": {
+            "monkeyId": "material_dlg",
+            "ComponentType": "sqc_dialog_page",
+            "className": "sqc_dialog_page"
+          },
+          "monkeyId": "construction_spinboard",
+          "ComponentType": "milk_spinboard",
+          "visible": "true",
+          "children": [
+            {
+              "parent": {
+                "monkeyId": "construction_spinboard",
+                "ComponentType": "milk_spinboard",
+                "className": "milk_spinboard"
+              },
+              "monkeyId": "cell_0",
+              "ComponentType": "milk_widget",
+              "visible": "true",
+              "children": [
+                {
+                  "parent": {
+                    "monkeyId": "cell_0",
+                    "ComponentType": "milk_widget",
+                    "className": "milk_widget"
+                  },
+                  "monkeyId": "cell_transparent_layer",
+                  "ComponentType": "milk_widget",
+                  "visible": "true",
+                  "children": [
+                    {
+                      "parent": {
+                        "monkeyId": "cell_transparent_layer",
+                        "ComponentType": "milk_widget",
+                        "className": "milk_widget"
+                      },
+                      "monkeyId": "cell_background_btn",
+                      "ComponentType": "milk_theme_button",
+                      "visible": "true",
+                      "children": [
+                        {
+                          "parent": {
+                            "monkeyId": "cell_background_btn",
+                            "ComponentType": "milk_theme_button",
+                            "className": "milk_theme_button"
+                          },
+                          "monkeyId": "none",
+                          "ComponentType": "sqc_proxy_texture_widget",
+                          "texture_is_ready": true,
+                          "visible": "true",
+                          "children": [
+                            {
+                              "parent": {
+                                "monkeyId": "none",
+                                "ComponentType": "sqc_proxy_texture_widget",
+                                "className": "sqc_proxy_texture_widget"
+                              },
+                              "monkeyId": "none",
+                              "ComponentType": "milk_circular_progress",
+                              "visible": "false",
+                              "children": [],
+                              "className": "milk_circular_progress",
+                              "type": "widget",
+                              "value": "",
+                              "coords": [
+                                261.0,
+                                229.0,
+                                47.0,
+                                47.0
+                              ]
+                            },
+                            {
+                              "parent": {
+                                "monkeyId": "none",
+                                "ComponentType": "sqc_proxy_texture_widget",
+                                "className": "sqc_proxy_texture_widget"
+                              },
+                              "monkeyId": "none",
+                              "ComponentType": "sqc_textured_image",
+                              "texture_is_ready": true,
+                              "visible": "true",
+                              "children": [],
+                              "className": "sqc_textured_image",
+                              "type": "texture_image",
+                              "value": "",
+                              "coords": [
+                                248.0,
+                                219.0,
+                                74.0,
+                                68.0
+                              ],
+                              "texture_name": "titanium_foil"
+                            }
+                          ],
+                          "className": "sqc_proxy_texture_widget",
+                          "type": "proxy_texture_widget",
+                          "value": "",
+                          "coords": [
+                            248.0,
+                            219.0,
+                            74.0,
+                            68.0
+                          ],
+                          "texture_name": "titanium_foil"
+                        },
+                        {
+                          "parent": {
+                            "monkeyId": "cell_background_btn",
+                            "ComponentType": "milk_theme_button",
+                            "className": "milk_theme_button"
+                          },
+                          "monkeyId": "none",
+                          "ComponentType": "milk_widget",
+                          "visible": "true",
+                          "children": [
+                            {
+                              "parent": {
+                                "monkeyId": "none",
+                                "ComponentType": "milk_widget",
+                                "className": "milk_widget"
+                              },
+                              "monkeyId": "experience",
+                              "ComponentType": "milk_slice_image",
+                              "visible": "true",
+                              "children": [
+                                {
+                                  "image_name": "experience_icon_ipad",
+                                  "parent": {
+                                    "monkeyId": "experience",
+                                    "ComponentType": "milk_slice_image",
+                                    "className": "milk_slice_image"
+                                  },
+                                  "monkeyId": "icon",
+                                  "ComponentType": "milk_image",
+                                  "visible": "true",
+                                  "children": [],
+                                  "className": "milk_image",
+                                  "type": "image",
+                                  "value": "",
+                                  "coords": [
+                                    288.0,
+                                    280.0,
+                                    22.0,
+                                    23.0
+                                  ]
+                                },
+                                {
+                                  "parent": {
+                                    "monkeyId": "experience",
+                                    "ComponentType": "milk_slice_image",
+                                    "className": "milk_slice_image"
+                                  },
+                                  "monkeyId": "value",
+                                  "ComponentType": "milk_label",
+                                  "visible": "true",
+                                  "children": [],
+                                  "className": "milk_label",
+                                  "type": "widget",
+                                  "value": "+1",
+                                  "coords": [
+                                    312.0,
+                                    280.0,
+                                    41.0,
+                                    23.0
+                                  ]
+                                }
+                              ],
+                              "className": "milk_slice_image",
+                              "type": "widget",
+                              "value": "",
+                              "coords": [
+                                288.0,
+                                280.0,
+                                69.0,
+                                23.0
+                              ]
+                            }
+                          ],
+                          "className": "milk_widget",
+                          "type": "widget",
+                          "value": "",
+                          "coords": [
+                            208.0,
+                            197.0,
+                            155.0,
+                            112.0
+                          ]
+                        }
+                      ],
+                      "active": true,
+                      "className": "milk_theme_button",
+                      "type": "button",
+                      "value": "",
+                      "coords": [
+                        208.0,
+                        197.0,
+                        155.0,
+                        112.0
+                      ]
+                    },
+                    {
+                      "parent": {
+                        "monkeyId": "cell_transparent_layer",
+                        "ComponentType": "milk_widget",
+                        "className": "milk_widget"
+                      },
+                      "monkeyId": "cell_item_name_label",
+                      "ComponentType": "milk_label",
+                      "visible": "true",
+                      "children": [],
+                      "className": "milk_label",
+                      "type": "widget",
+                      "value": "Titanium Foil",
+                      "coords": [
+                        203.0,
+                        313.0,
+                        165.0,
+                        80.0
+                      ]
+                    },
+                    {
+                      "parent": {
+                        "monkeyId": "cell_transparent_layer",
+                        "ComponentType": "milk_widget",
+                        "className": "milk_widget"
+                      },
+                      "monkeyId": "price_label",
+                      "ComponentType": "milk_dollar_label",
+                      "visible": "true",
+                      "children": [],
+                      "className": "milk_dollar_label",
+                      "type": "widget",
+                      "value": "$1",
+                      "coords": [
+                        271.0,
+                        173.0,
+                        84.0,
+                        23.0
+                      ]
+                    },
+                    {
+                      "parent": {
+                        "monkeyId": "cell_transparent_layer",
+                        "ComponentType": "milk_widget",
+                        "className": "milk_widget"
+                      },
+                      "monkeyId": "buy_object_button",
+                      "ComponentType": "milk_widget",
+                      "visible": "true",
+                      "children": [
+                        {
+                          "parent": {
+                            "monkeyId": "buy_object_button",
+                            "ComponentType": "milk_widget",
+                            "className": "milk_widget"
+                          },
+                          "monkeyId": "buy_button",
+                          "ComponentType": "milk_theme_button",
+                          "visible": "true",
+                          "children": [
+                            {
+                              "parent": {
+                                "monkeyId": "buy_button",
+                                "ComponentType": "milk_theme_button",
+                                "className": "milk_theme_button"
+                              },
+                              "monkeyId": "buy_button_label",
+                              "ComponentType": "milk_label",
+                              "visible": "true",
+                              "children": [],
+                              "className": "milk_label",
+                              "type": "widget",
+                              "value": "Buy",
+                              "coords": [
+                                287.0,
+                                137.0,
+                                78.0,
+                                26.0
+                              ]
+                            }
+                          ],
+                          "active": true,
+                          "className": "milk_theme_button",
+                          "type": "button",
+                          "value": "",
+                          "coords": [
+                            287.0,
+                            133.0,
+                            78.0,
+                            30.0
+                          ]
+                        }
+                      ],
+                      "className": "milk_widget",
+                      "type": "widget",
+                      "value": "",
+                      "coords": [
+                        287.0,
+                        133.0,
+                        78.0,
+                        30.0
+                      ]
+                    },
+                    {
+                      "parent": {
+                        "monkeyId": "cell_transparent_layer",
+                        "ComponentType": "milk_widget",
+                        "className": "milk_widget"
+                      },
+                      "monkeyId": "none",
+                      "ComponentType": "milk_widget",
+                      "visible": "true",
+                      "children": [
+                        {
+                          "parent": {
+                            "monkeyId": "none",
+                            "ComponentType": "milk_widget",
+                            "className": "milk_widget"
+                          },
+                          "monkeyId": "ask_button",
+                          "ComponentType": "milk_theme_button",
+                          "visible": "true",
+                          "children": [
+                            {
+                              "parent": {
+                                "monkeyId": "ask_button",
+                                "ComponentType": "milk_theme_button",
+                                "className": "milk_theme_button"
+                              },
+                              "monkeyId": "ask_button_label",
+                              "ComponentType": "milk_label",
+                              "visible": "true",
+                              "children": [],
+                              "className": "milk_label",
+                              "type": "widget",
+                              "value": "Ask",
+                              "coords": [
+                                206.0,
+                                137.0,
+                                78.0,
+                                26.0
+                              ]
+                            }
+                          ],
+                          "active": true,
+                          "className": "milk_theme_button",
+                          "type": "button",
+                          "value": "",
+                          "coords": [
+                            206.0,
+                            133.0,
+                            78.0,
+                            30.0
+                          ]
+                        }
+                      ],
+                      "className": "milk_widget",
+                      "type": "widget",
+                      "value": "",
+                      "coords": [
+                        206.0,
+                        133.0,
+                        78.0,
+                        30.0
+                      ]
+                    },
+                    {
+                      "parent": {
+                        "monkeyId": "cell_transparent_layer",
+                        "ComponentType": "milk_widget",
+                        "className": "milk_widget"
+                      },
+                      "monkeyId": "quantity_label",
+                      "ComponentType": "milk_label",
+                      "visible": "true",
+                      "children": [],
+                      "className": "milk_label",
+                      "type": "widget",
+                      "value": "0 \/ 11",
+                      "coords": [
+                        216.0,
+                        173.0,
+                        55.0,
+                        23.0
+                      ]
+                    }
+                  ],
+                  "className": "milk_widget",
+                  "type": "widget",
+                  "value": "",
+                  "coords": [
+                    200.0,
+                    127.0,
+                    171.0,
+                    266.0
+                  ]
+                },
+                {
+                  "parent": {
+                    "monkeyId": "cell_0",
+                    "ComponentType": "milk_widget",
+                    "className": "milk_widget"
+                  },
+                  "monkeyId": "non_transparent_backing_layer",
+                  "ComponentType": "milk_widget",
+                  "visible": "true",
+                  "children": [
+                    {
+                      "parent": {
+                        "monkeyId": "non_transparent_backing_layer",
+                        "ComponentType": "milk_widget",
+                        "className": "milk_widget"
+                      },
+                      "monkeyId": "add_to_wish_button",
+                      "ComponentType": "milk_widget",
+                      "visible": "true",
+                      "children": [
+                        {
+                          "parent": {
+                            "monkeyId": "add_to_wish_button",
+                            "ComponentType": "milk_widget",
+                            "className": "milk_widget"
+                          },
+                          "monkeyId": "cell_ask_button",
+                          "ComponentType": "milk_theme_button",
+                          "visible": "true",
+                          "children": [
+                            {
+                              "parent": {
+                                "monkeyId": "cell_ask_button",
+                                "ComponentType": "milk_theme_button",
+                                "className": "milk_theme_button"
+                              },
+                              "monkeyId": "cell_ask_button_label",
+                              "ComponentType": "milk_label",
+                              "visible": "true",
+                              "children": [],
+                              "className": "milk_label",
+                              "type": "widget",
+                              "value": "+",
+                              "coords": [
+                                329.0,
+                                203.0,
+                                26.0,
+                                30.0
+                              ]
+                            }
+                          ],
+                          "active": true,
+                          "className": "milk_theme_button",
+                          "type": "button",
+                          "value": "",
+                          "coords": [
+                            329.0,
+                            203.0,
+                            26.0,
+                            30.0
+                          ]
+                        }
+                      ],
+                      "className": "milk_widget",
+                      "type": "widget",
+                      "value": "",
+                      "coords": [
+                        333.0,
+                        200.0,
+                        26.0,
+                        30.0
+                      ]
+                    }
+                  ],
+                  "className": "milk_widget",
+                  "type": "widget",
+                  "value": "",
+                  "coords": [
+                    208.0,
+                    197.0,
+                    155.0,
+                    112.0
+                  ]
+                }
+              ],
+              "className": "milk_widget",
+              "type": "widget",
+              "value": "",
+              "coords": [
+                200.0,
+                127.0,
+                171.0,
+                266.0
+              ]
+            },
+            {
+              "parent": {
+                "monkeyId": "construction_spinboard",
+                "ComponentType": "milk_spinboard",
+                "className": "milk_spinboard"
+              },
+              "monkeyId": "cell_1",
+              "ComponentType": "milk_widget",
+              "visible": "true",
+              "children": [
+                {
+                  "parent": {
+                    "monkeyId": "cell_1",
+                    "ComponentType": "milk_widget",
+                    "className": "milk_widget"
+                  },
+                  "monkeyId": "cell_transparent_layer",
+                  "ComponentType": "milk_widget",
+                  "visible": "true",
+                  "children": [
+                    {
+                      "parent": {
+                        "monkeyId": "cell_transparent_layer",
+                        "ComponentType": "milk_widget",
+                        "className": "milk_widget"
+                      },
+                      "monkeyId": "cell_background_btn",
+                      "ComponentType": "milk_theme_button",
+                      "visible": "true",
+                      "children": [
+                        {
+                          "parent": {
+                            "monkeyId": "cell_background_btn",
+                            "ComponentType": "milk_theme_button",
+                            "className": "milk_theme_button"
+                          },
+                          "monkeyId": "none",
+                          "ComponentType": "sqc_proxy_texture_widget",
+                          "texture_is_ready": true,
+                          "visible": "true",
+                          "children": [
+                            {
+                              "parent": {
+                                "monkeyId": "none",
+                                "ComponentType": "sqc_proxy_texture_widget",
+                                "className": "sqc_proxy_texture_widget"
+                              },
+                              "monkeyId": "none",
+                              "ComponentType": "milk_circular_progress",
+                              "visible": "false",
+                              "children": [],
+                              "className": "milk_circular_progress",
+                              "type": "widget",
+                              "value": "",
+                              "coords": [
+                                437.0,
+                                229.0,
+                                47.0,
+                                47.0
+                              ]
+                            },
+                            {
+                              "parent": {
+                                "monkeyId": "none",
+                                "ComponentType": "sqc_proxy_texture_widget",
+                                "className": "sqc_proxy_texture_widget"
+                              },
+                              "monkeyId": "none",
+                              "ComponentType": "sqc_textured_image",
+                              "texture_is_ready": true,
+                              "visible": "true",
+                              "children": [],
+                              "className": "sqc_textured_image",
+                              "type": "texture_image",
+                              "value": "",
+                              "coords": [
+                                424.0,
+                                219.0,
+                                74.0,
+                                68.0
+                              ],
+                              "texture_name": "marine_armor"
+                            }
+                          ],
+                          "className": "sqc_proxy_texture_widget",
+                          "type": "proxy_texture_widget",
+                          "value": "",
+                          "coords": [
+                            424.0,
+                            219.0,
+                            74.0,
+                            68.0
+                          ],
+                          "texture_name": "marine_armor"
+                        },
+                        {
+                          "parent": {
+                            "monkeyId": "cell_background_btn",
+                            "ComponentType": "milk_theme_button",
+                            "className": "milk_theme_button"
+                          },
+                          "monkeyId": "none",
+                          "ComponentType": "milk_widget",
+                          "visible": "true",
+                          "children": [
+                            {
+                              "parent": {
+                                "monkeyId": "none",
+                                "ComponentType": "milk_widget",
+                                "className": "milk_widget"
+                              },
+                              "monkeyId": "experience",
+                              "ComponentType": "milk_slice_image",
+                              "visible": "true",
+                              "children": [
+                                {
+                                  "image_name": "experience_icon_ipad",
+                                  "parent": {
+                                    "monkeyId": "experience",
+                                    "ComponentType": "milk_slice_image",
+                                    "className": "milk_slice_image"
+                                  },
+                                  "monkeyId": "icon",
+                                  "ComponentType": "milk_image",
+                                  "visible": "true",
+                                  "children": [],
+                                  "className": "milk_image",
+                                  "type": "image",
+                                  "value": "",
+                                  "coords": [
+                                    464.0,
+                                    280.0,
+                                    22.0,
+                                    23.0
+                                  ]
+                                },
+                                {
+                                  "parent": {
+                                    "monkeyId": "experience",
+                                    "ComponentType": "milk_slice_image",
+                                    "className": "milk_slice_image"
+                                  },
+                                  "monkeyId": "value",
+                                  "ComponentType": "milk_label",
+                                  "visible": "true",
+                                  "children": [],
+                                  "className": "milk_label",
+                                  "type": "widget",
+                                  "value": "+1",
+                                  "coords": [
+                                    488.0,
+                                    280.0,
+                                    41.0,
+                                    23.0
+                                  ]
+                                }
+                              ],
+                              "className": "milk_slice_image",
+                              "type": "widget",
+                              "value": "",
+                              "coords": [
+                                464.0,
+                                280.0,
+                                69.0,
+                                23.0
+                              ]
+                            }
+                          ],
+                          "className": "milk_widget",
+                          "type": "widget",
+                          "value": "",
+                          "coords": [
+                            384.0,
+                            197.0,
+                            155.0,
+                            112.0
+                          ]
+                        }
+                      ],
+                      "active": true,
+                      "className": "milk_theme_button",
+                      "type": "button",
+                      "value": "",
+                      "coords": [
+                        384.0,
+                        197.0,
+                        155.0,
+                        112.0
+                      ]
+                    },
+                    {
+                      "parent": {
+                        "monkeyId": "cell_transparent_layer",
+                        "ComponentType": "milk_widget",
+                        "className": "milk_widget"
+                      },
+                      "monkeyId": "cell_item_name_label",
+                      "ComponentType": "milk_label",
+                      "visible": "true",
+                      "children": [],
+                      "className": "milk_label",
+                      "type": "widget",
+                      "value": "Ship Armor",
+                      "coords": [
+                        379.0,
+                        313.0,
+                        165.0,
+                        80.0
+                      ]
+                    },
+                    {
+                      "parent": {
+                        "monkeyId": "cell_transparent_layer",
+                        "ComponentType": "milk_widget",
+                        "className": "milk_widget"
+                      },
+                      "monkeyId": "price_label",
+                      "ComponentType": "milk_dollar_label",
+                      "visible": "true",
+                      "children": [],
+                      "className": "milk_dollar_label",
+                      "type": "widget",
+                      "value": "$1",
+                      "coords": [
+                        447.0,
+                        173.0,
+                        84.0,
+                        23.0
+                      ]
+                    },
+                    {
+                      "parent": {
+                        "monkeyId": "cell_transparent_layer",
+                        "ComponentType": "milk_widget",
+                        "className": "milk_widget"
+                      },
+                      "monkeyId": "buy_object_button",
+                      "ComponentType": "milk_widget",
+                      "visible": "true",
+                      "children": [
+                        {
+                          "parent": {
+                            "monkeyId": "buy_object_button",
+                            "ComponentType": "milk_widget",
+                            "className": "milk_widget"
+                          },
+                          "monkeyId": "buy_button",
+                          "ComponentType": "milk_theme_button",
+                          "visible": "true",
+                          "children": [
+                            {
+                              "parent": {
+                                "monkeyId": "buy_button",
+                                "ComponentType": "milk_theme_button",
+                                "className": "milk_theme_button"
+                              },
+                              "monkeyId": "buy_button_label",
+                              "ComponentType": "milk_label",
+                              "visible": "true",
+                              "children": [],
+                              "className": "milk_label",
+                              "type": "widget",
+                              "value": "Buy",
+                              "coords": [
+                                463.0,
+                                137.0,
+                                78.0,
+                                26.0
+                              ]
+                            }
+                          ],
+                          "active": true,
+                          "className": "milk_theme_button",
+                          "type": "button",
+                          "value": "",
+                          "coords": [
+                            463.0,
+                            133.0,
+                            78.0,
+                            30.0
+                          ]
+                        }
+                      ],
+                      "className": "milk_widget",
+                      "type": "widget",
+                      "value": "",
+                      "coords": [
+                        463.0,
+                        133.0,
+                        78.0,
+                        30.0
+                      ]
+                    },
+                    {
+                      "parent": {
+                        "monkeyId": "cell_transparent_layer",
+                        "ComponentType": "milk_widget",
+                        "className": "milk_widget"
+                      },
+                      "monkeyId": "none",
+                      "ComponentType": "milk_widget",
+                      "visible": "true",
+                      "children": [
+                        {
+                          "parent": {
+                            "monkeyId": "none",
+                            "ComponentType": "milk_widget",
+                            "className": "milk_widget"
+                          },
+                          "monkeyId": "ask_button",
+                          "ComponentType": "milk_theme_button",
+                          "visible": "true",
+                          "children": [
+                            {
+                              "parent": {
+                                "monkeyId": "ask_button",
+                                "ComponentType": "milk_theme_button",
+                                "className": "milk_theme_button"
+                              },
+                              "monkeyId": "ask_button_label",
+                              "ComponentType": "milk_label",
+                              "visible": "true",
+                              "children": [],
+                              "className": "milk_label",
+                              "type": "widget",
+                              "value": "Ask",
+                              "coords": [
+                                382.0,
+                                137.0,
+                                78.0,
+                                26.0
+                              ]
+                            }
+                          ],
+                          "active": true,
+                          "className": "milk_theme_button",
+                          "type": "button",
+                          "value": "",
+                          "coords": [
+                            382.0,
+                            133.0,
+                            78.0,
+                            30.0
+                          ]
+                        }
+                      ],
+                      "className": "milk_widget",
+                      "type": "widget",
+                      "value": "",
+                      "coords": [
+                        382.0,
+                        133.0,
+                        78.0,
+                        30.0
+                      ]
+                    },
+                    {
+                      "parent": {
+                        "monkeyId": "cell_transparent_layer",
+                        "ComponentType": "milk_widget",
+                        "className": "milk_widget"
+                      },
+                      "monkeyId": "quantity_label",
+                      "ComponentType": "milk_label",
+                      "visible": "true",
+                      "children": [],
+                      "className": "milk_label",
+                      "type": "widget",
+                      "value": "0 \/ 6",
+                      "coords": [
+                        392.0,
+                        173.0,
+                        55.0,
+                        23.0
+                      ]
+                    }
+                  ],
+                  "className": "milk_widget",
+                  "type": "widget",
+                  "value": "",
+                  "coords": [
+                    376.0,
+                    127.0,
+                    171.0,
+                    266.0
+                  ]
+                },
+                {
+                  "parent": {
+                    "monkeyId": "cell_1",
+                    "ComponentType": "milk_widget",
+                    "className": "milk_widget"
+                  },
+                  "monkeyId": "non_transparent_backing_layer",
+                  "ComponentType": "milk_widget",
+                  "visible": "true",
+                  "children": [
+                    {
+                      "parent": {
+                        "monkeyId": "non_transparent_backing_layer",
+                        "ComponentType": "milk_widget",
+                        "className": "milk_widget"
+                      },
+                      "monkeyId": "add_to_wish_button",
+                      "ComponentType": "milk_widget",
+                      "visible": "true",
+                      "children": [
+                        {
+                          "parent": {
+                            "monkeyId": "add_to_wish_button",
+                            "ComponentType": "milk_widget",
+                            "className": "milk_widget"
+                          },
+                          "monkeyId": "cell_ask_button",
+                          "ComponentType": "milk_theme_button",
+                          "visible": "true",
+                          "children": [
+                            {
+                              "parent": {
+                                "monkeyId": "cell_ask_button",
+                                "ComponentType": "milk_theme_button",
+                                "className": "milk_theme_button"
+                              },
+                              "monkeyId": "cell_ask_button_label",
+                              "ComponentType": "milk_label",
+                              "visible": "true",
+                              "children": [],
+                              "className": "milk_label",
+                              "type": "widget",
+                              "value": "+",
+                              "coords": [
+                                505.0,
+                                203.0,
+                                26.0,
+                                30.0
+                              ]
+                            }
+                          ],
+                          "active": true,
+                          "className": "milk_theme_button",
+                          "type": "button",
+                          "value": "",
+                          "coords": [
+                            505.0,
+                            203.0,
+                            26.0,
+                            30.0
+                          ]
+                        }
+                      ],
+                      "className": "milk_widget",
+                      "type": "widget",
+                      "value": "",
+                      "coords": [
+                        509.0,
+                        200.0,
+                        26.0,
+                        30.0
+                      ]
+                    }
+                  ],
+                  "className": "milk_widget",
+                  "type": "widget",
+                  "value": "",
+                  "coords": [
+                    384.0,
+                    197.0,
+                    155.0,
+                    112.0
+                  ]
+                }
+              ],
+              "className": "milk_widget",
+              "type": "widget",
+              "value": "",
+              "coords": [
+                376.0,
+                127.0,
+                171.0,
+                266.0
+              ]
+            },
+            {
+              "parent": {
+                "monkeyId": "construction_spinboard",
+                "ComponentType": "milk_spinboard",
+                "className": "milk_spinboard"
+              },
+              "monkeyId": "cell_2",
+              "ComponentType": "milk_widget",
+              "visible": "true",
+              "children": [
+                {
+                  "parent": {
+                    "monkeyId": "cell_2",
+                    "ComponentType": "milk_widget",
+                    "className": "milk_widget"
+                  },
+                  "monkeyId": "cell_transparent_layer",
+                  "ComponentType": "milk_widget",
+                  "visible": "true",
+                  "children": [
+                    {
+                      "parent": {
+                        "monkeyId": "cell_transparent_layer",
+                        "ComponentType": "milk_widget",
+                        "className": "milk_widget"
+                      },
+                      "monkeyId": "cell_background_btn",
+                      "ComponentType": "milk_theme_button",
+                      "visible": "true",
+                      "children": [
+                        {
+                          "parent": {
+                            "monkeyId": "cell_background_btn",
+                            "ComponentType": "milk_theme_button",
+                            "className": "milk_theme_button"
+                          },
+                          "monkeyId": "none",
+                          "ComponentType": "sqc_proxy_texture_widget",
+                          "texture_is_ready": true,
+                          "visible": "true",
+                          "children": [
+                            {
+                              "parent": {
+                                "monkeyId": "none",
+                                "ComponentType": "sqc_proxy_texture_widget",
+                                "className": "sqc_proxy_texture_widget"
+                              },
+                              "monkeyId": "none",
+                              "ComponentType": "milk_circular_progress",
+                              "visible": "false",
+                              "children": [],
+                              "className": "milk_circular_progress",
+                              "type": "widget",
+                              "value": "",
+                              "coords": [
+                                613.0,
+                                229.0,
+                                47.0,
+                                47.0
+                              ]
+                            },
+                            {
+                              "parent": {
+                                "monkeyId": "none",
+                                "ComponentType": "sqc_proxy_texture_widget",
+                                "className": "sqc_proxy_texture_widget"
+                              },
+                              "monkeyId": "none",
+                              "ComponentType": "sqc_textured_image",
+                              "texture_is_ready": true,
+                              "visible": "true",
+                              "children": [],
+                              "className": "sqc_textured_image",
+                              "type": "texture_image",
+                              "value": "",
+                              "coords": [
+                                600.0,
+                                219.0,
+                                74.0,
+                                68.0
+                              ],
+                              "texture_name": "illuminator"
+                            }
+                          ],
+                          "className": "sqc_proxy_texture_widget",
+                          "type": "proxy_texture_widget",
+                          "value": "",
+                          "coords": [
+                            600.0,
+                            219.0,
+                            74.0,
+                            68.0
+                          ],
+                          "texture_name": "illuminator"
+                        },
+                        {
+                          "parent": {
+                            "monkeyId": "cell_background_btn",
+                            "ComponentType": "milk_theme_button",
+                            "className": "milk_theme_button"
+                          },
+                          "monkeyId": "none",
+                          "ComponentType": "milk_widget",
+                          "visible": "true",
+                          "children": [
+                            {
+                              "parent": {
+                                "monkeyId": "none",
+                                "ComponentType": "milk_widget",
+                                "className": "milk_widget"
+                              },
+                              "monkeyId": "experience",
+                              "ComponentType": "milk_slice_image",
+                              "visible": "true",
+                              "children": [
+                                {
+                                  "image_name": "experience_icon_ipad",
+                                  "parent": {
+                                    "monkeyId": "experience",
+                                    "ComponentType": "milk_slice_image",
+                                    "className": "milk_slice_image"
+                                  },
+                                  "monkeyId": "icon",
+                                  "ComponentType": "milk_image",
+                                  "visible": "true",
+                                  "children": [],
+                                  "className": "milk_image",
+                                  "type": "image",
+                                  "value": "",
+                                  "coords": [
+                                    640.0,
+                                    280.0,
+                                    22.0,
+                                    23.0
+                                  ]
+                                },
+                                {
+                                  "parent": {
+                                    "monkeyId": "experience",
+                                    "ComponentType": "milk_slice_image",
+                                    "className": "milk_slice_image"
+                                  },
+                                  "monkeyId": "value",
+                                  "ComponentType": "milk_label",
+                                  "visible": "true",
+                                  "children": [],
+                                  "className": "milk_label",
+                                  "type": "widget",
+                                  "value": "+1",
+                                  "coords": [
+                                    664.0,
+                                    280.0,
+                                    41.0,
+                                    23.0
+                                  ]
+                                }
+                              ],
+                              "className": "milk_slice_image",
+                              "type": "widget",
+                              "value": "",
+                              "coords": [
+                                640.0,
+                                280.0,
+                                69.0,
+                                23.0
+                              ]
+                            }
+                          ],
+                          "className": "milk_widget",
+                          "type": "widget",
+                          "value": "",
+                          "coords": [
+                            560.0,
+                            197.0,
+                            155.0,
+                            112.0
+                          ]
+                        }
+                      ],
+                      "active": true,
+                      "className": "milk_theme_button",
+                      "type": "button",
+                      "value": "",
+                      "coords": [
+                        560.0,
+                        197.0,
+                        155.0,
+                        112.0
+                      ]
+                    },
+                    {
+                      "parent": {
+                        "monkeyId": "cell_transparent_layer",
+                        "ComponentType": "milk_widget",
+                        "className": "milk_widget"
+                      },
+                      "monkeyId": "cell_item_name_label",
+                      "ComponentType": "milk_label",
+                      "visible": "true",
+                      "children": [],
+                      "className": "milk_label",
+                      "type": "widget",
+                      "value": "Porthole",
+                      "coords": [
+                        555.0,
+                        313.0,
+                        165.0,
+                        80.0
+                      ]
+                    },
+                    {
+                      "parent": {
+                        "monkeyId": "cell_transparent_layer",
+                        "ComponentType": "milk_widget",
+                        "className": "milk_widget"
+                      },
+                      "monkeyId": "price_label",
+                      "ComponentType": "milk_dollar_label",
+                      "visible": "true",
+                      "children": [],
+                      "className": "milk_dollar_label",
+                      "type": "widget",
+                      "value": "$1",
+                      "coords": [
+                        623.0,
+                        173.0,
+                        84.0,
+                        23.0
+                      ]
+                    },
+                    {
+                      "parent": {
+                        "monkeyId": "cell_transparent_layer",
+                        "ComponentType": "milk_widget",
+                        "className": "milk_widget"
+                      },
+                      "monkeyId": "buy_object_button",
+                      "ComponentType": "milk_widget",
+                      "visible": "true",
+                      "children": [
+                        {
+                          "parent": {
+                            "monkeyId": "buy_object_button",
+                            "ComponentType": "milk_widget",
+                            "className": "milk_widget"
+                          },
+                          "monkeyId": "buy_button",
+                          "ComponentType": "milk_theme_button",
+                          "visible": "true",
+                          "children": [
+                            {
+                              "parent": {
+                                "monkeyId": "buy_button",
+                                "ComponentType": "milk_theme_button",
+                                "className": "milk_theme_button"
+                              },
+                              "monkeyId": "buy_button_label",
+                              "ComponentType": "milk_label",
+                              "visible": "true",
+                              "children": [],
+                              "className": "milk_label",
+                              "type": "widget",
+                              "value": "Buy",
+                              "coords": [
+                                639.0,
+                                137.0,
+                                78.0,
+                                26.0
+                              ]
+                            }
+                          ],
+                          "active": true,
+                          "className": "milk_theme_button",
+                          "type": "button",
+                          "value": "",
+                          "coords": [
+                            639.0,
+                            133.0,
+                            78.0,
+                            30.0
+                          ]
+                        }
+                      ],
+                      "className": "milk_widget",
+                      "type": "widget",
+                      "value": "",
+                      "coords": [
+                        639.0,
+                        133.0,
+                        78.0,
+                        30.0
+                      ]
+                    },
+                    {
+                      "parent": {
+                        "monkeyId": "cell_transparent_layer",
+                        "ComponentType": "milk_widget",
+                        "className": "milk_widget"
+                      },
+                      "monkeyId": "none",
+                      "ComponentType": "milk_widget",
+                      "visible": "true",
+                      "children": [
+                        {
+                          "parent": {
+                            "monkeyId": "none",
+                            "ComponentType": "milk_widget",
+                            "className": "milk_widget"
+                          },
+                          "monkeyId": "ask_button",
+                          "ComponentType": "milk_theme_button",
+                          "visible": "true",
+                          "children": [
+                            {
+                              "parent": {
+                                "monkeyId": "ask_button",
+                                "ComponentType": "milk_theme_button",
+                                "className": "milk_theme_button"
+                              },
+                              "monkeyId": "ask_button_label",
+                              "ComponentType": "milk_label",
+                              "visible": "true",
+                              "children": [],
+                              "className": "milk_label",
+                              "type": "widget",
+                              "value": "Ask",
+                              "coords": [
+                                558.0,
+                                137.0,
+                                78.0,
+                                26.0
+                              ]
+                            }
+                          ],
+                          "active": true,
+                          "className": "milk_theme_button",
+                          "type": "button",
+                          "value": "",
+                          "coords": [
+                            558.0,
+                            133.0,
+                            78.0,
+                            30.0
+                          ]
+                        }
+                      ],
+                      "className": "milk_widget",
+                      "type": "widget",
+                      "value": "",
+                      "coords": [
+                        558.0,
+                        133.0,
+                        78.0,
+                        30.0
+                      ]
+                    },
+                    {
+                      "parent": {
+                        "monkeyId": "cell_transparent_layer",
+                        "ComponentType": "milk_widget",
+                        "className": "milk_widget"
+                      },
+                      "monkeyId": "quantity_label",
+                      "ComponentType": "milk_label",
+                      "visible": "true",
+                      "children": [],
+                      "className": "milk_label",
+                      "type": "widget",
+                      "value": "0 \/ 6",
+                      "coords": [
+                        568.0,
+                        173.0,
+                        55.0,
+                        23.0
+                      ]
+                    }
+                  ],
+                  "className": "milk_widget",
+                  "type": "widget",
+                  "value": "",
+                  "coords": [
+                    552.0,
+                    127.0,
+                    171.0,
+                    266.0
+                  ]
+                },
+                {
+                  "parent": {
+                    "monkeyId": "cell_2",
+                    "ComponentType": "milk_widget",
+                    "className": "milk_widget"
+                  },
+                  "monkeyId": "non_transparent_backing_layer",
+                  "ComponentType": "milk_widget",
+                  "visible": "true",
+                  "children": [
+                    {
+                      "parent": {
+                        "monkeyId": "non_transparent_backing_layer",
+                        "ComponentType": "milk_widget",
+                        "className": "milk_widget"
+                      },
+                      "monkeyId": "add_to_wish_button",
+                      "ComponentType": "milk_widget",
+                      "visible": "true",
+                      "children": [
+                        {
+                          "parent": {
+                            "monkeyId": "add_to_wish_button",
+                            "ComponentType": "milk_widget",
+                            "className": "milk_widget"
+                          },
+                          "monkeyId": "cell_ask_button",
+                          "ComponentType": "milk_theme_button",
+                          "visible": "true",
+                          "children": [
+                            {
+                              "parent": {
+                                "monkeyId": "cell_ask_button",
+                                "ComponentType": "milk_theme_button",
+                                "className": "milk_theme_button"
+                              },
+                              "monkeyId": "cell_ask_button_label",
+                              "ComponentType": "milk_label",
+                              "visible": "true",
+                              "children": [],
+                              "className": "milk_label",
+                              "type": "widget",
+                              "value": "+",
+                              "coords": [
+                                681.0,
+                                203.0,
+                                26.0,
+                                30.0
+                              ]
+                            }
+                          ],
+                          "active": true,
+                          "className": "milk_theme_button",
+                          "type": "button",
+                          "value": "",
+                          "coords": [
+                            681.0,
+                            203.0,
+                            26.0,
+                            30.0
+                          ]
+                        }
+                      ],
+                      "className": "milk_widget",
+                      "type": "widget",
+                      "value": "",
+                      "coords": [
+                        685.0,
+                        200.0,
+                        26.0,
+                        30.0
+                      ]
+                    }
+                  ],
+                  "className": "milk_widget",
+                  "type": "widget",
+                  "value": "",
+                  "coords": [
+                    560.0,
+                    197.0,
+                    155.0,
+                    112.0
+                  ]
+                }
+              ],
+              "className": "milk_widget",
+              "type": "widget",
+              "value": "",
+              "coords": [
+                552.0,
+                127.0,
+                171.0,
+                266.0
+              ]
+            },
+            {
+              "parent": {
+                "monkeyId": "construction_spinboard",
+                "ComponentType": "milk_spinboard",
+                "className": "milk_spinboard"
+              },
+              "monkeyId": "cell_3",
+              "ComponentType": "milk_widget",
+              "visible": "true",
+              "children": [
+                {
+                  "parent": {
+                    "monkeyId": "cell_3",
+                    "ComponentType": "milk_widget",
+                    "className": "milk_widget"
+                  },
+                  "monkeyId": "cell_transparent_layer",
+                  "ComponentType": "milk_widget",
+                  "visible": "true",
+                  "children": [
+                    {
+                      "parent": {
+                        "monkeyId": "cell_transparent_layer",
+                        "ComponentType": "milk_widget",
+                        "className": "milk_widget"
+                      },
+                      "monkeyId": "cell_background_btn",
+                      "ComponentType": "milk_theme_button",
+                      "visible": "true",
+                      "children": [
+                        {
+                          "parent": {
+                            "monkeyId": "cell_background_btn",
+                            "ComponentType": "milk_theme_button",
+                            "className": "milk_theme_button"
+                          },
+                          "monkeyId": "none",
+                          "ComponentType": "sqc_proxy_texture_widget",
+                          "texture_is_ready": true,
+                          "visible": "true",
+                          "children": [
+                            {
+                              "parent": {
+                                "monkeyId": "none",
+                                "ComponentType": "sqc_proxy_texture_widget",
+                                "className": "sqc_proxy_texture_widget"
+                              },
+                              "monkeyId": "none",
+                              "ComponentType": "milk_circular_progress",
+                              "visible": "false",
+                              "children": [],
+                              "className": "milk_circular_progress",
+                              "type": "widget",
+                              "value": "",
+                              "coords": [
+                                789.0,
+                                229.0,
+                                47.0,
+                                47.0
+                              ]
+                            },
+                            {
+                              "parent": {
+                                "monkeyId": "none",
+                                "ComponentType": "sqc_proxy_texture_widget",
+                                "className": "sqc_proxy_texture_widget"
+                              },
+                              "monkeyId": "none",
+                              "ComponentType": "sqc_textured_image",
+                              "texture_is_ready": true,
+                              "visible": "true",
+                              "children": [],
+                              "className": "sqc_textured_image",
+                              "type": "texture_image",
+                              "value": "",
+                              "coords": [
+                                776.0,
+                                219.0,
+                                74.0,
+                                68.0
+                              ],
+                              "texture_name": "asphalt_new"
+                            }
+                          ],
+                          "className": "sqc_proxy_texture_widget",
+                          "type": "proxy_texture_widget",
+                          "value": "",
+                          "coords": [
+                            776.0,
+                            219.0,
+                            74.0,
+                            68.0
+                          ],
+                          "texture_name": "asphalt_new"
+                        },
+                        {
+                          "parent": {
+                            "monkeyId": "cell_background_btn",
+                            "ComponentType": "milk_theme_button",
+                            "className": "milk_theme_button"
+                          },
+                          "monkeyId": "none",
+                          "ComponentType": "milk_widget",
+                          "visible": "true",
+                          "children": [
+                            {
+                              "parent": {
+                                "monkeyId": "none",
+                                "ComponentType": "milk_widget",
+                                "className": "milk_widget"
+                              },
+                              "monkeyId": "experience",
+                              "ComponentType": "milk_slice_image",
+                              "visible": "true",
+                              "children": [
+                                {
+                                  "image_name": "experience_icon_ipad",
+                                  "parent": {
+                                    "monkeyId": "experience",
+                                    "ComponentType": "milk_slice_image",
+                                    "className": "milk_slice_image"
+                                  },
+                                  "monkeyId": "icon",
+                                  "ComponentType": "milk_image",
+                                  "visible": "true",
+                                  "children": [],
+                                  "className": "milk_image",
+                                  "type": "image",
+                                  "value": "",
+                                  "coords": [
+                                    816.0,
+                                    280.0,
+                                    22.0,
+                                    23.0
+                                  ]
+                                },
+                                {
+                                  "parent": {
+                                    "monkeyId": "experience",
+                                    "ComponentType": "milk_slice_image",
+                                    "className": "milk_slice_image"
+                                  },
+                                  "monkeyId": "value",
+                                  "ComponentType": "milk_label",
+                                  "visible": "true",
+                                  "children": [],
+                                  "className": "milk_label",
+                                  "type": "widget",
+                                  "value": "+1",
+                                  "coords": [
+                                    840.0,
+                                    280.0,
+                                    41.0,
+                                    23.0
+                                  ]
+                                }
+                              ],
+                              "className": "milk_slice_image",
+                              "type": "widget",
+                              "value": "",
+                              "coords": [
+                                816.0,
+                                280.0,
+                                69.0,
+                                23.0
+                              ]
+                            }
+                          ],
+                          "className": "milk_widget",
+                          "type": "widget",
+                          "value": "",
+                          "coords": [
+                            736.0,
+                            197.0,
+                            155.0,
+                            112.0
+                          ]
+                        }
+                      ],
+                      "active": true,
+                      "className": "milk_theme_button",
+                      "type": "button",
+                      "value": "",
+                      "coords": [
+                        736.0,
+                        197.0,
+                        155.0,
+                        112.0
+                      ]
+                    },
+                    {
+                      "parent": {
+                        "monkeyId": "cell_transparent_layer",
+                        "ComponentType": "milk_widget",
+                        "className": "milk_widget"
+                      },
+                      "monkeyId": "cell_item_name_label",
+                      "ComponentType": "milk_label",
+                      "visible": "true",
+                      "children": [],
+                      "className": "milk_label",
+                      "type": "widget",
+                      "value": "Asphalt",
+                      "coords": [
+                        731.0,
+                        313.0,
+                        165.0,
+                        80.0
+                      ]
+                    },
+                    {
+                      "parent": {
+                        "monkeyId": "cell_transparent_layer",
+                        "ComponentType": "milk_widget",
+                        "className": "milk_widget"
+                      },
+                      "monkeyId": "price_label",
+                      "ComponentType": "milk_dollar_label",
+                      "visible": "true",
+                      "children": [],
+                      "className": "milk_dollar_label",
+                      "type": "widget",
+                      "value": "$1",
+                      "coords": [
+                        799.0,
+                        173.0,
+                        84.0,
+                        23.0
+                      ]
+                    },
+                    {
+                      "parent": {
+                        "monkeyId": "cell_transparent_layer",
+                        "ComponentType": "milk_widget",
+                        "className": "milk_widget"
+                      },
+                      "monkeyId": "buy_object_button",
+                      "ComponentType": "milk_widget",
+                      "visible": "true",
+                      "children": [
+                        {
+                          "parent": {
+                            "monkeyId": "buy_object_button",
+                            "ComponentType": "milk_widget",
+                            "className": "milk_widget"
+                          },
+                          "monkeyId": "buy_button",
+                          "ComponentType": "milk_theme_button",
+                          "visible": "true",
+                          "children": [
+                            {
+                              "parent": {
+                                "monkeyId": "buy_button",
+                                "ComponentType": "milk_theme_button",
+                                "className": "milk_theme_button"
+                              },
+                              "monkeyId": "buy_button_label",
+                              "ComponentType": "milk_label",
+                              "visible": "true",
+                              "children": [],
+                              "className": "milk_label",
+                              "type": "widget",
+                              "value": "Buy",
+                              "coords": [
+                                815.0,
+                                137.0,
+                                78.0,
+                                26.0
+                              ]
+                            }
+                          ],
+                          "active": true,
+                          "className": "milk_theme_button",
+                          "type": "button",
+                          "value": "",
+                          "coords": [
+                            815.0,
+                            133.0,
+                            78.0,
+                            30.0
+                          ]
+                        }
+                      ],
+                      "className": "milk_widget",
+                      "type": "widget",
+                      "value": "",
+                      "coords": [
+                        815.0,
+                        133.0,
+                        78.0,
+                        30.0
+                      ]
+                    },
+                    {
+                      "parent": {
+                        "monkeyId": "cell_transparent_layer",
+                        "ComponentType": "milk_widget",
+                        "className": "milk_widget"
+                      },
+                      "monkeyId": "none",
+                      "ComponentType": "milk_widget",
+                      "visible": "true",
+                      "children": [
+                        {
+                          "parent": {
+                            "monkeyId": "none",
+                            "ComponentType": "milk_widget",
+                            "className": "milk_widget"
+                          },
+                          "monkeyId": "ask_button",
+                          "ComponentType": "milk_theme_button",
+                          "visible": "true",
+                          "children": [
+                            {
+                              "parent": {
+                                "monkeyId": "ask_button",
+                                "ComponentType": "milk_theme_button",
+                                "className": "milk_theme_button"
+                              },
+                              "monkeyId": "ask_button_label",
+                              "ComponentType": "milk_label",
+                              "visible": "true",
+                              "children": [],
+                              "className": "milk_label",
+                              "type": "widget",
+                              "value": "Ask",
+                              "coords": [
+                                734.0,
+                                137.0,
+                                78.0,
+                                26.0
+                              ]
+                            }
+                          ],
+                          "active": true,
+                          "className": "milk_theme_button",
+                          "type": "button",
+                          "value": "",
+                          "coords": [
+                            734.0,
+                            133.0,
+                            78.0,
+                            30.0
+                          ]
+                        }
+                      ],
+                      "className": "milk_widget",
+                      "type": "widget",
+                      "value": "",
+                      "coords": [
+                        734.0,
+                        133.0,
+                        78.0,
+                        30.0
+                      ]
+                    },
+                    {
+                      "parent": {
+                        "monkeyId": "cell_transparent_layer",
+                        "ComponentType": "milk_widget",
+                        "className": "milk_widget"
+                      },
+                      "monkeyId": "quantity_label",
+                      "ComponentType": "milk_label",
+                      "visible": "true",
+                      "children": [],
+                      "className": "milk_label",
+                      "type": "widget",
+                      "value": "0 \/ 5",
+                      "coords": [
+                        744.0,
+                        173.0,
+                        55.0,
+                        23.0
+                      ]
+                    }
+                  ],
+                  "className": "milk_widget",
+                  "type": "widget",
+                  "value": "",
+                  "coords": [
+                    728.0,
+                    127.0,
+                    171.0,
+                    266.0
+                  ]
+                },
+                {
+                  "parent": {
+                    "monkeyId": "cell_3",
+                    "ComponentType": "milk_widget",
+                    "className": "milk_widget"
+                  },
+                  "monkeyId": "non_transparent_backing_layer",
+                  "ComponentType": "milk_widget",
+                  "visible": "true",
+                  "children": [
+                    {
+                      "parent": {
+                        "monkeyId": "non_transparent_backing_layer",
+                        "ComponentType": "milk_widget",
+                        "className": "milk_widget"
+                      },
+                      "monkeyId": "add_to_wish_button",
+                      "ComponentType": "milk_widget",
+                      "visible": "true",
+                      "children": [
+                        {
+                          "parent": {
+                            "monkeyId": "add_to_wish_button",
+                            "ComponentType": "milk_widget",
+                            "className": "milk_widget"
+                          },
+                          "monkeyId": "cell_ask_button",
+                          "ComponentType": "milk_theme_button",
+                          "visible": "true",
+                          "children": [
+                            {
+                              "parent": {
+                                "monkeyId": "cell_ask_button",
+                                "ComponentType": "milk_theme_button",
+                                "className": "milk_theme_button"
+                              },
+                              "monkeyId": "cell_ask_button_label",
+                              "ComponentType": "milk_label",
+                              "visible": "true",
+                              "children": [],
+                              "className": "milk_label",
+                              "type": "widget",
+                              "value": "+",
+                              "coords": [
+                                857.0,
+                                203.0,
+                                26.0,
+                                30.0
+                              ]
+                            }
+                          ],
+                          "active": true,
+                          "className": "milk_theme_button",
+                          "type": "button",
+                          "value": "",
+                          "coords": [
+                            857.0,
+                            203.0,
+                            26.0,
+                            30.0
+                          ]
+                        }
+                      ],
+                      "className": "milk_widget",
+                      "type": "widget",
+                      "value": "",
+                      "coords": [
+                        861.0,
+                        200.0,
+                        26.0,
+                        30.0
+                      ]
+                    }
+                  ],
+                  "className": "milk_widget",
+                  "type": "widget",
+                  "value": "",
+                  "coords": [
+                    736.0,
+                    197.0,
+                    155.0,
+                    112.0
+                  ]
+                }
+              ],
+              "className": "milk_widget",
+              "type": "widget",
+              "value": "",
+              "coords": [
+                728.0,
+                127.0,
+                171.0,
+                266.0
+              ]
+            },
+            {
+              "parent": {
+                "monkeyId": "construction_spinboard",
+                "ComponentType": "milk_spinboard",
+                "className": "milk_spinboard"
+              },
+              "monkeyId": "cell_4",
+              "ComponentType": "milk_widget",
+              "visible": "true",
+              "children": [
+                {
+                  "parent": {
+                    "monkeyId": "cell_4",
+                    "ComponentType": "milk_widget",
+                    "className": "milk_widget"
+                  },
+                  "monkeyId": "none",
+                  "ComponentType": "milk_widget",
+                  "visible": "true",
+                  "children": [
+                    {
+                      "parent": {
+                        "monkeyId": "none",
+                        "ComponentType": "milk_widget",
+                        "className": "milk_widget"
+                      },
+                      "monkeyId": "cell_background_btn",
+                      "ComponentType": "milk_theme_button",
+                      "visible": "true",
+                      "children": [
+                        {
+                          "parent": {
+                            "monkeyId": "cell_background_btn",
+                            "ComponentType": "milk_theme_button",
+                            "className": "milk_theme_button"
+                          },
+                          "monkeyId": "none",
+                          "ComponentType": "sqc_proxy_texture_widget",
+                          "texture_is_ready": true,
+                          "visible": "true",
+                          "children": [
+                            {
+                              "parent": {
+                                "monkeyId": "none",
+                                "ComponentType": "sqc_proxy_texture_widget",
+                                "className": "sqc_proxy_texture_widget"
+                              },
+                              "monkeyId": "none",
+                              "ComponentType": "milk_circular_progress",
+                              "visible": "false",
+                              "children": [],
+                              "className": "milk_circular_progress",
+                              "type": "widget",
+                              "value": "",
+                              "coords": [
+                                965.0,
+                                229.0,
+                                47.0,
+                                47.0
+                              ]
+                            },
+                            {
+                              "parent": {
+                                "monkeyId": "none",
+                                "ComponentType": "sqc_proxy_texture_widget",
+                                "className": "sqc_proxy_texture_widget"
+                              },
+                              "monkeyId": "none",
+                              "ComponentType": "sqc_textured_image",
+                              "texture_is_ready": true,
+                              "visible": "true",
+                              "children": [],
+                              "className": "sqc_textured_image",
+                              "type": "texture_image",
+                              "value": "",
+                              "coords": [
+                                952.0,
+                                219.0,
+                                74.0,
+                                68.0
+                              ],
+                              "texture_name": "scaffolding_new"
+                            }
+                          ],
+                          "className": "sqc_proxy_texture_widget",
+                          "type": "proxy_texture_widget",
+                          "value": "",
+                          "coords": [
+                            952.0,
+                            219.0,
+                            74.0,
+                            68.0
+                          ],
+                          "texture_name": "scaffolding_new"
+                        },
+                        {
+                          "parent": {
+                            "monkeyId": "cell_background_btn",
+                            "ComponentType": "milk_theme_button",
+                            "className": "milk_theme_button"
+                          },
+                          "monkeyId": "none",
+                          "ComponentType": "milk_widget",
+                          "visible": "true",
+                          "children": [
+                            {
+                              "parent": {
+                                "monkeyId": "none",
+                                "ComponentType": "milk_widget",
+                                "className": "milk_widget"
+                              },
+                              "monkeyId": "experience",
+                              "ComponentType": "milk_slice_image",
+                              "visible": "true",
+                              "children": [
+                                {
+                                  "image_name": "experience_icon_ipad",
+                                  "parent": {
+                                    "monkeyId": "experience",
+                                    "ComponentType": "milk_slice_image",
+                                    "className": "milk_slice_image"
+                                  },
+                                  "monkeyId": "icon",
+                                  "ComponentType": "milk_image",
+                                  "visible": "true",
+                                  "children": [],
+                                  "className": "milk_image",
+                                  "type": "image",
+                                  "value": "",
+                                  "coords": [
+                                    992.0,
+                                    280.0,
+                                    22.0,
+                                    23.0
+                                  ]
+                                },
+                                {
+                                  "parent": {
+                                    "monkeyId": "experience",
+                                    "ComponentType": "milk_slice_image",
+                                    "className": "milk_slice_image"
+                                  },
+                                  "monkeyId": "value",
+                                  "ComponentType": "milk_label",
+                                  "visible": "true",
+                                  "children": [],
+                                  "className": "milk_label",
+                                  "type": "widget",
+                                  "value": "+1",
+                                  "coords": [
+                                    1016.0,
+                                    280.0,
+                                    41.0,
+                                    23.0
+                                  ]
+                                }
+                              ],
+                              "className": "milk_slice_image",
+                              "type": "widget",
+                              "value": "",
+                              "coords": [
+                                992.0,
+                                280.0,
+                                69.0,
+                                23.0
+                              ]
+                            }
+                          ],
+                          "className": "milk_widget",
+                          "type": "widget",
+                          "value": "",
+                          "coords": [
+                            912.0,
+                            197.0,
+                            155.0,
+                            112.0
+                          ]
+                        }
+                      ],
+                      "active": true,
+                      "className": "milk_theme_button",
+                      "type": "button",
+                      "value": "",
+                      "coords": [
+                        912.0,
+                        197.0,
+                        155.0,
+                        112.0
+                      ]
+                    },
+                    {
+                      "parent": {
+                        "monkeyId": "none",
+                        "ComponentType": "milk_widget",
+                        "className": "milk_widget"
+                      },
+                      "monkeyId": "cell_item_name_label",
+                      "ComponentType": "milk_label",
+                      "visible": "true",
+                      "children": [],
+                      "className": "milk_label",
+                      "type": "widget",
+                      "value": "Scaffolding",
+                      "coords": [
+                        907.0,
+                        313.0,
+                        165.0,
+                        80.0
+                      ]
+                    },
+                    {
+                      "parent": {
+                        "monkeyId": "none",
+                        "ComponentType": "milk_widget",
+                        "className": "milk_widget"
+                      },
+                      "monkeyId": "price_label",
+                      "ComponentType": "milk_dollar_label",
+                      "visible": "false",
+                      "children": [],
+                      "className": "milk_dollar_label",
+                      "type": "widget",
+                      "value": "$1",
+                      "coords": [
+                        975.0,
+                        173.0,
+                        84.0,
+                        23.0
+                      ]
+                    },
+                    {
+                      "parent": {
+                        "monkeyId": "none",
+                        "ComponentType": "milk_widget",
+                        "className": "milk_widget"
+                      },
+                      "monkeyId": "quantity_label",
+                      "ComponentType": "milk_label",
+                      "visible": "true",
+                      "children": [],
+                      "className": "milk_label",
+                      "type": "widget",
+                      "value": "0 \/ 5",
+                      "coords": [
+                        920.0,
+                        173.0,
+                        55.0,
+                        23.0
+                      ]
+                    },
+                    {
+                      "parent": {
+                        "monkeyId": "none",
+                        "ComponentType": "milk_widget",
+                        "className": "milk_widget"
+                      },
+                      "monkeyId": "none",
+                      "ComponentType": "milk_widget",
+                      "visible": "true",
+                      "children": [
+                        {
+                          "parent": {
+                            "monkeyId": "none",
+                            "ComponentType": "milk_widget",
+                            "className": "milk_widget"
+                          },
+                          "monkeyId": "apply_button",
+                          "ComponentType": "milk_theme_button",
+                          "visible": "true",
+                          "children": [
+                            {
+                              "parent": {
+                                "monkeyId": "apply_button",
+                                "ComponentType": "milk_theme_button",
+                                "className": "milk_theme_button"
+                              },
+                              "monkeyId": "apply_button_label",
+                              "ComponentType": "milk_label",
+                              "visible": "true",
+                              "children": [],
+                              "className": "milk_label",
+                              "type": "widget",
+                              "value": "Apply",
+                              "coords": [
+                                991.0,
+                                137.0,
+                                78.0,
+                                26.0
+                              ]
+                            }
+                          ],
+                          "active": true,
+                          "className": "milk_theme_button",
+                          "type": "button",
+                          "value": "",
+                          "coords": [
+                            991.0,
+                            133.0,
+                            78.0,
+                            30.0
+                          ]
+                        },
+                        {
+                          "parent": {
+                            "monkeyId": "none",
+                            "ComponentType": "milk_widget",
+                            "className": "milk_widget"
+                          },
+                          "monkeyId": "counter_image",
+                          "ComponentType": "milk_slice_image",
+                          "visible": "true",
+                          "children": [
+                            {
+                              "parent": {
+                                "monkeyId": "counter_image",
+                                "ComponentType": "milk_slice_image",
+                                "className": "milk_slice_image"
+                              },
+                              "monkeyId": "counter_label",
+                              "ComponentType": "milk_label",
+                              "visible": "true",
+                              "children": [],
+                              "className": "milk_label",
+                              "type": "widget",
+                              "value": "5",
+                              "coords": [
+                                1055.0,
+                                160.0,
+                                16.0,
+                                12.0
+                              ]
+                            }
+                          ],
+                          "className": "milk_slice_image",
+                          "type": "widget",
+                          "value": "",
+                          "coords": [
+                            1053.0,
+                            157.0,
+                            20.0,
+                            18.0
+                          ]
+                        }
+                      ],
+                      "className": "milk_widget",
+                      "type": "widget",
+                      "value": "",
+                      "coords": [
+                        991.0,
+                        133.0,
+                        78.0,
+                        30.0
+                      ]
+                    },
+                    {
+                      "parent": {
+                        "monkeyId": "none",
+                        "ComponentType": "milk_widget",
+                        "className": "milk_widget"
+                      },
+                      "monkeyId": "none",
+                      "ComponentType": "milk_widget",
+                      "visible": "true",
+                      "children": [
+                        {
+                          "parent": {
+                            "monkeyId": "none",
+                            "ComponentType": "milk_widget",
+                            "className": "milk_widget"
+                          },
+                          "monkeyId": "ask_button",
+                          "ComponentType": "milk_theme_button",
+                          "visible": "true",
+                          "children": [
+                            {
+                              "parent": {
+                                "monkeyId": "ask_button",
+                                "ComponentType": "milk_theme_button",
+                                "className": "milk_theme_button"
+                              },
+                              "monkeyId": "ask_button_label",
+                              "ComponentType": "milk_label",
+                              "visible": "true",
+                              "children": [],
+                              "className": "milk_label",
+                              "type": "widget",
+                              "value": "Ask",
+                              "coords": [
+                                910.0,
+                                137.0,
+                                78.0,
+                                26.0
+                              ]
+                            }
+                          ],
+                          "active": true,
+                          "className": "milk_theme_button",
+                          "type": "button",
+                          "value": "",
+                          "coords": [
+                            910.0,
+                            133.0,
+                            78.0,
+                            30.0
+                          ]
+                        }
+                      ],
+                      "className": "milk_widget",
+                      "type": "widget",
+                      "value": "",
+                      "coords": [
+                        910.0,
+                        133.0,
+                        78.0,
+                        30.0
+                      ]
+                    }
+                  ],
+                  "className": "milk_widget",
+                  "type": "widget",
+                  "value": "",
+                  "coords": [
+                    904.0,
+                    127.0,
+                    171.0,
+                    266.0
+                  ]
+                },
+                {
+                  "parent": {
+                    "monkeyId": "cell_4",
+                    "ComponentType": "milk_widget",
+                    "className": "milk_widget"
+                  },
+                  "monkeyId": "non_transparent_backing_layer",
+                  "ComponentType": "milk_widget",
+                  "visible": "true",
+                  "children": [
+                    {
+                      "parent": {
+                        "monkeyId": "non_transparent_backing_layer",
+                        "ComponentType": "milk_widget",
+                        "className": "milk_widget"
+                      },
+                      "monkeyId": "add_to_wish_button",
+                      "ComponentType": "milk_widget",
+                      "visible": "true",
+                      "children": [
+                        {
+                          "parent": {
+                            "monkeyId": "add_to_wish_button",
+                            "ComponentType": "milk_widget",
+                            "className": "milk_widget"
+                          },
+                          "monkeyId": "cell_ask_button",
+                          "ComponentType": "milk_theme_button",
+                          "visible": "true",
+                          "children": [
+                            {
+                              "parent": {
+                                "monkeyId": "cell_ask_button",
+                                "ComponentType": "milk_theme_button",
+                                "className": "milk_theme_button"
+                              },
+                              "monkeyId": "cell_ask_button_label",
+                              "ComponentType": "milk_label",
+                              "visible": "true",
+                              "children": [],
+                              "className": "milk_label",
+                              "type": "widget",
+                              "value": "+",
+                              "coords": [
+                                1033.0,
+                                203.0,
+                                26.0,
+                                30.0
+                              ]
+                            }
+                          ],
+                          "active": true,
+                          "className": "milk_theme_button",
+                          "type": "button",
+                          "value": "",
+                          "coords": [
+                            1033.0,
+                            203.0,
+                            26.0,
+                            30.0
+                          ]
+                        }
+                      ],
+                      "className": "milk_widget",
+                      "type": "widget",
+                      "value": "",
+                      "coords": [
+                        1037.0,
+                        200.0,
+                        26.0,
+                        30.0
+                      ]
+                    }
+                  ],
+                  "className": "milk_widget",
+                  "type": "widget",
+                  "value": "",
+                  "coords": [
+                    912.0,
+                    197.0,
+                    155.0,
+                    112.0
+                  ]
+                }
+              ],
+              "className": "milk_widget",
+              "type": "widget",
+              "value": "",
+              "coords": [
+                904.0,
+                127.0,
+                171.0,
+                266.0
+              ]
+            },
+            {
+              "parent": {
+                "monkeyId": "construction_spinboard",
+                "ComponentType": "milk_spinboard",
+                "className": "milk_spinboard"
+              },
+              "monkeyId": "cell_5",
+              "ComponentType": "milk_widget",
+              "visible": "true",
+              "children": [
+                {
+                  "parent": {
+                    "monkeyId": "cell_5",
+                    "ComponentType": "milk_widget",
+                    "className": "milk_widget"
+                  },
+                  "monkeyId": "cell_transparent_layer",
+                  "ComponentType": "milk_widget",
+                  "visible": "true",
+                  "children": [
+                    {
+                      "parent": {
+                        "monkeyId": "cell_transparent_layer",
+                        "ComponentType": "milk_widget",
+                        "className": "milk_widget"
+                      },
+                      "monkeyId": "cell_background_btn",
+                      "ComponentType": "milk_theme_button",
+                      "visible": "true",
+                      "children": [
+                        {
+                          "parent": {
+                            "monkeyId": "cell_background_btn",
+                            "ComponentType": "milk_theme_button",
+                            "className": "milk_theme_button"
+                          },
+                          "monkeyId": "none",
+                          "ComponentType": "sqc_proxy_texture_widget",
+                          "texture_is_ready": true,
+                          "visible": "true",
+                          "children": [
+                            {
+                              "parent": {
+                                "monkeyId": "none",
+                                "ComponentType": "sqc_proxy_texture_widget",
+                                "className": "sqc_proxy_texture_widget"
+                              },
+                              "monkeyId": "none",
+                              "ComponentType": "milk_circular_progress",
+                              "visible": "false",
+                              "children": [],
+                              "className": "milk_circular_progress",
+                              "type": "widget",
+                              "value": "",
+                              "coords": [
+                                1141.0,
+                                229.0,
+                                47.0,
+                                47.0
+                              ]
+                            },
+                            {
+                              "parent": {
+                                "monkeyId": "none",
+                                "ComponentType": "sqc_proxy_texture_widget",
+                                "className": "sqc_proxy_texture_widget"
+                              },
+                              "monkeyId": "none",
+                              "ComponentType": "sqc_textured_image",
+                              "texture_is_ready": true,
+                              "visible": "true",
+                              "children": [],
+                              "className": "sqc_textured_image",
+                              "type": "texture_image",
+                              "value": "",
+                              "coords": [
+                                1128.0,
+                                219.0,
+                                74.0,
+                                68.0
+                              ],
+                              "texture_name": "adjustable_wrench"
+                            }
+                          ],
+                          "className": "sqc_proxy_texture_widget",
+                          "type": "proxy_texture_widget",
+                          "value": "",
+                          "coords": [
+                            1128.0,
+                            219.0,
+                            74.0,
+                            68.0
+                          ],
+                          "texture_name": "adjustable_wrench"
+                        },
+                        {
+                          "parent": {
+                            "monkeyId": "cell_background_btn",
+                            "ComponentType": "milk_theme_button",
+                            "className": "milk_theme_button"
+                          },
+                          "monkeyId": "none",
+                          "ComponentType": "milk_widget",
+                          "visible": "true",
+                          "children": [
+                            {
+                              "parent": {
+                                "monkeyId": "none",
+                                "ComponentType": "milk_widget",
+                                "className": "milk_widget"
+                              },
+                              "monkeyId": "experience",
+                              "ComponentType": "milk_slice_image",
+                              "visible": "true",
+                              "children": [
+                                {
+                                  "image_name": "experience_icon_ipad",
+                                  "parent": {
+                                    "monkeyId": "experience",
+                                    "ComponentType": "milk_slice_image",
+                                    "className": "milk_slice_image"
+                                  },
+                                  "monkeyId": "icon",
+                                  "ComponentType": "milk_image",
+                                  "visible": "true",
+                                  "children": [],
+                                  "className": "milk_image",
+                                  "type": "image",
+                                  "value": "",
+                                  "coords": [
+                                    1168.0,
+                                    280.0,
+                                    22.0,
+                                    23.0
+                                  ]
+                                },
+                                {
+                                  "parent": {
+                                    "monkeyId": "experience",
+                                    "ComponentType": "milk_slice_image",
+                                    "className": "milk_slice_image"
+                                  },
+                                  "monkeyId": "value",
+                                  "ComponentType": "milk_label",
+                                  "visible": "true",
+                                  "children": [],
+                                  "className": "milk_label",
+                                  "type": "widget",
+                                  "value": "+1",
+                                  "coords": [
+                                    1192.0,
+                                    280.0,
+                                    41.0,
+                                    23.0
+                                  ]
+                                }
+                              ],
+                              "className": "milk_slice_image",
+                              "type": "widget",
+                              "value": "",
+                              "coords": [
+                                1168.0,
+                                280.0,
+                                69.0,
+                                23.0
+                              ]
+                            }
+                          ],
+                          "className": "milk_widget",
+                          "type": "widget",
+                          "value": "",
+                          "coords": [
+                            1088.0,
+                            197.0,
+                            155.0,
+                            112.0
+                          ]
+                        }
+                      ],
+                      "active": true,
+                      "className": "milk_theme_button",
+                      "type": "button",
+                      "value": "",
+                      "coords": [
+                        1088.0,
+                        197.0,
+                        155.0,
+                        112.0
+                      ]
+                    },
+                    {
+                      "parent": {
+                        "monkeyId": "cell_transparent_layer",
+                        "ComponentType": "milk_widget",
+                        "className": "milk_widget"
+                      },
+                      "monkeyId": "cell_item_name_label",
+                      "ComponentType": "milk_label",
+                      "visible": "true",
+                      "children": [],
+                      "className": "milk_label",
+                      "type": "widget",
+                      "value": "Adjustable wrench",
+                      "coords": [
+                        1083.0,
+                        313.0,
+                        165.0,
+                        80.0
+                      ]
+                    },
+                    {
+                      "parent": {
+                        "monkeyId": "cell_transparent_layer",
+                        "ComponentType": "milk_widget",
+                        "className": "milk_widget"
+                      },
+                      "monkeyId": "price_label",
+                      "ComponentType": "milk_dollar_label",
+                      "visible": "true",
+                      "children": [],
+                      "className": "milk_dollar_label",
+                      "type": "widget",
+                      "value": "$1",
+                      "coords": [
+                        1151.0,
+                        173.0,
+                        84.0,
+                        23.0
+                      ]
+                    },
+                    {
+                      "parent": {
+                        "monkeyId": "cell_transparent_layer",
+                        "ComponentType": "milk_widget",
+                        "className": "milk_widget"
+                      },
+                      "monkeyId": "buy_object_button",
+                      "ComponentType": "milk_widget",
+                      "visible": "true",
+                      "children": [
+                        {
+                          "parent": {
+                            "monkeyId": "buy_object_button",
+                            "ComponentType": "milk_widget",
+                            "className": "milk_widget"
+                          },
+                          "monkeyId": "buy_button",
+                          "ComponentType": "milk_theme_button",
+                          "visible": "true",
+                          "children": [
+                            {
+                              "parent": {
+                                "monkeyId": "buy_button",
+                                "ComponentType": "milk_theme_button",
+                                "className": "milk_theme_button"
+                              },
+                              "monkeyId": "buy_button_label",
+                              "ComponentType": "milk_label",
+                              "visible": "true",
+                              "children": [],
+                              "className": "milk_label",
+                              "type": "widget",
+                              "value": "Buy",
+                              "coords": [
+                                1167.0,
+                                137.0,
+                                78.0,
+                                26.0
+                              ]
+                            }
+                          ],
+                          "active": true,
+                          "className": "milk_theme_button",
+                          "type": "button",
+                          "value": "",
+                          "coords": [
+                            1167.0,
+                            133.0,
+                            78.0,
+                            30.0
+                          ]
+                        }
+                      ],
+                      "className": "milk_widget",
+                      "type": "widget",
+                      "value": "",
+                      "coords": [
+                        1167.0,
+                        133.0,
+                        78.0,
+                        30.0
+                      ]
+                    },
+                    {
+                      "parent": {
+                        "monkeyId": "cell_transparent_layer",
+                        "ComponentType": "milk_widget",
+                        "className": "milk_widget"
+                      },
+                      "monkeyId": "none",
+                      "ComponentType": "milk_widget",
+                      "visible": "true",
+                      "children": [
+                        {
+                          "parent": {
+                            "monkeyId": "none",
+                            "ComponentType": "milk_widget",
+                            "className": "milk_widget"
+                          },
+                          "monkeyId": "ask_button",
+                          "ComponentType": "milk_theme_button",
+                          "visible": "true",
+                          "children": [
+                            {
+                              "parent": {
+                                "monkeyId": "ask_button",
+                                "ComponentType": "milk_theme_button",
+                                "className": "milk_theme_button"
+                              },
+                              "monkeyId": "ask_button_label",
+                              "ComponentType": "milk_label",
+                              "visible": "true",
+                              "children": [],
+                              "className": "milk_label",
+                              "type": "widget",
+                              "value": "Ask",
+                              "coords": [
+                                1086.0,
+                                137.0,
+                                78.0,
+                                26.0
+                              ]
+                            }
+                          ],
+                          "active": true,
+                          "className": "milk_theme_button",
+                          "type": "button",
+                          "value": "",
+                          "coords": [
+                            1086.0,
+                            133.0,
+                            78.0,
+                            30.0
+                          ]
+                        }
+                      ],
+                      "className": "milk_widget",
+                      "type": "widget",
+                      "value": "",
+                      "coords": [
+                        1086.0,
+                        133.0,
+                        78.0,
+                        30.0
+                      ]
+                    },
+                    {
+                      "parent": {
+                        "monkeyId": "cell_transparent_layer",
+                        "ComponentType": "milk_widget",
+                        "className": "milk_widget"
+                      },
+                      "monkeyId": "quantity_label",
+                      "ComponentType": "milk_label",
+                      "visible": "true",
+                      "children": [],
+                      "className": "milk_label",
+                      "type": "widget",
+                      "value": "0 \/ 12",
+                      "coords": [
+                        1096.0,
+                        173.0,
+                        55.0,
+                        23.0
+                      ]
+                    }
+                  ],
+                  "className": "milk_widget",
+                  "type": "widget",
+                  "value": "",
+                  "coords": [
+                    1080.0,
+                    127.0,
+                    171.0,
+                    266.0
+                  ]
+                },
+                {
+                  "parent": {
+                    "monkeyId": "cell_5",
+                    "ComponentType": "milk_widget",
+                    "className": "milk_widget"
+                  },
+                  "monkeyId": "non_transparent_backing_layer",
+                  "ComponentType": "milk_widget",
+                  "visible": "true",
+                  "children": [
+                    {
+                      "parent": {
+                        "monkeyId": "non_transparent_backing_layer",
+                        "ComponentType": "milk_widget",
+                        "className": "milk_widget"
+                      },
+                      "monkeyId": "add_to_wish_button",
+                      "ComponentType": "milk_widget",
+                      "visible": "true",
+                      "children": [
+                        {
+                          "parent": {
+                            "monkeyId": "add_to_wish_button",
+                            "ComponentType": "milk_widget",
+                            "className": "milk_widget"
+                          },
+                          "monkeyId": "cell_ask_button",
+                          "ComponentType": "milk_theme_button",
+                          "visible": "true",
+                          "children": [
+                            {
+                              "parent": {
+                                "monkeyId": "cell_ask_button",
+                                "ComponentType": "milk_theme_button",
+                                "className": "milk_theme_button"
+                              },
+                              "monkeyId": "cell_ask_button_label",
+                              "ComponentType": "milk_label",
+                              "visible": "true",
+                              "children": [],
+                              "className": "milk_label",
+                              "type": "widget",
+                              "value": "+",
+                              "coords": [
+                                1209.0,
+                                203.0,
+                                26.0,
+                                30.0
+                              ]
+                            }
+                          ],
+                          "active": true,
+                          "className": "milk_theme_button",
+                          "type": "button",
+                          "value": "",
+                          "coords": [
+                            1209.0,
+                            203.0,
+                            26.0,
+                            30.0
+                          ]
+                        }
+                      ],
+                      "className": "milk_widget",
+                      "type": "widget",
+                      "value": "",
+                      "coords": [
+                        1213.0,
+                        200.0,
+                        26.0,
+                        30.0
+                      ]
+                    }
+                  ],
+                  "className": "milk_widget",
+                  "type": "widget",
+                  "value": "",
+                  "coords": [
+                    1088.0,
+                    197.0,
+                    155.0,
+                    112.0
+                  ]
+                }
+              ],
+              "className": "milk_widget",
+              "type": "widget",
+              "value": "",
+              "coords": [
+                1080.0,
+                127.0,
+                171.0,
+                266.0
+              ]
+            }
+          ],
+          "className": "milk_spinboard",
+          "type": "widget",
+          "value": "",
+          "coords": [
+            195.0,
+            127.0,
+            889.0,
+            266.0
+          ]
+        },
+        {
+          "parent": {
+            "monkeyId": "material_dlg",
+            "ComponentType": "sqc_dialog_page",
+            "className": "sqc_dialog_page"
+          },
+          "monkeyId": "arrow_button_left",
+          "ComponentType": "milk_image_button",
+          "visible": "false",
+          "children": [],
+          "active": true,
+          "className": "milk_image_button",
+          "type": "button",
+          "value": "",
+          "coords": [
+            168.0,
+            311.0,
+            23.0,
+            47.0
+          ]
+        },
+        {
+          "parent": {
+            "monkeyId": "material_dlg",
+            "ComponentType": "sqc_dialog_page",
+            "className": "sqc_dialog_page"
+          },
+          "monkeyId": "arrow_button_right",
+          "ComponentType": "milk_image_button",
+          "visible": "true",
+          "children": [],
+          "active": true,
+          "className": "milk_image_button",
+          "type": "button",
+          "value": "",
+          "coords": [
+            1089.0,
+            311.0,
+            23.0,
+            47.0
+          ]
+        },
+        {
+          "parent": {
+            "monkeyId": "material_dlg",
+            "ComponentType": "sqc_dialog_page",
+            "className": "sqc_dialog_page"
+          },
+          "monkeyId": "default_spinboard_pager",
+          "ComponentType": "milk_spinboard_pager",
+          "visible": "true",
+          "children": [],
+          "className": "milk_spinboard_pager",
+          "type": "widget",
+          "value": "",
+          "coords": [
+            202.0,
+            88.0,
+            180.0,
+            40.0
+          ]
+        }
+      ],
+      "className": "sqc_dialog_page",
+      "type": "widget",
+      "value": "",
+      "coords": [
+        162.0,
+        83.0,
+        955.0,
+        569.0
+      ]
+    },
+    {
+      "parent": {
+        "monkeyId": "sqc::framework::metro_style::city_metro_style_dlg",
+        "ComponentType": "city_metro_style_dlg",
+        "className": "city_metro_style_dlg"
+      },
+      "monkeyId": "metro_style_balance_widget",
+      "ComponentType": "city_balance_widget",
+      "visible": "true",
+      "children": [
+        {
+          "parent": {
+            "monkeyId": "metro_style_balance_widget",
+            "ComponentType": "city_balance_widget",
+            "className": "city_balance_widget"
+          },
+          "monkeyId": "buildmaterial_certificate_and_bucks_slice_backing_image",
+          "ComponentType": "milk_slice_image",
+          "visible": "true",
+          "children": [
+            {
+              "image_name": "icon_small_buildmaterial_certificate_m_ipad",
+              "parent": {
+                "monkeyId": "buildmaterial_certificate_and_bucks_slice_backing_image",
+                "ComponentType": "milk_slice_image",
+                "className": "milk_slice_image"
+              },
+              "monkeyId": "buildmaterial_certificate_image",
+              "ComponentType": "milk_image",
+              "visible": "true",
+              "children": [],
+              "className": "milk_image",
+              "type": "image",
+              "value": "",
+              "coords": [
+                895.0,
+                96.0,
+                20.0,
+                21.0
+              ]
+            },
+            {
+              "image_name": "icon_megabucks_ipad",
+              "parent": {
+                "monkeyId": "buildmaterial_certificate_and_bucks_slice_backing_image",
+                "ComponentType": "milk_slice_image",
+                "className": "milk_slice_image"
+              },
+              "monkeyId": "buildmaterial_bucks_image",
+              "ComponentType": "milk_image",
+              "visible": "true",
+              "children": [],
+              "className": "milk_image",
+              "type": "image",
+              "value": "",
+              "coords": [
+                990.0,
+                96.0,
+                23.0,
+                20.0
+              ]
+            },
+            {
+              "parent": {
+                "monkeyId": "buildmaterial_certificate_and_bucks_slice_backing_image",
+                "ComponentType": "milk_slice_image",
+                "className": "milk_slice_image"
+              },
+              "monkeyId": "buildmaterial_certificate_label",
+              "ComponentType": "milk_label",
+              "visible": "true",
+              "children": [],
+              "className": "milk_label",
+              "type": "widget",
+              "value": "0",
+              "coords": [
+                923.0,
+                92.0,
+                65.0,
+                29.0
+              ]
+            },
+            {
+              "parent": {
+                "monkeyId": "buildmaterial_certificate_and_bucks_slice_backing_image",
+                "ComponentType": "milk_slice_image",
+                "className": "milk_slice_image"
+              },
+              "monkeyId": "buildmaterial_bucks_label",
+              "ComponentType": "milk_label",
+              "visible": "true",
+              "children": [],
+              "className": "milk_label",
+              "type": "widget",
+              "value": "99.99M",
+              "coords": [
+                1020.0,
+                92.0,
+                68.0,
+                29.0
+              ]
+            },
+            {
+              "parent": {
+                "monkeyId": "buildmaterial_certificate_and_bucks_slice_backing_image",
+                "ComponentType": "milk_slice_image",
+                "className": "milk_slice_image"
+              },
+              "monkeyId": "buy_bucks_button",
+              "ComponentType": "milk_image_button",
+              "visible": "false",
+              "children": [],
+              "active": true,
+              "className": "milk_image_button",
+              "type": "button",
+              "value": "",
+              "coords": [
+                1074.0,
+                96.0,
+                33.0,
+                33.0
+              ]
+            }
+          ],
+          "className": "milk_slice_image",
+          "type": "widget",
+          "value": "",
+          "coords": [
+            890.0,
+            92.0,
+            210.0,
+            29.0
+          ]
+        },
+        {
+          "parent": {
+            "monkeyId": "metro_style_balance_widget",
+            "ComponentType": "city_balance_widget",
+            "className": "city_balance_widget"
+          },
+          "monkeyId": "city_show_buildmaterial_certificate",
+          "ComponentType": "sqc_scriptable_widget",
+          "visible": "true",
+          "children": [
+            {
+              "parent": {
+                "monkeyId": "city_show_buildmaterial_certificate",
+                "ComponentType": "sqc_scriptable_widget",
+                "className": "sqc_scriptable_widget"
+              },
+              "monkeyId": "buildmaterial_certificate_show_hide_button",
+              "ComponentType": "milk_image_button",
+              "visible": "true",
+              "children": [],
+              "active": true,
+              "className": "milk_image_button",
+              "type": "button",
+              "value": "",
+              "coords": [
+                862.0,
+                92.0,
+                238.0,
+                29.0
+              ]
+            }
+          ],
+          "className": "sqc_scriptable_widget",
+          "type": "widget",
+          "value": "",
+          "coords": [
+            862.0,
+            92.0,
+            238.0,
+            29.0
+          ]
+        }
+      ],
+      "className": "city_balance_widget",
+      "type": "widget",
+      "value": "",
+      "coords": [
+        862.0,
+        92.0,
+        238.0,
+        29.0
+      ]
+    },
+    {
+      "parent": {
+        "monkeyId": "sqc::framework::metro_style::city_metro_style_dlg",
+        "ComponentType": "city_metro_style_dlg",
+        "className": "city_metro_style_dlg"
+      },
+      "monkeyId": "layout_buy_all_materials",
+      "ComponentType": "milk_theme_button",
+      "visible": "true",
+      "children": [
+        {
+          "parent": {
+            "monkeyId": "layout_buy_all_materials",
+            "ComponentType": "milk_theme_button",
+            "className": "milk_theme_button"
+          },
+          "monkeyId": "layout_buy_all_materials_label",
+          "ComponentType": "milk_combined_data_label",
+          "visible": "true",
+          "children": [],
+          "className": "milk_combined_data_label",
+          "type": "widget",
+          "value": "Buy everything for $ 95",
+          "coords": [
+            467.0,
+            93.0,
+            344.0,
+            29.0
+          ]
+        }
+      ],
+      "active": true,
+      "className": "milk_theme_button",
+      "type": "button",
+      "value": "",
+      "coords": [
+        464.0,
+        90.0,
+        350.0,
+        32.0
+      ]
+    }
+  ],
+  "className": "city_metro_style_dlg",
+  "type": "widget",
+  "value": "",
+  "coords": [
+    162.0,
+    83.0,
+    955.0,
+    569.0
+  ]
+}

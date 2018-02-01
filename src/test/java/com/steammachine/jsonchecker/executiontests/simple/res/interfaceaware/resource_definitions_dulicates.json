@@ -1,0 +1,29 @@
+{
+  "interface": {
+    "types": {
+      "defaultclassalias": "TestType",
+      "items": [
+        {
+          "classalias": "TestType",
+          "class": "com.steammachine.jsonchecker.executiontests.simple.res.types.TestType"
+        },
+        {
+          "classalias": "TestType",
+          "class": "com.steammachine.jsonchecker.executiontests.simple.res.types.TestType2"
+        },
+        {
+          "classalias": "TestType",
+          "class": "com.steammachine.jsonchecker.executiontests.simple.res.types.TestType3"
+        },
+        {
+          "classalias": "TestType4",
+          "class": "com.steammachine.jsonchecker.executiontests.simple.res.types.TestType4"
+        },
+        {
+          "classalias": "TestType4",
+          "class": "com.steammachine.jsonchecker.executiontests.simple.res.types.TestType1"
+        }
+      ]
+    }
+  }
+}

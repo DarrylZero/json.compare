@@ -1,0 +1,33 @@
+{
+  "monkeyId": "ui_leaders",
+  "ComponentType": "milk_touch_widget",
+  "children": [
+    {
+      "monkeyId": "tab_container1",
+      "visible": "true",
+      "children": [
+        {
+          "image_name": "ui_tab_button_image1_ipad",
+          "monkeyId": "button_image",
+          "visible": "true",
+          "children": [],
+          "className": "milk_image",
+          "type": "image",
+          "value": "",
+          "coords": [
+            416.0,
+            557.0,
+            76.0,
+            48.0
+          ]
+        }
+      ],
+      "coords": [
+        284.0,
+        113.0,
+        711.0,
+        573.0
+      ]
+    }
+  ]
+}

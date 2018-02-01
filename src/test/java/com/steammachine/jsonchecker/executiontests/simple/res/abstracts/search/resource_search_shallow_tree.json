@@ -1,0 +1,37 @@
+{
+  "monkeyId": "beltway_map_dlg",
+  "ComponentType": "sqc_scriptable_dialog",
+  "visible": "true",
+  "children": [
+    {
+      "monkeyId": "bevel",
+      "ComponentType": "milk_bevel",
+      "visible": "true",
+      "children": [],
+      "className": "milk_bevel",
+      "type": "widget",
+      "value": "",
+      "coords": [
+        250.0,
+        98.0,
+        780.0,
+        470.0
+      ]
+    },
+    {
+      "monkeyId": "bevel",
+      "ComponentType": "milk_bevel",
+      "visible": "true",
+      "children": [],
+      "className": "milk_bevel",
+      "type": "widget",
+      "value": "",
+      "coords": [
+        250.0,
+        98.0,
+        780.0,
+        470.0
+      ]
+    }
+  ]
+}
