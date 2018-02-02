@@ -1,13 +1,11 @@
 package com.steammachine.jsonchecker.utils.jsondirectcomparison;
 
+import com.steammachine.common.lazyeval.LazyEval;
 import com.steammachine.common.utils.metodsutils.MethodCaller;
 import com.steammachine.common.utils.metodsutils.MethodUtils;
-import org.json.simple.JSONObject;
 import com.steammachine.jsonchecker.impl.flatter2.PathCluster;
 import com.steammachine.jsonchecker.utils.JSonDirectComparator;
-import com.steammachine.common.lazyeval.LazyEval;
-//import com.steammachine.common.utils.metodsutils.MethodCaller;
-//import ___internal.common.utils.metodsutils.MethodUtils;
+import org.json.simple.JSONObject;
 
 import java.util.List;
 

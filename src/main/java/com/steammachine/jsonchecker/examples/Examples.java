@@ -37,6 +37,45 @@ public class Examples {
         simpleJsonDataComparison();
         comparisonWithParams();
         comparisonWithIncusion();
+        compareWithExclusion();
+        compareWithExclusions2();
+    }
+
+    /**
+     *
+     * Compares two json documents where everything is compared except for first and second (in zero based array) elements of param4
+     *
+     */
+    @Example
+    private static void compareWithExclusions2() throws IOException {
+        try (InputStream data1 = dataStream("resources/resource_json1.json")) {
+            try (InputStream data2 = dataStream("resources/resource_json5.json")) {
+                NodeCheckResult result = JSonDirectComparator.compareJSonStreams(data1, data2, null,
+                        null, asList("param4[1]", "param4[2]"));
+
+                LOG.info("comparison result =   {0}", result); /* jsons are the same */
+                check(result::isSuccessful, IllegalStateException::new);
+            }
+        }
+    }
+
+
+    /**
+     *
+     * Compares two json documents where everything is compared except for all array elements of param4
+     *
+     */
+    @Example
+    private static void compareWithExclusion() throws IOException {
+        try (InputStream data1 = dataStream("resources/resource_json1.json")) {
+            try (InputStream data2 = dataStream("resources/resource_json5.json")) {
+                NodeCheckResult result = JSonDirectComparator.compareJSonStreams(data1, data2, null,
+                        null, asList("param4[*]"));
+
+                LOG.info("comparison result =   {0}", result); /* jsons are the same */
+                check(result::isSuccessful, IllegalStateException::new);
+            }
+        }
     }
 
     /**
@@ -44,11 +83,12 @@ public class Examples {
      *  only param1, param3, param4[0]
      *
      */
+    @Example
     private static void comparisonWithIncusion() throws IOException {
         try (InputStream data1 = dataStream("resources/resource_json1.json")) {
             try (InputStream data2 = dataStream("resources/resource_json5.json")) {
-                NodeCheckResult result = JSonDirectComparator.compareJSonStreams(data1, data2, null,
-                        asList("param1", "param3", "param4[0]"), null);
+                NodeCheckResult result = JSonDirectComparator.compareJSonStreams(data1, data2,
+                        null, asList("param1", "param3", "param4[0]"), null);
 
                 LOG.info("comparison result =   {0}", result); /* jsons are the same */
                 check(result::isSuccessful, IllegalStateException::new);
@@ -60,6 +100,7 @@ public class Examples {
      * Comparison the document with params
      *
      **/
+    @Example
     private static void comparisonWithParams() throws IOException {
         try (InputStream data1 = dataStream("resources/resource_json1.json")) {
             try (InputStream data2 = dataStream("resources/resource_json4.json")) {
