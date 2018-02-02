@@ -7,4 +7,7 @@ Each example code snippet is annotated with @Example annotation.
 Please bear in mind that any parts of code (classes, methods, fields) are free to be modified or removed
 unless annotated with @Api(State.MAINTAINED) or @Api(State.INCUBATING)
 
-Take a look at the class com.steammachine.jsonchecker.examples.Examples to start with
+Take a look at the class com.steammachine.jsonchecker.examples.Examples to start with.
+
+Use clojars storage to download built artifacts 
+[![Clojars Project](https://img.shields.io/clojars/v/com.steammachine.org/json.comparison.svg)](https://clojars.org/com.steammachine.org/json.comparison)
