@@ -2,8 +2,9 @@ package com.steammachine.jsonchecker.utils;
 
 import com.steammachine.common.apilevel.Api;
 import com.steammachine.common.apilevel.State;
-import com.steammachine.jsonchecker.types.DirectValue;
+import com.steammachine.common.utils.commonutils.CommonUtils;
 import com.steammachine.jsonchecker.impl.directcomparison.flatterprocs.FlattersCommon;
+import com.steammachine.jsonchecker.types.DirectValue;
 import com.steammachine.jsonchecker.types.JSONMatchedParam;
 import com.steammachine.jsonchecker.types.JSONParam;
 import com.steammachine.jsonchecker.types.JSONParams;
@@ -11,7 +12,6 @@ import com.steammachine.jsonchecker.types.exceptions.ParamError;
 import com.steammachine.jsonchecker.types.exceptions.ParamNotFound;
 import com.steammachine.jsonchecker.types.exceptions.ParamTypeError;
 import com.steammachine.jsonchecker.utils.compatibletypescomparator.CompatibleTypesComparator;
-import com.steammachine.common.utils.commonutils.CommonUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -41,7 +41,7 @@ public class JSONParamsBuilder {
         private final String name;
 
         private JSONMatchedParamWrapper(String name, JSONMatchedParam matchedParam) {
-            this.name = Objects.requireNonNull(name) ;
+            this.name = Objects.requireNonNull(name);
             this.matchedParam = Objects.requireNonNull(matchedParam);
         }
 
@@ -171,11 +171,26 @@ public class JSONParamsBuilder {
     private JSONParamsBuilder() {
     }
 
+    /**
+     * creates new builder instance
+     *
+     * @return new builder instance (not null)
+     */
     public static JSONParamsBuilder of() {
         return new JSONParamsBuilder();
     }
 
-    public <T extends Object> JSONParamsBuilder  fromMap(Map<String, T> value) {
+    /**
+     * creates new builder instance
+     *
+     * @return new builder instance (not null)
+     */
+    public static JSONParamsBuilder params() {
+        return new JSONParamsBuilder();
+    }
+
+
+    public <T extends Object> JSONParamsBuilder fromMap(Map<String, T> value) {
         if (value != null) {
             value.entrySet().forEach(entry -> single(entry.getKey(), entry.getValue()));
         }
@@ -183,9 +198,9 @@ public class JSONParamsBuilder {
     }
 
     /**
+     * Object building method
      *
-     * Построение объекта {@link JSONParams}
-     * @return новый экземпляр {@link JSONParams}
+     * @return new instance {@link JSONParams}
      */
     public JSONParams build() {
         params.forEach(JSONParam::checkValues);

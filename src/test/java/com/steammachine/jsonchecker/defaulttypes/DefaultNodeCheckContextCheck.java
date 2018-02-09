@@ -5,7 +5,6 @@ import org.junit.jupiter.api.Test;
 import com.steammachine.jsonchecker.defaults.DefaultNodeCheckContext;
 
 /**
- * Created by Vladimir Bogodukhov  on 01.12.17
  *
  * @author Vladimir Bogodukhov
  */
