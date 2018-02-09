@@ -4,7 +4,6 @@ import com.steammachine.common.apilevel.Api;
 import com.steammachine.common.apilevel.State;
 import com.steammachine.common.definitions.annotations.Example;
 import com.steammachine.common.utils.ResourceUtils;
-import com.steammachine.common.utils.commonutils.CommonUtils;
 import com.steammachine.jsonchecker.types.JSONParams;
 import com.steammachine.jsonchecker.types.NodeCheckResult;
 import com.steammachine.jsonchecker.utils.JSONParamsBuilder;
@@ -14,10 +13,10 @@ import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.lang.reflect.Array;
-import java.util.Arrays;
+import java.util.regex.Pattern;
 
 import static com.steammachine.common.utils.commonutils.CommonUtils.check;
+import static com.steammachine.jsonchecker.utils.JSONParamsBuilder.params;
 import static java.util.Arrays.asList;
 
 
@@ -28,6 +27,7 @@ import static java.util.Arrays.asList;
  * com.steammachine.jsonchecker.examples.Examples
  */
 @Api(State.MAINTAINED)
+@Example
 public class Examples {
 
     private static final Logger LOG = LoggerFactory.getLogger(Examples.class);
@@ -39,12 +39,48 @@ public class Examples {
         comparisonWithIncusion();
         compareWithExclusion();
         compareWithExclusions2();
+
+
+        compareWithRegexpPattern();
+
+
     }
 
     /**
      *
-     * Compares two json documents where everything is compared except for first and second (in zero based array) elements of param4
+     * Here two json documents are compared using regexp param
      *
+     * data from one document is checked with regexp params.
+     *
+     * here a param p2 must conform the json field value.
+     *
+     *
+     */
+    @Example
+    private static void compareWithRegexpPattern() throws IOException {
+        try (InputStream data1 = dataStream("resources/resource_json4.json")) {
+            try (InputStream data2 = dataStream("resources/resource_json6.json")) {
+                NodeCheckResult result = JSonDirectComparator.compareJSonStreams(data1, data2,
+                        params().regexp("p2", Pattern.compile("^[(0-9)]{1,5}$")).build(), null, null);
+
+                LOG.info("comparison result =   {0}", result); /* jsons are the same */
+                check(result::isSuccessful, IllegalStateException::new);
+            }
+        }
+
+        try (InputStream data1 = dataStream("resources/resource_json4.json")) {
+            try (InputStream data2 = dataStream("resources/resource_json6.json")) {
+                NodeCheckResult result = JSonDirectComparator.compareJSonStreams(data1, data2,
+                        params().regexp("p2", "^[(0-9)]{1,5}$").build(), null, null);
+
+                LOG.info("comparison result =   {0}", result); /* jsons are the same */
+                check(result::isSuccessful, IllegalStateException::new);
+            }
+        }
+    }
+
+    /**
+     * Compares two json documents where everything is compared except for first and second (in zero based array) elements of param4
      */
     @Example
     private static void compareWithExclusions2() throws IOException {
@@ -61,9 +97,7 @@ public class Examples {
 
 
     /**
-     *
      * Compares two json documents where everything is compared except for all array elements of param4
-     *
      */
     @Example
     private static void compareWithExclusion() throws IOException {
@@ -79,9 +113,8 @@ public class Examples {
     }
 
     /**
-     *  compares two jsons in their parts only
-     *  only param1, param3, param4[0]
-     *
+     * compares two jsons in their parts only
+     * only param1, param3, param4[0]
      */
     @Example
     private static void comparisonWithIncusion() throws IOException {
@@ -98,13 +131,12 @@ public class Examples {
 
     /**
      * Comparison the document with params
-     *
      **/
     @Example
     private static void comparisonWithParams() throws IOException {
         try (InputStream data1 = dataStream("resources/resource_json1.json")) {
             try (InputStream data2 = dataStream("resources/resource_json4.json")) {
-                JSONParams params = JSONParamsBuilder.of().single("p2", false).build();
+                JSONParams params = params().single("p2", false).build();
                 NodeCheckResult result = JSonDirectComparator.compareJSonStreams(data1, data2, params, null, null);
 
                 LOG.info("comparison result =   {0}", result); /* jsons are the same */
