@@ -54,7 +54,7 @@ import java.text.SimpleDateFormat
 
 dependencies {
     compile 'org.slf4j:slf4j-api:1.7.25'
-    compile 'com.steammachine.org:common.utils:1.0.4'
+    compile 'com.steammachine.org:common.utils:1.0.5'
     compile 'com.googlecode.json-simple:json-simple:1.1'
 
     testRuntime 'org.junit.jupiter:junit-jupiter-engine:5.0.0'
@@ -93,7 +93,11 @@ junitPlatform {
     }
 }
 
-
+copyresources.copy('copy_publish_properties') {
+    c ->
+        c.from 'publish.properties'
+        c.into new File(project.buildDir, 'classes/test/com/steammachine/jsonchecker/infrastructure')
+}
 
 task sourceJar(type: Jar) {
     from sourceSets.main.allJava

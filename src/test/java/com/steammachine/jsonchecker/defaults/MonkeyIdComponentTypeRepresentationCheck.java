@@ -13,7 +13,6 @@ import com.steammachine.jsonchecker.types.PathRepresentation;
 import java.util.stream.Stream;
 
 /**
- * Created by Vladimir Bogodukhov on 01.12.2017.
  *
  * @author Vladimir Bogodukhov
  */

@@ -15,6 +15,7 @@ package com.steammachine.jsonchecker.types;
  * @author Vladimir Bogodukhov
  **/
 @FunctionalInterface
+@Deprecated
 public interface UnmappedProperties {
 
     /**
