@@ -93,7 +93,11 @@ junitPlatform {
     }
 }
 
-
+copyresources.copy('copy_publish_properties') {
+    c ->
+        c.from 'publish.properties'
+        c.into new File(project.buildDir, 'classes/test/com/steammachine/jsonchecker/infrastructure')
+}
 
 task sourceJar(type: Jar) {
     from sourceSets.main.allJava

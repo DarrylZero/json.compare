@@ -39,22 +39,17 @@ public class Examples {
         comparisonWithIncusion();
         compareWithExclusion();
         compareWithExclusions2();
-
-
         compareWithRegexpPattern();
-
-
+        compareWithWildCardPattern();
+        compareJsonsWithOutput();
     }
 
     /**
-     *
      * Here two json documents are compared using regexp param
-     *
+     * <p>
      * data from one document is checked with regexp params.
-     *
-     * here a param p2 must conform the json field value.
-     *
-     *
+     * <p>
+     * a param 'p2' must conform the json field value.
      */
     @Example
     private static void compareWithRegexpPattern() throws IOException {
@@ -78,6 +73,46 @@ public class Examples {
             }
         }
     }
+
+
+    /**
+     */
+    @Example
+    private static void compareWithWildCardPattern() throws IOException {
+        // compares only those child elements that are called paramN - the rest of elenens are not checked
+        // ***/paramN/**
+
+        try (InputStream data1 = dataStream("resources/resource_json7.json")) {
+            try (InputStream data2 = dataStream("resources/resource_json8.json")) {
+                NodeCheckResult result = JSonDirectComparator.compareJSonStreams(data1, data2,
+                        null, asList("***/paramN/**"), null);
+
+                LOG.info("comparison result =   {0}", result); /* jsons are the same */
+                check(result::isSuccessful, IllegalStateException::new);
+            }
+        }
+    }
+
+    /**
+     */
+    @Example
+    private static void compareJsonsWithOutput() throws IOException {
+        // compares only those child elements that are called paramN
+        // ***/paramN/**
+
+        try (InputStream data1 = dataStream("resources/resource_json7.json")) {
+            try (InputStream data2 = dataStream("resources/resource_json8.json")) {
+                NodeCheckResult result = JSonDirectComparator.compareJSonStreams(data1, data2, null, null, null);
+
+                LOG.info("comparison result =   {0}", result); /* jsons are NOT the same */
+                LOG.info("comparison result =   {0}", result.messages()); /* differences */
+                result.messages().stream().forEachOrdered(System.out::println);/* differences line by line */
+
+                check(() -> !result.isSuccessful(), IllegalStateException::new);
+            }
+        }
+    }
+
 
     /**
      * Compares two json documents where everything is compared except for first and second (in zero based array) elements of param4
@@ -194,6 +229,9 @@ public class Examples {
         LOG.info("comparison result = {0}", result);
         check(() -> result2, IllegalStateException::new);
     }
+
+
+    /*  -------------------------------------------------- privates --------------------------------------------*/
 
     private static InputStream dataStream(String path) {
         return ResourceUtils.loadResourceByRelativePath(Examples.class, path);

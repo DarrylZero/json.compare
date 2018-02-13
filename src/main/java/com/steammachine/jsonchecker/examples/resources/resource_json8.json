@@ -1,0 +1,21 @@
+{
+  "param1": {
+    "paramN": false,
+    "param1": "ww",
+    "param2": 12,
+    "param22": {
+      "paramN": false,
+      "param3": 31,
+      "param4": false,
+      "param22": {
+        "paramN": 112,
+        "param1": 22,
+        "param66": null,
+        "param22": {
+          "paramN": "",
+          "param1": 11
+        }
+      }
+    }
+  }
+}

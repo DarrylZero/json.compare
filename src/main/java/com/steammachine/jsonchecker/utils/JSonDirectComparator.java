@@ -569,7 +569,7 @@ public class JSonDirectComparator {
                             " and " + vs.value2().getClass().getName());
             context.failed();
         } else if (vs.param1() == null && vs.param2() == null && !CompatibleTypesComparatorV2.compatibleEquals(vs.value1(), vs.value2())) {
-            /* Оба значения с несовместимыми значениями */
+            /* both values are not compatible */
 
             context.log(VALUES_BY_PATH, " ", stringRep(vs.cluster1(), vs.keyPath(), representation),
                     " are not equal. " + vs.value1() + " != " + vs.value2());
@@ -632,7 +632,7 @@ public class JSonDirectComparator {
         }
     }
 
-/* ------------------------------------------- public toplevel maintained methods ---------------------------------- */
+/* ------------------------------------------- public top-level maintained methods ---------------------------------- */
 
     /**
      * Simple json string comparison
