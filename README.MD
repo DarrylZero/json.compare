@@ -11,7 +11,7 @@ Please bear in mind that any parts of code (classes, methods, fields) are free t
 unless annotated with @Api(State.MAINTAINED) or @Api(State.INCUBATING)
 
 Take a look at the class 
-'''java
+'''
  com.steammachine.jsonchecker.examples.Examples 
 '''
 to start with.
