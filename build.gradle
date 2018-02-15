@@ -112,13 +112,14 @@ task sourceJar(type: Jar) {
     }
 }
 
+def artefacts_publications_user = project.hasProperty('repo_user') ? repo_user : 'repo_user'
 def artefacts_publications_password = project.hasProperty('repo_password') ? repo_password : 'repo_password'
 
 publishing {
     repositories {
         maven {
             credentials {
-                username = deploy.username
+                username = artefacts_publications_user
                 password = artefacts_publications_password
             }
             url deploy.repository_host

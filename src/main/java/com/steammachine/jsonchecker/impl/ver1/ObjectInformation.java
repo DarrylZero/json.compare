@@ -165,12 +165,12 @@ public class ObjectInformation {
         Class<?> c = clazz;
         while (c != null) {
             Stream.of(c.getDeclaredMethods()).
-                    filter((m) -> !Modifier.isStatic(m.getModifiers())).
-                    filter((m) -> m.getName().startsWith("set")).
-                    filter((m) -> m.getReturnType() == void.class).
-                    filter((m) -> m.getParameterCount() == 1).
-                    map((m) -> new MethodDataInfoKey(m, m.getName(), m.getParameterTypes()[0])).
-                    forEach((mi) -> methodMap.putIfAbsent(mi, mi.method()));
+                    filter(m -> !Modifier.isStatic(m.getModifiers())).
+                    filter(m -> m.getName().startsWith("set")).
+                    filter(m -> m.getReturnType() == void.class).
+                    filter(m -> m.getParameterCount() == 1).
+                    map(m -> new MethodDataInfoKey(m, m.getName(), m.getParameterTypes()[0])).
+                    forEach(mi -> methodMap.putIfAbsent(mi, mi.method()));
             c = c.getSuperclass();
         }
 

@@ -16,13 +16,12 @@ Take a look at the class
 '''
 to start with.
 
-At the moment the library has com.googlecode.json-simple:json-simple:1.1 dependency underneath. Probably in future this dependency will be gotten rid.
+At the moment the library has com.googlecode.json-simple:json-simple:1.1 dependency underneath. 
+It will probably be gotten rid in future.
 
 
 Use clojars storage to download built artifacts 
 [![Clojars Project](https://img.shields.io/clojars/v/com.steammachine.org/json.comparison.svg)](https://clojars.org/com.steammachine.org/json.comparison)
-
-Build status for _**master**_  ![Build Status](https://travis-ci.org/DarrylZero/json.compare.svg?branch=master) 
 
 Build status for _**development**_ branch ![Build Status](https://travis-ci.org/DarrylZero/json.compare.svg?branch=development)
 
