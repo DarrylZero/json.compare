@@ -208,7 +208,8 @@ public class JSonDirectComparator {
      * @param representation объект интерпретации пути (not null)
      * @return {@code true} если два данных json идентичны  по структуре
      */
-    public static NodeCheckResult jsonStreamComparison(
+    @Api(State.INTERNAL)
+    private static NodeCheckResult jsonStreamComparison(
             InputStream json1, InputStream json2,
             PathRepresentation representation) throws IOException {
         Objects.requireNonNull(json1);
@@ -681,7 +682,7 @@ public class JSonDirectComparator {
      * @param json2 поток с данными (not null)
      * @return {@code true} если два данных json идентичны  по структуре
      */
-    @Api(State.INCUBATING)
+    @Api(State.MAINTAINED)
     public static NodeCheckResult compareJSonStreams(
             InputStream json1,
             InputStream json2,
