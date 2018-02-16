@@ -33,15 +33,17 @@ public class Examples {
     private static final Logger LOG = LoggerFactory.getLogger(Examples.class);
 
     public static void main(String... args) throws IOException {
-        simpleJsonComparison();
-        simpleJsonDataComparison();
-        comparisonWithParams();
-        comparisonWithIncusion();
-        compareWithExclusion();
-        compareWithExclusions2();
-        compareWithRegexpPattern();
-        compareWithWildCardPattern();
-        compareJsonsWithOutput();
+        Examples examples = new Examples();
+        examples.simpleJsonComparison();
+        examples.simpleJsonDataComparison();
+        examples.comparisonWithParams();
+        examples.comparisonWithIncusion();
+        examples.compareWithExclusion();
+        examples.compareWithExclusions2();
+        examples.compareWithRegexpPattern();
+        examples.compareWithWildCardPattern();
+        examples.compareJsonsWithOutput();
+        examples.simpleJsonComparisonShowsResult();
     }
 
     /**
@@ -52,7 +54,7 @@ public class Examples {
      * a param 'p2' must conform the json field value.
      */
     @Example
-    private static void compareWithRegexpPattern() throws IOException {
+    private void compareWithRegexpPattern() throws IOException {
         try (InputStream data1 = dataStream("resources/resource_json4.json")) {
             try (InputStream data2 = dataStream("resources/resource_json6.json")) {
                 NodeCheckResult result = JSonDirectComparator.compareJSonStreams(data1, data2,
@@ -78,7 +80,7 @@ public class Examples {
     /**
      */
     @Example
-    private static void compareWithWildCardPattern() throws IOException {
+    private void compareWithWildCardPattern() throws IOException {
         // compares only those child elements that are called paramN - the rest of elenens are not checked
         // ***/paramN/**
 
@@ -96,7 +98,7 @@ public class Examples {
     /**
      */
     @Example
-    private static void compareJsonsWithOutput() throws IOException {
+    private void compareJsonsWithOutput() throws IOException {
         // compares only those child elements that are called paramN
         // ***/paramN/**
 
@@ -118,7 +120,7 @@ public class Examples {
      * Compares two json documents where everything is compared except for first and second (in zero based array) elements of param4
      */
     @Example
-    private static void compareWithExclusions2() throws IOException {
+    private void compareWithExclusions2() throws IOException {
         try (InputStream data1 = dataStream("resources/resource_json1.json")) {
             try (InputStream data2 = dataStream("resources/resource_json5.json")) {
                 NodeCheckResult result = JSonDirectComparator.compareJSonStreams(data1, data2, null,
@@ -135,7 +137,7 @@ public class Examples {
      * Compares two json documents where everything is compared except for all array elements of param4
      */
     @Example
-    private static void compareWithExclusion() throws IOException {
+    private void compareWithExclusion() throws IOException {
         try (InputStream data1 = dataStream("resources/resource_json1.json")) {
             try (InputStream data2 = dataStream("resources/resource_json5.json")) {
                 NodeCheckResult result = JSonDirectComparator.compareJSonStreams(data1, data2, null,
@@ -152,7 +154,7 @@ public class Examples {
      * only param1, param3, param4[0]
      */
     @Example
-    private static void comparisonWithIncusion() throws IOException {
+    private void comparisonWithIncusion() throws IOException {
         try (InputStream data1 = dataStream("resources/resource_json1.json")) {
             try (InputStream data2 = dataStream("resources/resource_json5.json")) {
                 NodeCheckResult result = JSonDirectComparator.compareJSonStreams(data1, data2,
@@ -168,7 +170,7 @@ public class Examples {
      * Comparison the document with params
      **/
     @Example
-    private static void comparisonWithParams() throws IOException {
+    private void comparisonWithParams() throws IOException {
         try (InputStream data1 = dataStream("resources/resource_json1.json")) {
             try (InputStream data2 = dataStream("resources/resource_json4.json")) {
                 JSONParams params = params().single("p2", false).build();
@@ -196,7 +198,7 @@ public class Examples {
      * Pay your attention that the caller should take care of used stream in respect of closing it.
      */
     @Example
-    private static void simpleJsonDataComparison() throws IOException {
+    private void simpleJsonDataComparison() throws IOException {
         try (InputStream data1 = dataStream("resources/resource_json1.json")) {
             try (InputStream data2 = dataStream("resources/resource_json2.json")) {
                 boolean result = JSonDirectComparator.compareJSonStreams(data1, data2);
@@ -214,13 +216,32 @@ public class Examples {
         }
     }
 
+
+    /*
+ * in this example two json strings are compared
+ * No details are returned - only boolean status of comparison
+ *
+ */
+    @Example
+    private void simpleJsonComparisonShowsResult() throws IOException {
+        try (InputStream data1 = dataStream("resources/resource_json1.json")) {
+            try (InputStream data2 = dataStream("resources/resource_json9.json")) {
+                NodeCheckResult result = JSonDirectComparator.compareJSonStreams(data1, data2, null, null, null);
+
+                check(() -> !result.isSuccessful(), IllegalStateException::new);/* jsons are different */
+                result.messages().stream().forEachOrdered(System.out::println);
+            }
+        }
+    }
+
+
     /*
      * in this example two json strings are compared
      * No details are returned - only boolean status of comparison
      *
      */
     @Example
-    private static void simpleJsonComparison() {
+    private void simpleJsonComparison() {
         boolean result = JSonDirectComparator.compareJSonStrings("{\"d\": 11}", "{   }");
         LOG.info("comparison result = {0}", result);
         check(() -> !result, IllegalStateException::new);
@@ -231,9 +252,10 @@ public class Examples {
     }
 
 
+
     /*  -------------------------------------------------- privates --------------------------------------------*/
 
-    private static InputStream dataStream(String path) {
+    private InputStream dataStream(String path) {
         return ResourceUtils.loadResourceByRelativePath(Examples.class, path);
     }
 
