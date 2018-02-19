@@ -13,7 +13,7 @@ import java.util.List;
 public interface NodeCheckResult {
 
     /**
-     * @return whether documents are equal.
+     * @return whether documents are equal(matched).
      */
     boolean isSuccessful();
 

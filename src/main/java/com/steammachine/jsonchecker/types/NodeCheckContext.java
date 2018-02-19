@@ -1,11 +1,8 @@
 package com.steammachine.jsonchecker.types;
 
 /**
+ * Json comparison context. Userd to pass into comparison utils.
  *
- * Контекст проверки данных json.
- * Предназначен для передачи в проверочные утилиты.
- *
- * 30.12.2017 10:21:46
  * @author Vladimir Bogodukhov
  **/
 @FunctionalInterface

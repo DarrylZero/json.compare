@@ -1,5 +1,5 @@
 /**
- * Основные типы, используемые для проверки данных json.
+ * Base types used for json comaprison
  * <p>
  * Created by Vladimir Bogodukhov on 01.12.2017.
  *
