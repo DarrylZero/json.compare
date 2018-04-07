@@ -1,10 +1,13 @@
 package com.steammachine.jsonchecker.impl.directcomparison.pathformats;
 
-import com.steammachine.jsonchecker.types.Path;
 import com.steammachine.common.lazyeval.LazyEval;
 import com.steammachine.common.utils.commonutils.CommonUtils;
+import com.steammachine.jsonchecker.types.Path;
 
-import java.util.*;
+import java.util.Collections;
+import java.util.EnumMap;
+import java.util.Map;
+import java.util.Objects;
 import java.util.regex.Pattern;
 import java.util.stream.Stream;
 

@@ -19,6 +19,11 @@ to start with.
 At the moment the library has com.googlecode.json-simple:json-simple:1.1 dependency underneath. 
 It will probably be gotten rid in future.
 
+To build project use a command 
+'''groovy
+gradle clean build
+'''
+
 
 Use clojars storage to download built artifacts 
 [![Clojars Project](https://img.shields.io/clojars/v/com.steammachine.org/json.comparison.svg)](https://clojars.org/com.steammachine.org/json.comparison)
