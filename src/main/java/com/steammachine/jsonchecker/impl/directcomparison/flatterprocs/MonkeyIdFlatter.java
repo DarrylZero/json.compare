@@ -91,18 +91,18 @@ public class MonkeyIdFlatter {
 
         @SuppressWarnings("unchecked") List<Object> list = array;
         for (int index = 0; index < list.size(); index++) {
-            Object item = list.get(index);
+            final Object item = Objects.requireNonNull(list.get(index));
 
             if (isFlatValue(item)) {
                 /* обычное значение просто добавляем в список */
 
                 values.add(ValRec.of(parentPath.id(Id.arr(index)).path(), ValueKey.of(array, index), item));
-            } else if (JSONObject.class.isAssignableFrom(Objects.requireNonNull(item).getClass())) {
+            } else if (JSONObject.class.isAssignableFrom(item.getClass())) {
                 /* значение объект  */
 
 
                 flattenObject(parentPath, cast(item), values);
-            } else if (JSONArray.class.isAssignableFrom(Objects.requireNonNull(item).getClass())) {
+            } else if (JSONArray.class.isAssignableFrom(item.getClass())) {
 
                 String monkeyIdName = monkeyIdName(cast(item));
                 String componentTypeName = componentTypeName(cast(item));
