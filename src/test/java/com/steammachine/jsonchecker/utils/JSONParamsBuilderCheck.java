@@ -16,7 +16,7 @@ class JSONParamsBuilderCheck {
 
     @Test
     void fromMap() {
-        JSONParamsBuilder.of().fromMap(MapBuilder.<String, Integer>of().put("11", 1000).build());
+        JSONParamsBuilder.of().fromMap(MapBuilder.<String, Integer>of().put("11", 1000).build()).single("pas", 1);
     }
 
     @Test

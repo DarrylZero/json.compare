@@ -1,5 +1,8 @@
 package com.steammachine.jsonchecker.types;
 
+import com.steammachine.common.apilevel.Api;
+import com.steammachine.common.apilevel.State;
+
 /**
  *
  * Вспомогательный интерфейс - представления пути в виде строки
@@ -7,6 +10,7 @@ package com.steammachine.jsonchecker.types;
  * @author Vladimir Bogodukhov
  **/
 @FunctionalInterface
+@Api(State.INTERNAL)
 public interface PathRepresentation {
 
     /**

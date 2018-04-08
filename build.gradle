@@ -7,7 +7,7 @@ buildscript {
     dependencies {
         classpath 'org.junit.platform:junit-platform-gradle-plugin:1.0.0'
         classpath 'com.steammachine.org:gradle.plugins:0.9.3'
-        classpath 'com.steammachine.org:gradle.copy.plugin:0.9.0'
+        classpath 'com.steammachine.org:gradle.copy.plugin:0.9.1'
         classpath 'com.steammachine.org:gradle.substitute.plugin:1.0.0'
     }
 }
@@ -94,9 +94,8 @@ junitPlatform {
 }
 
 copyresources.copy('copy_publish_properties') {
-    c ->
-        c.from 'publish.properties'
-        c.into new File(project.buildDir, 'classes/test/com/steammachine/jsonchecker/infrastructure')
+    from 'publish.properties'
+    into new File(project.buildDir, 'classes/test/com/steammachine/jsonchecker/infrastructure')
 }
 
 task sourceJar(type: Jar) {

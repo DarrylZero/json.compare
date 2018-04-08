@@ -452,8 +452,12 @@ public class JSonDirectComparator {
     }
 
     private static PathCluster transformCluster(PathCluster cluster, JSONParams params) {
-        boolean hasParams = cluster.kinds().stream().map(cluster::path).flatMap(path -> path.elements().stream()).
-                flatMap(element -> element.list().stream()).map(Id::id).filter(Objects::nonNull).
+        boolean hasParams = cluster.kinds().stream().
+                map(cluster::path).
+                flatMap(path -> path.elements().stream()).
+                flatMap(element -> element.list().stream()).
+                map(Id::id).
+                filter(Objects::nonNull).
                 peek(value -> checkParam(value, params)).anyMatch(JSonDirectComparator::hasParam);
         if (!hasParams) {
             /* there is no params - returning unfiltered data. */
@@ -465,7 +469,6 @@ public class JSonDirectComparator {
            если есть хотя бы один элемент, который содержит параметр */
 
         Map<String, Path> modified = new HashMap<>();
-
         for (Map.Entry<String, Path> entry : cluster.unmodifiablePathMap().entrySet()) {
             Path.Builder builder = Path.builder();
             for (PathParticle particle : entry.getValue().particles()) {
@@ -588,7 +591,6 @@ public class JSonDirectComparator {
                     " do not match. " + vs.value2() + " does not match " + vs.param1().paramsRep());
             context.failed();
         }
-
     }
 
     private static boolean compareParams(JSONParam param, JSONParam param2) {
@@ -676,11 +678,11 @@ public class JSonDirectComparator {
      * Сравнение производится с предварительным преобразованием к приведенному виду.
      * Результат выполнения не дает даталей расхождений.
      * <p>
-     * Api note - внутри метода не осуществляется закрытия потоков.
+     * Api note - streams are not closed within method.
      *
-     * @param json1 поток с данными (not null)
-     * @param json2 поток с данными (not null)
-     * @return {@code true} если два данных json идентичны  по структуре
+     * @param json1 data stream (not null)
+     * @param json2 data stream (not null)
+     * @return {@code true} if one date matches the other
      */
     @Api(State.MAINTAINED)
     public static NodeCheckResult compareJSonStreams(

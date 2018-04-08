@@ -6,7 +6,7 @@ import com.steammachine.jsonchecker.types.exceptions.ParamError;
 import com.steammachine.jsonchecker.types.exceptions.ParamTypeError;
 
 /**
- * Интерфейс параметра, используемый для передачи в методы сравнения документов JSON
+ * Interface of param  used for passing into Json comparison utils.
  *
  * @author Vladimir Bogodukhov
  */
@@ -14,23 +14,20 @@ import com.steammachine.jsonchecker.types.exceptions.ParamTypeError;
 public interface JSONParam {
 
     /**
-     * @return Наименование параметра (Всегда не null)
+     * @return Param name (never null)
      */
     String name();
 
 
     /**
-     * @return представление имеющихся параметров в виде строки (всегда не null)
+     * @return Param value as a string (never null)
      */
     String paramsRep();
 
     /**
-     * Метод проверяет допустимость типов и значений данного параметра.
-     *
-     * @throws ParamTypeError
-     * @throws ParamError
+     * Checks if param type is allowed for actual param value.
      */
-    void checkValues() throws ParamTypeError, ParamError;
+    void checkValues();
 
 
     /**

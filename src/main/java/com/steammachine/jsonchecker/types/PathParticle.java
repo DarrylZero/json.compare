@@ -4,7 +4,8 @@ import java.util.Arrays;
 
 /**
  *
- * Частица пути
+ * Path particle interface
+ *
  * @author Vladimir Bogodukhov
  * 30.12.2017 10:21:46
  **/
