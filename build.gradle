@@ -48,6 +48,16 @@ group = deploy.group
 version = deploy.version
 
 
+allprojects {
+    tasks.withType(JavaCompile) {
+        options.encoding = 'UTF-8'
+    }
+
+    tasks.withType(Test) {
+        systemProperty "file.encoding", "UTF-8"
+    }
+}
+
 import com.steammachine.org.gradle.substitute.plugin.ModificationRule
 
 import java.text.SimpleDateFormat
