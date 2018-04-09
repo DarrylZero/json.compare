@@ -19,7 +19,7 @@ import java.util.List;
  **/
 public class ResultNodeCheckContext extends DefaultNodeCheckContext implements NodeCheckResult {
 
-    private List<String> messages = new ArrayList<>();
+    private final List<String> messages = new ArrayList<>();
 
     @Override
     protected void doLog(String compiledString) {

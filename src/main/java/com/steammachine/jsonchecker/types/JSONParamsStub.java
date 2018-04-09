@@ -10,6 +10,7 @@ import com.steammachine.jsonchecker.types.exceptions.ParamNotFound;
  * {@link com.steammachine.jsonchecker.types.JSONParamsStub}
  * com.steammachine.jsonchecker.types.JSONParamsStub
  */
+@Api(State.MAINTAINED)
 public class JSONParamsStub {
 
     private JSONParamsStub() {
